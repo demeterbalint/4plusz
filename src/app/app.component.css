@@ -1,0 +1,69 @@
+.main-container {
+  position: relative;
+  padding-top: 10vh;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  /*border: black solid 1px;*/
+  overflow-x: hidden;
+}
+
+.navbar {
+  box-sizing: border-box;
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1rem;
+  background: var(--menuColor);
+  z-index: 100;
+}
+
+.navbar * {
+  background: transparent;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a, button {
+  cursor: pointer;
+}
+
+.negyplusz {
+  position: absolute;
+  left: 6%;
+
+}
+
+.nav-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: var(--menuSize);
+}
+
+.socials {
+  display: flex;
+  gap: 0.6rem;
+  font-size: var(--menuSize);
+}
+
+.language {
+  margin-right: 6%;
+  display: flex;
+  gap: 0.6rem;
+  font-size: var(--menuSize);
+
+  button {
+    border: none;
+  }
+}

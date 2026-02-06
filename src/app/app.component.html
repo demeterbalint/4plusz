@@ -1,0 +1,24 @@
+<div class="main-container">
+  <header>
+    <nav class="navbar">
+      <a class="negyplusz" routerLink="/">{{ homeMain }}</a>
+      <ul class="nav-list">
+        <li><a routerLink="/" routerLinkActive="active">{{ home }}</a></li>
+        <li><a routerLink="/studio" routerLinkActive="active">{{ studio }}</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active">{{ projects }}</a></li>
+        <li><a routerLink="/publications" routerLinkActive="active">{{ publications }}</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">{{ contact }}</a></li>
+      </ul>
+      <div class="socials">
+        <a>FB</a>
+        <a>IG</a>
+      </div>
+      <div class="language">
+        <button (click)=languageToHu()>HU</button>
+        <span>|</span>
+        <button (click)="languageToEn()">EN</button>
+      </div>
+    </nav>
+  </header>
+  <router-outlet></router-outlet>
+</div>

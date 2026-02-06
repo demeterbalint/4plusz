@@ -1,0 +1,30 @@
+:root {
+  --menuSize: 0.8rem;
+  --menuFont: 'Oswald-extralight', sans-serif;
+  --textFont: 'Oswald-medium', sans-serif;
+  --testFont: 'Helvetica-w01-light', sans-serif;
+  --test2Font: 'Futura-lt-w01-book', sans-serif;
+  --menuColor: #f1f1f1;
+  --backgroundColor: white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.menu {
+  font-family: oswald-extralight, oswald, sans-serif;
+}
+
+.text{
+  font-family: oswald-medium, oswald, sans-serif;
+}
+
+.test{
+  font-family: helvetica-w01-light, sans-serif;
+}
+
+.test2 {
+  font-family: futura-lt-w01-book, sans-serif;
+}
