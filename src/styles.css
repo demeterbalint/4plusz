@@ -1,7 +1,6 @@
 :root {
   --menuFont: normal 400 0.8rem 'Questrial', sans-serif;
   --menuColor: rgb(105, 105, 105);
-  --menuBackground: #f1f1f1;
   --backgroundColor: white;
   --languageActiveColor: rgb(254, 97, 97);
   --languagePipeColor: rgb(230, 224, 211);
