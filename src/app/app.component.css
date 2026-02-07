@@ -4,23 +4,22 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
-  /*border: black solid 1px;*/
   overflow-x: hidden;
 }
 
 .navbar {
   box-sizing: border-box;
   position: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
   height: 10vh;
   width: 100%;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  gap: 1rem;
-  background: var(--menuColor);
+  background: var(--backgroundColor);
   z-index: 100;
+  font: var(--menuFont);
 }
 
 .navbar * {
@@ -36,10 +35,20 @@
   cursor: pointer;
 }
 
+.nav-right {
+  margin-right: 5%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+
 .negyplusz {
   position: absolute;
   left: 6%;
-
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
 }
 
 .nav-list {
@@ -48,22 +57,52 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-size: var(--menuSize);
+  font: var(--menuFont);
+
+  a {
+    color: var(--menuColor);
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  a.active-link {
+    color: black;
+  }
 }
 
 .socials {
   display: flex;
+  margin-right: -0.8rem;
   gap: 0.6rem;
-  font-size: var(--menuSize);
+  font-size: 0.9rem;
 }
 
 .language {
-  margin-right: 6%;
   display: flex;
-  gap: 0.6rem;
-  font-size: var(--menuSize);
+  color: var(--menuColor);
 
   button {
+    height: 2rem;
+    width: 3rem;
     border: none;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--languageColor);
+  }
+
+  button:hover {
+    color: var(--languageHoverColor);
+  }
+
+  button.active {
+    color: var(--languageActiveColor);
+  }
+
+  .bt-hu {
+    border-right: 1px solid var(--languagePipeColor);
   }
 }

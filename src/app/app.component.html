@@ -2,21 +2,26 @@
   <header>
     <nav class="navbar">
       <a class="negyplusz" routerLink="/">{{ homeMain }}</a>
-      <ul class="nav-list">
-        <li><a routerLink="/" routerLinkActive="active">{{ home }}</a></li>
-        <li><a routerLink="/studio" routerLinkActive="active">{{ studio }}</a></li>
-        <li><a routerLink="/projects" routerLinkActive="active">{{ projects }}</a></li>
-        <li><a routerLink="/publications" routerLinkActive="active">{{ publications }}</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">{{ contact }}</a></li>
-      </ul>
-      <div class="socials">
-        <a>FB</a>
-        <a>IG</a>
-      </div>
-      <div class="language">
-        <button (click)=languageToHu()>HU</button>
-        <span>|</span>
-        <button (click)="languageToEn()">EN</button>
+      <div class="nav-right">
+        <ul class="nav-list">
+          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ home }}</a></li>
+          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ studio }}</a></li>
+          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ projects }}</a></li>
+          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ publications }}</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ contact }}</a></li>
+        </ul>
+        <div class="socials">
+          <div class="facebook">
+            <a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>
+          </div>
+          <div class="instagram">
+            <a class="fab fa-instagram" target="_blank" href="https://www.instagram.com/4plusz/"></a>
+          </div>
+        </div>
+        <div class="language">
+          <button class="bt-hu" [class.active]="!isEnglish" (click)=languageToHu()>HU</button>
+          <button [class.active]="isEnglish" (click)=languageToEn()>EN</button>
+        </div>
       </div>
     </nav>
   </header>
