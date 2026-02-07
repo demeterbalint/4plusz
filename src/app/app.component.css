@@ -79,8 +79,12 @@
   font-size: 0.9rem;
 }
 
-.footer-contact-div {
+footer {
   padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+.footer-contact-div {
   width: 100%;
   display: flex;
   flex-direction: column;
