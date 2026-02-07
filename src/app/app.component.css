@@ -72,11 +72,37 @@
   }
 }
 
-.socials {
+.socials-header {
   display: flex;
   margin-right: -0.8rem;
   gap: 0.6rem;
   font-size: 0.9rem;
+}
+
+.footer-contact-div {
+  padding-top: 7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer-name{
+    font-weight: bold;
+  }
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .language {
