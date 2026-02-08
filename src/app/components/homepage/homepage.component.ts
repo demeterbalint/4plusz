@@ -1,12 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {Project} from '../../interfaces/project';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-homepage',
   imports: [
-    NgForOf
+    NgForOf,
+    NgIf,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
@@ -16,12 +17,12 @@ export class HomepageComponent implements OnInit {
   homePageProjects: Project[] = [];
   imageIndex: number = 0;
   numberOfProjects: number = 0;
-  currentProject: Project | undefined;
 
   //animation
   isAnimating: boolean = false;
   loopedProjects: Project[] = [];
   intervalId: any;
+  isPaused: boolean = false;
 
   constructor(private projectLoader: ProjectLoaderService) {
   }
@@ -47,7 +48,9 @@ export class HomepageComponent implements OnInit {
 
   startAutoSlide() {
     this.intervalId = setInterval(() => {
-      this.nextProject();
+      if (!this.isPaused) {
+        this.nextProject();
+      }
     }, 5000);
   }
 
@@ -89,6 +92,22 @@ export class HomepageComponent implements OnInit {
         this.isAnimating = false;
       }, 2000);
     }
+  }
+
+  pauseAutoSlide() {
+    /*if (this.isAnimating) {
+      setTimeout(() => {
+        this.isPaused = true;
+      }, 2000);
+      return;
+    } else {
+      this.isPaused = true;
+    }*/
+    this.isPaused = true;
+  }
+
+  resumeAutoSlide() {
+    this.isPaused = false;
   }
 
   get displayIndex(): number {

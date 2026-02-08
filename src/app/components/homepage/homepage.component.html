@@ -14,7 +14,8 @@
   </div>
   <div class="home-image-stop-count">
     <!--    <span class="home-image-stop">||</span>-->
-    <i class="fa-solid fa-pause"></i>
+    <i *ngIf="!isPaused" class="fa-solid fa-pause" (click)="pauseAutoSlide()"></i>
+    <i *ngIf="isPaused" class="fa-solid fa-caret-right" (click)="resumeAutoSlide()"></i>
     <span class="home-image-count">{{ displayIndex }}/{{ numberOfProjects }}</span>
   </div>
 </div>
