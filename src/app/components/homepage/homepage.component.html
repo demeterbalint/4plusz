@@ -1,12 +1,20 @@
 <div class="homepage-image-div">
-  Képek
+  <div class="home-images">
+    <div class="home-images-track" [style.transform]="'translateX(-' + imageIndex * 100 + '%)'"
+         [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
+      <div class="home-image" *ngFor="let project of loopedProjects">
+        <img [src]="project.images" [alt]="project.shortDescription">
+        <span>{{ project.name }}</span>
+      </div>
+    </div>
+  </div>
   <div class="home-image-arrows">
-    <i class="fa-solid fa-angle-left"></i>
-    <i class="fa-solid fa-angle-right"></i>
+    <i class="fa-solid fa-angle-left" (click)="previousProject()"></i>
+    <i class="fa-solid fa-angle-right" (click)="nextProject()"></i>
   </div>
   <div class="home-image-stop-count">
-<!--    <span class="home-image-stop">||</span>-->
+    <!--    <span class="home-image-stop">||</span>-->
     <i class="fa-solid fa-pause"></i>
-    <span class="home-image-count">{{count}}</span>
+    <span class="home-image-count">{{ displayIndex }}/{{ numberOfProjects }}</span>
   </div>
 </div>
