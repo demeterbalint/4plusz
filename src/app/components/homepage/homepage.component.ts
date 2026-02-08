@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 
+  count: string = '6/14';
+
 }

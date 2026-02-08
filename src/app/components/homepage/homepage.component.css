@@ -1,4 +1,53 @@
 .homepage-image-div {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: bisque;
+}
+
+.home-image-stop-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.7rem;
+  right: 0.7rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 1rem;
+}
+
+.home-image-stop-count i {
+  cursor: pointer;
+}
+
+.home-image-arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.home-image-arrows i {
+  opacity: 0.5;
+  text-shadow: 1px 1px 10px black;
+  cursor: pointer;
+}
+
+.home-image-stop-count,
+.home-image-arrows {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s ease;
+}
+
+.homepage-image-div:hover .home-image-stop-count,
+.homepage-image-div:hover .home-image-arrows {
+  opacity: 1;
 }
