@@ -7,9 +7,11 @@ import {Project} from '../interfaces/project';
 })
 export class ProjectLoaderService {
 
+  homePageProjectSlugs: string[] = ['test slug', 'test2 slug']
+
   constructor(private projectService: ProjectService) { }
 
   getHomePageProjects(): Project[] {
-    return this.projectService.getProjects().filter(project => project.slug === 'home');
+    return this.projectService.getProjects().filter(project => this.homePageProjectSlugs.includes(project.slug));
   }
 }
