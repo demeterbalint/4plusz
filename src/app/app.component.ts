@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
-import {NgClass} from '@angular/common';
-import {HomepageComponent} from './components/homepage/homepage.component';
+import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +8,9 @@ import {HomepageComponent} from './components/homepage/homepage.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     this.languageToHu();
@@ -61,5 +62,13 @@ export class AppComponent implements OnInit {
     //footer names
     this.name = '4plusz Architect Studio';
     this.address = '1111 Budapest Bartók Béla street 18'
+  }
+
+  protected goToHome() {
+    if (this.router.isActive('/', true)) {
+      window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+    } else {
+      this.router.navigate(['/']);
+    }
   }
 }
