@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Language, LanguageService} from './services/language.service';
-import {NavbarFooterText} from './models/navbarFooterText';
-import {NAVBAR_FOOTER_TEXT} from './data/NavbarFooterTextData';
+import {NavbarFooterTextModel} from './models/navbar-footer-text-model';
+import {NAVBAR_FOOTER_TEXT} from './data/navbar-footer-text-data';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     })
   }
 
-  navFooText: NavbarFooterText =  NAVBAR_FOOTER_TEXT;
+  navFooText: NavbarFooterTextModel =  NAVBAR_FOOTER_TEXT;
 
   switchToEnglish() {
     this.languageService.setLanguage('en');

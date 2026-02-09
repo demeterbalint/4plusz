@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {ProjectService} from './project.service';
-import {Project} from '../models/project';
+import {ProjectModel} from '../models/project-model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class ProjectLoaderService {
 
   constructor(private projectService: ProjectService) { }
 
-  getHomePageProjects(): Project[] {
+  getHomePageProjects(): ProjectModel[] {
     return this.projectService.getProjects().filter(project => this.homePageProjectSlugs.includes(project.slug));
   }
 }

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProjectLoaderService} from '../../services/project-loader.service';
-import {Project} from '../../models/project';
+import {ProjectModel} from '../../models/project-model';
 import {NgForOf, NgIf} from '@angular/common';
 import {Language, LanguageService} from '../../services/language.service';
 
@@ -15,14 +15,14 @@ import {Language, LanguageService} from '../../services/language.service';
 })
 export class HomepageComponent implements OnInit {
 
-  homePageProjects: Project[] = [];
+  homePageProjects: ProjectModel[] = [];
   imageIndex: number = 0;
   numberOfProjects: number = 0;
   currentLang: Language = 'hu';
 
   //animation
   isAnimating: boolean = false;
-  loopedProjects: Project[] = [];
+  loopedProjects: ProjectModel[] = [];
   intervalId: any;
   isPaused: boolean = false;
 

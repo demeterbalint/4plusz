@@ -1,4 +1,4 @@
-export interface Project {
+export interface ProjectModel {
   slug: string;
   name: {
     hu: string;

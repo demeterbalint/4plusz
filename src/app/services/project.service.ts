@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Project} from '../models/project';
+import {ProjectModel} from '../models/project-model';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ export class ProjectService {
   constructor() {
   }
 
-  private projects: Project[] = [
+  private projects: ProjectModel[] = [
     {
       slug: "test slug",
       name: {
@@ -52,7 +52,7 @@ export class ProjectService {
     }
   ];
 
-  getProjects(): Project[] {
+  getProjects(): ProjectModel[] {
     return this.projects;
   }
 }
