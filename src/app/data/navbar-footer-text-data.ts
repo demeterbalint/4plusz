@@ -1,4 +1,6 @@
-export const NAVBAR_FOOTER_TEXT = {
+import {NavbarFooterTextModel} from '../models/navbar-footer-text-model';
+
+export const NAVBAR_FOOTER_TEXT: NavbarFooterTextModel = {
   //header names
   headerBrand: { hu: '4 PLUSZ ÉPÍTÉSZ STÚDIÓ', en: '4 PLUSZ ARCHITECT STUDIO' },
   home: { hu: 'Kezdőlap', en: 'Home' },
