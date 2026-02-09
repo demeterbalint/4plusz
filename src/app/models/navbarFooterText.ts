@@ -1,4 +1,4 @@
-export interface NavbarContactText {
+export interface NavbarFooterText {
   //header names
   headerBrand: {
     hu: string;

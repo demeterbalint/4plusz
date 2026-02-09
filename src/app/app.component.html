@@ -1,14 +1,14 @@
 <div class="main-container">
   <header>
     <nav class="navbar">
-      <a class="negyplusz" routerLink="/">{{ navcontext.headerBrand[currentLang] }}</a>
+      <a class="negyplusz" routerLink="/">{{ navFooText.headerBrand[currentLang] }}</a>
       <div class="nav-right">
         <ul class="nav-list">
-          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.home[currentLang] }}</a></li>
-          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.studio[currentLang] }}</a></li>
-          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.projects[currentLang] }}</a></li>
-          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.publications[currentLang] }}</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.contact[currentLang] }}</a></li>
+          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.home[currentLang] }}</a></li>
+          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.studio[currentLang] }}</a></li>
+          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.projects[currentLang] }}</a></li>
+          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.publications[currentLang] }}</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.contact[currentLang] }}</a></li>
         </ul>
         <div class="socials-header">
           <div class="facebook">
@@ -30,9 +30,9 @@
 
   <footer>
     <div class="footer-contact-div">
-      <a class="footer-name" (click)="goToHome()">{{ navcontext.footerBrand[currentLang] }}</a>
-      <span>{{ navcontext.phone[currentLang] }}</span>
-      <span>{{ navcontext.address[currentLang] }}</span>
+      <a class="footer-name" (click)="goToHome()">{{ navFooText.footerBrand[currentLang] }}</a>
+      <span>{{ navFooText.phone[currentLang] }}</span>
+      <span>{{ navFooText.address[currentLang] }}</span>
       <div class="socials-footer">
         <div class="facebook">
           <a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>

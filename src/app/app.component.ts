@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Language, LanguageService} from './services/language.service';
-import {NavbarContactText} from './models/navbarContactText';
+import {NavbarFooterText} from './models/navbarFooterText';
+import {NAVBAR_FOOTER_TEXT} from './data/NavbarFooterTextData';
 
 @Component({
   selector: 'app-root',
@@ -24,20 +25,7 @@ export class AppComponent implements OnInit {
     })
   }
 
-  navcontext: NavbarContactText = {
-    //header names
-    headerBrand: { hu: '4 PLUSZ ÉPÍTÉSZ STÚDIÓ', en: '4 PLUSZ ARCHITECT STUDIO' },
-    home: { hu: 'Kezdőlap', en: 'Home' },
-    studio: { hu: 'Stúdió', en: 'Studio' },
-    projects: { hu: 'Projektek', en: 'Projects' },
-    publications: { hu: 'Publikációk', en: 'Publications' },
-    contact: { hu: 'Kapcsolat', en: 'Contact' },
-
-    //footer names
-    footerBrand: { hu: '4plusz Építész Stúdió', en: '4plusz Architect Studio' },
-    phone: { hu: '+36 20 982 6352', en: '+36 20 982 6352' },
-    address: { hu: '1111 Budapest Bartók Béla út 18', en: '1111 Budapest Bartók Béla street 18' }
-  }
+  navFooText: NavbarFooterText =  NAVBAR_FOOTER_TEXT;
 
   switchToEnglish() {
     this.languageService.setLanguage('en');
