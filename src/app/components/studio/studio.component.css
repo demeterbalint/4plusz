@@ -1,0 +1,79 @@
+.studio-div {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.part-divider {
+  width: 77.4%;
+  background-color: black;
+  height: 0.016rem;
+}
+
+.part1, .part2, .part3 {
+  position: relative;
+  width: 62%;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+span, a {
+  font-size: 12px;
+  line-height: 1.88em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.part1-brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.part1-text {
+  width: 100%;
+  display: flex;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.part1-text span {
+  width: 44%;
+}
+
+.part2-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.part3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part3-left, .part3-right {
+  width: 47%;
+}
+
+.part3-name-text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.part3-name-text-2 {
+  font-style: italic;
+}
