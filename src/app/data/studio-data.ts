@@ -1,6 +1,6 @@
 import {StudioModel} from '../models/studio-model';
 
-export const studioData: StudioModel = {
+export const STUDIO_DATA: StudioModel = {
   brand: {
     hu: '4 Plusz Építész Stúdió',
     en: '4 Plusz Architect Studio'
