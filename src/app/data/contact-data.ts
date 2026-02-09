@@ -17,6 +17,10 @@ export const CONTACT_DATA: ContactModel = {
     hu: '+36 20 982 6352',
     en: '+36 20 982 6352'
   },
+  emailTitle: {
+    hu: 'Email',
+    en: 'Email',
+  },
   email: {
     hu: '4pluszkft@gmail.com',
     en: '4pluszkft@gmail.com'

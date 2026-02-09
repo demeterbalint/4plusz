@@ -15,6 +15,10 @@ export interface ContactModel {
     hu: string,
     en: string
   },
+  emailTitle: {
+    hu: string,
+    en: string
+  },
   email: {
     hu: string,
     en: string
