@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Language, LanguageService} from './services/language.service';
-import {NavbarContactText} from './interfaces/navbarContactText';
+import {NavbarContactText} from './models/navbarContactText';
 
 @Component({
   selector: 'app-root',

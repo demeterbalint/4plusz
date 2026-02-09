@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProjectLoaderService} from '../../services/project-loader.service';
-import {Project} from '../../interfaces/project';
+import {Project} from '../../models/project';
 import {NgForOf, NgIf} from '@angular/common';
 import {Language, LanguageService} from '../../services/language.service';
 
