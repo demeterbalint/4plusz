@@ -95,14 +95,6 @@ export class HomepageComponent implements OnInit {
   }
 
   pauseAutoSlide() {
-    /*if (this.isAnimating) {
-      setTimeout(() => {
-        this.isPaused = true;
-      }, 2000);
-      return;
-    } else {
-      this.isPaused = true;
-    }*/
     this.isPaused = true;
   }
 
