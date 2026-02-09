@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {Language, LanguageService} from './services/language.service';
+import {NavbarContactText} from './interfaces/navbarContactText';
 
 @Component({
   selector: 'app-root',
@@ -8,60 +10,41 @@ import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/route
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  title = 'negyplusz';
 
-  constructor(private router: Router) {
+  currentLang: Language = 'hu';
+
+  constructor(private router: Router,
+              private languageService: LanguageService) {
   }
 
   ngOnInit(): void {
-    this.languageToHu();
+    this.languageService.language$.subscribe(lang => {
+      this.currentLang = lang;
+    })
   }
 
-  title = 'negyplusz';
-  isEnglish: boolean = false;
-
-  //header names
-  homeMain: string = '';
-  home: string = '';
-  studio: string = '';
-  projects: string = '';
-  publications: string = '';
-  contact: string = '';
-
-  //footer names
-  name: string = '';
-  phone: string = '+36 20 982 6352';
-  address: string = '';
-
-  languageToHu() {
-    this.isEnglish = false;
-
+  navcontext: NavbarContactText = {
     //header names
-    this.homeMain = '4 PLUSZ ÉPÍTÉSZ STÚDIÓ';
-    this.home = 'Kezdőlap';
-    this.studio = 'Stúdió';
-    this.projects = 'Projektek';
-    this.publications = 'Publikációk';
-    this.contact = 'Kapcsolat';
+    headerBrand: { hu: '4 PLUSZ ÉPÍTÉSZ STÚDIÓ', en: '4 PLUSZ ARCHITECT STUDIO' },
+    home: { hu: 'Kezdőlap', en: 'Home' },
+    studio: { hu: 'Stúdió', en: 'Studio' },
+    projects: { hu: 'Projektek', en: 'Projects' },
+    publications: { hu: 'Publikációk', en: 'Publications' },
+    contact: { hu: 'Kapcsolat', en: 'Contact' },
 
     //footer names
-    this.name = '4plusz Építész Stúdió';
-    this.address = '1111 Budapest Bartók Béla út 18'
+    footerBrand: { hu: '4plusz Építész Stúdió', en: '4plusz Architect Studio' },
+    phone: { hu: '+36 20 982 6352', en: '+36 20 982 6352' },
+    address: { hu: '1111 Budapest Bartók Béla út 18', en: '1111 Budapest Bartók Béla street 18' }
   }
 
-  languageToEn() {
-    this.isEnglish = true;
+  switchToEnglish() {
+    this.languageService.setLanguage('en');
+  }
 
-    //header names
-    this.homeMain = '4 PLUSZ ARCHITECT STUDIO';
-    this.home = 'Home';
-    this.studio = 'Studio';
-    this.projects = 'Projects';
-    this.publications = 'Publications';
-    this.contact = 'Contact';
-
-    //footer names
-    this.name = '4plusz Architect Studio';
-    this.address = '1111 Budapest Bartók Béla street 18'
+  switchToHungarian() {
+    this.languageService.setLanguage('hu');
   }
 
   protected goToHome() {

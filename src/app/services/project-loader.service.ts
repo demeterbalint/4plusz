@@ -7,7 +7,7 @@ import {Project} from '../interfaces/project';
 })
 export class ProjectLoaderService {
 
-  homePageProjectSlugs: string[] = ['test slug', 'test2 slug']
+  homePageProjectSlugs: string[] = ['test slug', '2 test slug']
 
   constructor(private projectService: ProjectService) { }
 

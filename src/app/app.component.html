@@ -1,14 +1,14 @@
 <div class="main-container">
   <header>
     <nav class="navbar">
-      <a class="negyplusz" routerLink="/">{{ homeMain }}</a>
+      <a class="negyplusz" routerLink="/">{{ navcontext.headerBrand[currentLang] }}</a>
       <div class="nav-right">
         <ul class="nav-list">
-          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ home }}</a></li>
-          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ studio }}</a></li>
-          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ projects }}</a></li>
-          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ publications }}</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ contact }}</a></li>
+          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.home[currentLang] }}</a></li>
+          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.studio[currentLang] }}</a></li>
+          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.projects[currentLang] }}</a></li>
+          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.publications[currentLang] }}</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navcontext.contact[currentLang] }}</a></li>
         </ul>
         <div class="socials-header">
           <div class="facebook">
@@ -19,8 +19,8 @@
           </div>
         </div>
         <div class="language">
-          <button class="bt-hu" [class.active]="!isEnglish" (click)=languageToHu()>HU</button>
-          <button [class.active]="isEnglish" (click)=languageToEn()>EN</button>
+          <button class="bt-hu" [class.active]="currentLang === 'hu'" (click)=switchToHungarian()>HU</button>
+          <button [class.active]="currentLang === 'en'" (click)=switchToEnglish()>EN</button>
         </div>
       </div>
     </nav>
@@ -30,9 +30,9 @@
 
   <footer>
     <div class="footer-contact-div">
-      <a class="footer-name" (click)="goToHome()">{{name}}</a>
-      <span>{{phone}}</span>
-      <span>{{address}}</span>
+      <a class="footer-name" (click)="goToHome()">{{ navcontext.footerBrand[currentLang] }}</a>
+      <span>{{ navcontext.phone[currentLang] }}</span>
+      <span>{{ navcontext.address[currentLang] }}</span>
       <div class="socials-footer">
         <div class="facebook">
           <a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>

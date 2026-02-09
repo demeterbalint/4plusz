@@ -1,8 +1,20 @@
 export interface Project {
-  name: string;
   slug: string;
-  shortDescription: string;
-  longDescription: string;
-  additionalInfo: string;
+  name: {
+    hu: string;
+    en: string;
+  };
+  shortDescription: {
+    hu: string;
+    en: string;
+  };
+  longDescription: {
+    hu: string;
+    en: string;
+  };
+  additionalInfo: {
+    hu: string;
+    en: string;
+  };
   images: string[];
 }

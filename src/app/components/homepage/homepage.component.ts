@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {Project} from '../../interfaces/project';
 import {NgForOf, NgIf} from '@angular/common';
+import {Language, LanguageService} from '../../services/language.service';
 
 @Component({
   selector: 'app-homepage',
@@ -17,6 +18,7 @@ export class HomepageComponent implements OnInit {
   homePageProjects: Project[] = [];
   imageIndex: number = 0;
   numberOfProjects: number = 0;
+  currentLang: Language = 'hu';
 
   //animation
   isAnimating: boolean = false;
@@ -24,10 +26,15 @@ export class HomepageComponent implements OnInit {
   intervalId: any;
   isPaused: boolean = false;
 
-  constructor(private projectLoader: ProjectLoaderService) {
+  constructor(private projectLoader: ProjectLoaderService,
+              private languageService: LanguageService) {
   }
 
   ngOnInit(): void {
+    this.languageService.language$.subscribe(lang => {
+      this.currentLang = lang;
+    })
+
     const projects = this.projectLoader.getHomePageProjects();
 
     this.homePageProjects = projects;
