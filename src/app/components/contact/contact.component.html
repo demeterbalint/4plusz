@@ -10,15 +10,11 @@
       </div>
       <div class="contact-datas">
         <span class="contact-data">{{ contactData.address[currentLang] }}</span>
-        <span class="contact-data" >{{ contactData.phone[currentLang] }}</span>
-        <span class="contact-data" >{{ contactData.email[currentLang] }}</span>
+        <span class="contact-data">{{ contactData.phone[currentLang] }}</span>
+        <a class="contact-data" (click)="openMail()">{{ contactData.email[currentLang] }}</a>
         <div class="follow-socials">
-          <div class="social-border">
-            <a class="fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>
-          </div>
-          <div class="social-border">
-            <a class="fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/4plusz/"></a>
-          </div>
+          <a class="social-border fa-brands fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>
+          <a class="social-border fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/4plusz/"></a>
         </div>
       </div>
     </div>
