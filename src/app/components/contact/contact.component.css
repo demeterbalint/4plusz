@@ -79,6 +79,6 @@
   background-color: darkgray;
 }
 
-/*.contact-maps iframe {
+.contact-maps iframe {
   filter: grayscale(100%);
-}*/
+}
