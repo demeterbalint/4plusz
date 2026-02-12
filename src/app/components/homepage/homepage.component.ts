@@ -19,6 +19,23 @@ export class HomepageComponent implements OnInit {
   imageIndex: number = 0;
   numberOfProjects: number = 0;
   currentLang: Language = 'hu';
+  /*
+  1. raday-2
+  2. raday-5
+  3. csomor-16
+  4. fasor
+  5. kapy-main
+  6. budaors-1
+  7. ujpest-11
+  8. fasor
+  9. ujpest-4
+  10. budaors-home
+  11. rezhaz
+  12. budaors-23
+  13. fasor
+  14. csomor-11
+  15. raday-press
+  */
 
   //animation
   isAnimating: boolean = false;
