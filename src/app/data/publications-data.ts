@@ -2,7 +2,7 @@ import {PublicationModel} from '../models/publication--model';
 
 export const PUBLICATIONS_DATA: PublicationModel[] = [
   {
-    imageURL: 'pub-1.img',
+    imageURL: 'fasor-press',
     link: 'https://meonline.hu/aktualis/tema/meg-a-templomnal-is-nagyobb/?fbclid=IwVERTSAOBfxNleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR7Kabvxdt294UxkBYK4fQ_-88U_cnzoupjPu5mjHowYdlrlgBz7WiPXA_bVrw_aem_3Jy9TaJqiaA3LkexQG6LnA',
     title: {
       hu: '"Fasori református templom műemléki felújítása"',
@@ -15,7 +15,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-2.img',
+    imageURL: '',
     link: 'https://kultura.hu/a-templomtereket-szemelyesse-ugyanakkor-szakralis-terkent-is-erzekelhetove-kell-tenni/?fbclid=IwY2xjawN9oK5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeTUeZEvDcmmaaGQyCQcM_0D4btwk3_QGFz-fIpVvhrzmJzpuJGFnQphB1nyc_aem_HquDtCghs8bup_iOixSZ3Q',
     title: {
       hu: '"A templomtereket személyessé, ugyanakkor szakrális térként is érzékelhetővé kell tenni"',
@@ -41,7 +41,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-4.img',
+    imageURL: 'tihany-historical',
     link: 'https://epiteszforum.hu/enyeszettol-a-diszkon-at-a-muzeumig--ot-magtar-ot-tortenet?fbclid=IwY2xjawN9neZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe2gkB6RLYDUnY0Xj6NtwR0R-Zhu4OWZtCAF4qYCtd4ixeYVTjRwv3bdOMZYY_aem_4y0gk55VPgm7Ntgz--B9QA',
     title: {
       hu: '"Öt magtár, öt történet"',
@@ -110,7 +110,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-9.img',
+    imageURL: '',
     link: 'https://reformatus.hu/egyhazunk/hirek/berzsak-zoltan-eptiesz-budaors-csomor-raday28/',
     title: {
       hu: '"Fontos az építés drámája"',
@@ -253,7 +253,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-20.img',
+    imageURL: 'csomor-16',
     link: 'https://epiteszforum.hu/hagyomanyba-oltott-modernitas--reformatus-templom-es-gyulekezeti-kozpont-csomoron',
     title: {
       hu: '"Hagyományba oltott modernitás"',
@@ -266,7 +266,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-21.img',
+    imageURL: '',
     link: 'https://meonline.hu/aktualis/tema/a-magveto-haza/',
     title: {
       hu: '"A Magvető Háza"',
@@ -279,7 +279,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-22.img',
+    imageURL: 'copperhouse-4',
     link: 'https://epiteszforum.hu/mult-es-jovo-osszeforrasztasa-rezhaz-rakosmenten',
     title: {
       hu: '"Múlt és jövő összeforrasztása"',
