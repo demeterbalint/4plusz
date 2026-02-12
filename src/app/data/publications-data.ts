@@ -28,7 +28,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-3.img',
+    imageURL: 'budaors-home',
     link: 'https://architizer.com/projects/house-of-gardener/?fbclid=IwY2xjawN9oKlleHRuA2FlbQIxMABicmlkETFPZFZsMFBsT2hFR3JDdmpsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlP5GnQWr-_cfLnmK-W0iJ6beoHyGZH6uacbdzshJ7ppWrsN74sZWJoLK1na_aem_Q9P8yHWtNM_k0jMLDyl3bQ',
     title: {
       hu: '"House of Gardener - Reformed Church and Congregation Home"',
@@ -54,7 +54,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-5.img',
+    imageURL: 'raday-9',
     link: 'https://epiteszforum.hu/epitoipari-nivodij-2023?fbclid=IwY2xjawN9oLtleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEebKh6f1DCScRa-1rCnfY3q9UYfzP9Bw_gmIOEBsgXA2fftJA-gPxR7PqcPZU_aem_1mZV6kXYd5R4ioGsouC24w',
     title: {
       hu: '"Nívódíjat kapott a Ráday-ház"',
@@ -67,7 +67,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-6.img',
+    imageURL: 'raday-11',
     link: 'https://archello.com/project/raday-house?fbclid=IwY2xjawN9oTRleHRuA2FlbQIxMABicmlkETFPZFZsMFBsT2hFR3JDdmpsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlzfexFeHpcv3WEjrvJ54cy1jJRcjrxIb7nR3qd9MoRKGJzhhe4GaRfjCTuu_aem_xi0ElkO4uqBMLxgcrCzvdg',
     title: {
       hu: '"Ráday - house"',
@@ -80,7 +80,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-7.img',
+    imageURL: 'budaors-13',
     link: 'https://archello.com/project/house-of-gardener-reformed-church-and-congregation-home?fbclid=IwY2xjawN9oUNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeWr_2CqqmBk9Nwqt6lP6khWjMGohyddNVbbdYXEdwe7ydIRdSMg_C8Bm1V1I_aem_IMO0pKdGjfqre8b7y3mO2Q',
     title: {
       hu: '"House of Gardener - Reformed Church and Congregation Home"',
@@ -93,7 +93,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-8.img',
+    imageURL: 'raday-press',
     link: 'https://epiteszforum.hu/ujjateremtes--a-reformatus-egyhaz-raday-utcai-puspoki-kozpontja-teologiai-kara-es-kollegiuma',
     title: {
       hu: '"Újjáteremtés"',
@@ -123,7 +123,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-10.img',
+    imageURL: 'raday-2-main',
     link: 'https://epiteszforum.hu/atadtak-az-ujjaepitett-raday-utcai-kollegiumot',
     title: {
       hu: 'Ráday utcai kollégium',
@@ -136,7 +136,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-11.img',
+    imageURL: 'raday-5',
     link: 'https://meonline.hu/aktualis/tema/a-lelek-gyumolcsei/',
     title: {
       hu: '"A lélek gyümölcsei"',
@@ -149,7 +149,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-12.img',
+    imageURL: 'budaors-25-main',
     link: 'https://epiteszforum.hu/hivogato-nyitottsag--reformatus-gyulekezeti-kozpont-budaorson',
     title: {
       hu: '"Hívogató nyitottság"',
@@ -162,7 +162,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-13.img',
+    imageURL: 'budaors-5',
     link: 'https://www.octogon.hu/epiteszet/ahol-ugyanis-ketten-vagy-harman/',
     title: {
       hu: '"Ahol ugyanis ketten vagy hárman..."',
@@ -175,7 +175,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-14.img',
+    imageURL: 'budaors-18',
     link: 'https://meonline.hu/aktualis/tema/elmozdulasok/',
     title: {
       hu: 'Budaörsi Református Gyülekezeti központ',
@@ -188,7 +188,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-15.img',
+    imageURL: 'ujpest-11-home',
     link: 'https://proarchitectura.hu/dijazottak-2017',
     title: {
       hu: '2017-es Pro Architectura díj díjazottjai',
@@ -201,7 +201,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-16.img',
+    imageURL: 'ujpest-2',
     link: 'https://meonline.hu/archivum/ternyitas/',
     title: {
       hu: 'Újpesti Főplébánia',
@@ -214,7 +214,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-17.img',
+    imageURL: 'ujpest-5',
     link: 'https://epiteszforum.hu/ujpesti-foplebania-kialakitasa-a-zeneiskola-regi-epuleteben',
     title: {
       hu: 'Újpesti Főplébánia',
@@ -227,7 +227,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-18.img',
+    imageURL: 'ujpest-3-main',
     link: 'https://www.archdaily.com/772133/parish-church-of-the-celestial-queen-4-plusz-epitesz-studio?ad_medium=office_landing&ad_name=article',
     title: {
       hu: 'Parish Church of the Celestial Queen',
@@ -240,7 +240,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'pub-19.img',
+    imageURL: 'ujpest-1',
     link: 'https://www.octogon.hu/magazin/kozossegi-ter-teremtes/',
     title: {
       hu: '"Közösségi tér - teremtés"',
