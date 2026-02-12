@@ -14,7 +14,7 @@ import {CONTACT_DATA} from '../../data/contact-data';
 export class ContactComponent implements OnInit {
 
   currentLang: Language = 'hu';
-  backgroundURL: string = '';
+  backgroundURL: string = ''; //raday-5
 
   constructor(private languageService: LanguageService) {
   }
