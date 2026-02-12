@@ -23,16 +23,16 @@ export class HomepageComponent implements OnInit {
   1. raday-2
   2. raday-5
   3. csomor-16
-  4. fasor
+  4. fasor-12
   5. kapy-main
   6. budaors-1
   7. ujpest-11
-  8. fasor
+  8. fasor-press
   9. ujpest-4
   10. budaors-home
-  11. rezhaz
+  11. copperhouse-4
   12. budaors-23
-  13. fasor
+  13. fasor-13
   14. csomor-11
   15. raday-press
   */
