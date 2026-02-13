@@ -1,9 +1,5 @@
 :root {
-  --menuFont: normal 12px 'Futura LT W01 Medium', sans-serif;
   --brandFont: normal 200 16px 'Oswald-extralight', 'Oswald', sans-serif;
-  --studioTitleFont: normal 500 22px 'Oswald', sans-serif;
-  --studioSubtitleFont: normal 500 15px 'Oswald-medium', 'Oswald', sans-serif;
-  --textFont: normal 200 1rem;
   --menuColor: rgb(105, 105, 105);
   --backgroundColor: white;
   --languageActiveColor: rgb(254, 97, 97);
@@ -17,7 +13,15 @@ html, body {
   margin: 0;
 }
 
-span {
-  font: normal 200 12px 'Futura LT W01 Medium', 'Futura', sans-serif;
-  /*font: normal 400 12px 'LFutura', 'Futura', sans-serif;*/
+span, a {
+  /*font: normal 12px 'Futura LT W01 Medium', 'Futura', sans-serif;*/
+  font: normal 600 13px 'Futura Thin', 'Futura', sans-serif;
+}
+
+h1 {
+  font: 22px 'Oswald', sans-serif;
+}
+
+h2 {
+  font: 18px 'Oswald', sans-serif;
 }
