@@ -1,17 +1,19 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {ProjectService} from './project.service';
-import {ProjectModel} from '../models/project-model';
+import {imageMap} from '../image-map';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectLoaderService {
 
-  homePageProjectSlugs: string[] = ['test slug', '2 test slug']
+  images: string[] = Object.values(imageMap).flat().filter(img => img.includes('home'));
 
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectService: ProjectService) {
+  }
 
-  getHomePageProjects(): ProjectModel[] {
-    return this.projectService.getProjects().filter(project => this.homePageProjectSlugs.includes(project.slug));
+
+  getHomePageImages(): string[] {
+    return this.images;
   }
 }

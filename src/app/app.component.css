@@ -47,8 +47,8 @@
 .negyplusz {
   position: absolute;
   left: 6%;
-  letter-spacing: 0.1rem;
-  font-size: 1.1rem;
+  letter-spacing: 0.15rem;;
+  font: var(--brandFont);
 }
 
 .nav-list {

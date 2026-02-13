@@ -59,5 +59,5 @@ export const STUDIO_DATA: StudioModel = {
     hu: 'Balogh Eszter, Berzsák Barna, Csintalan Csongor, Eperjesi Blanka, Egri Balázs, Farkas Eszter, Göös Petronella, Juhász Andrea, Hortobágyi Éva, Kerényi Szilvia, Kiss Zoltán, Konyha Katalin, Koós Mariann, Mátis Barna, Monori-Szabó Edit, Mravik Csaba, Sonkoly András, Szájer Andrea, Szvák Dorottya, Pálinkás Yvett, Rácz Noémi, Vékony Péter, Zacher Eszter',
     en: 'Eszter Balogh, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Balázs Egri, Eszter Farkas, Petronella Göös, Andrea Juhász, Éva Hortobágyi, Szilvia Kerényi, Zoltán Kiss, Katalin Konyha, Mariann Koós, Barna Mátis, Edit Monori-Szabó, Csaba Mravik, András Sonkoly, Andrea Szájer, Dorottya Szvák, Yvett Pálinkás, Noémi Rácz, Péter Vékony, Eszter Zacher'
   },
-  part3ImageURL: 'berzsi-img'
+  part3ImageURL: 'assets/portraits/berzsak-studio.jpg'
 }

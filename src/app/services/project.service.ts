@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ProjectModel} from '../models/project-model';
+import {imageMap} from '../image-map';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class ProjectService {
 
   private projects: ProjectModel[] = [
     {
-      slug: 'budaors-church',
+      slug: 'budaorsi-church',
       name: {
         hu: 'BUDAÖRSI TEMPLOM',
         en: 'BUDAÖRSI CHURCH'
@@ -36,7 +37,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Katalin Konyha, Dorottya Szvák, Noémi Rácz, Csongor Csintalan\n' + '\n' + 'Budaörs\n' + '\n' + '2019',
         'Photographs of József Hajdú and Zsolt Hlinka']
       },
-      images: ['budaors-1', 'budaors-2']
+      images: imageMap['budaorsi-church']
     },
     {
       slug: 'ujpesti-parish-church',
@@ -152,7 +153,7 @@ export class ProjectService {
       images: ['kelefold-1', "kelefold-2"]
     },
     {
-      slug: 'csomor-church',
+      slug: 'csomori-church',
       name: {
         hu: 'CSÖMÖRI TEMPLOM',
         en: 'CSÖMÖR CHURCH'
@@ -180,7 +181,7 @@ export class ProjectService {
       images: ['csomor-1', "csomor-2"]
     },
     {
-      slug: 'csipkebokor-kindergatden',
+      slug: 'csipkebokor-kindergarten',
       name: {
         hu: 'CSIPKEBOKOR ÓVODA',
         en: 'CSIPKEBOKOR KINDERGARTEN'

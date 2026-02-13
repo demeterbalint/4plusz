@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ProjectLoaderService} from '../../services/project-loader.service';
-import {ProjectModel} from '../../models/project-model';
 import {NgForOf, NgIf} from '@angular/common';
 import {Language, LanguageService} from '../../services/language.service';
+import {HomepageProjectModel} from '../../models/homepage-project-model';
+import {HOMEPAGE_PROJECT_DATA} from '../../data/homepage-project-data';
 
 @Component({
   selector: 'app-homepage',
@@ -15,36 +15,18 @@ import {Language, LanguageService} from '../../services/language.service';
 })
 export class HomepageComponent implements OnInit {
 
-  homePageProjects: ProjectModel[] = [];
+  homePageProjects: HomepageProjectModel[] = [];
   imageIndex: number = 0;
-  numberOfProjects: number = 0;
+  numberOfImages: number = 0;
   currentLang: Language = 'hu';
-  /*
-  1. raday-2
-  2. raday-5
-  3. csomor-16
-  4. fasor-12
-  5. kapy-main
-  6. budaors-1
-  7. ujpest-11
-  8. fasor-press
-  9. ujpest-4
-  10. budaors-home
-  11. copperhouse-4
-  12. budaors-23
-  13. fasor-13
-  14. csomor-11
-  15. raday-press
-  */
 
   //animation
   isAnimating: boolean = false;
-  loopedProjects: ProjectModel[] = [];
+  loopedProjects: HomepageProjectModel[] = [];
   intervalId: any;
   isPaused: boolean = false;
 
-  constructor(private projectLoader: ProjectLoaderService,
-              private languageService: LanguageService) {
+  constructor(private languageService: LanguageService) {
   }
 
   ngOnInit(): void {
@@ -52,16 +34,16 @@ export class HomepageComponent implements OnInit {
       this.currentLang = lang;
     })
 
-    const projects = this.projectLoader.getHomePageProjects();
+    const homeProjects = HOMEPAGE_PROJECT_DATA;
 
-    this.homePageProjects = projects;
-    this.numberOfProjects = projects.length;
+    this.homePageProjects = homeProjects;
+    this.numberOfImages = homeProjects.length;
 
-    if (projects.length > 0) {
-      const first = projects[0];
-      const last = projects[projects.length - 1];
+    if (homeProjects.length > 0) {
+      const first = homeProjects[0];
+      const last = homeProjects[homeProjects.length - 1];
 
-      this.loopedProjects = [last, ...projects, first];
+      this.loopedProjects = [last, ...homeProjects, first];
       this.imageIndex = 1;
     } else {
       this.loopedProjects = [];
@@ -79,7 +61,7 @@ export class HomepageComponent implements OnInit {
   }
 
   nextProject() {
-    if (this.isAnimating || this.numberOfProjects == 0) {
+    if (this.isAnimating || this.numberOfImages == 0) {
       return;
     }
 
@@ -99,7 +81,7 @@ export class HomepageComponent implements OnInit {
   }
 
   previousProject() {
-    if (this.isAnimating || this.numberOfProjects == 0) {
+    if (this.isAnimating || this.numberOfImages == 0) {
       return;
     }
 
@@ -127,17 +109,17 @@ export class HomepageComponent implements OnInit {
   }
 
   get displayIndex(): number {
-    if (this.numberOfProjects === 0) {
+    if (this.numberOfImages === 0) {
       return 0;
     }
 
     let index = this.imageIndex - 1;
 
     if (index < 0) {
-      index = this.numberOfProjects - 1;
+      index = this.numberOfImages - 1;
     }
 
-    if (index >= this.numberOfProjects) {
+    if (index >= this.numberOfImages) {
       index = 0;
     }
 

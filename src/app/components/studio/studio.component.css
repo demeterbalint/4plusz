@@ -24,11 +24,10 @@
 }
 
 h2 {
-  font-size: 15px;
+  font: var(--studioSubtitleFont);
 }
 
 span, a {
-  font-size: 12px;
   line-height: 1.88em;
 }
 
@@ -40,7 +39,7 @@ a {
 
 .part1-brand {
   font-size: 22px;
-  font-weight: bold;
+  font: var(--studioTitleFont);
 }
 
 .part1-text {
@@ -76,4 +75,16 @@ a {
 
 .part3-name-text-2 {
   font-style: italic;
+}
+
+.part3-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part3-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
