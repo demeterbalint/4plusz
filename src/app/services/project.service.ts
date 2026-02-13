@@ -468,220 +468,250 @@ export class ProjectService {
       images: ['pecsely-1', 'pecsely-2']
     },
     {
-      slug: '',
+      slug: 'family-house-4',
       name: {
-        hu: '',
-        en: ''
+        hu: 'CSALÁDI HÁZ',
+        en: 'FAMILY HOUSE'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Diósdi családi ház',
+        en: 'Diósd family house'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Családi ház\n' + 'Diósd',
+        en: 'Family house\n' + 'Diósd'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Fiatal nagycsalád számára készült földszintes családi ház. A központi nappali teréből külön nyílik a gyermekek közös hálóblokkja, és a szülők rezidenciája. Mindenki bekapcsolódhat a közös terekbe, de az elvonulás lehetősége is adott. Egyszerű tömegét négyzet alaprajzú oromfalas épület csonkolása adja. A külső és a belső között átmeneti terek húzódnak.',
+        'Az épület visszafogottsága a részletekkel szemben is kitartó igényességgel együtt teremti meg a belőle áradó finom, bensőséges hangulatot. Ehhez minden résztvevő egymásra figyelő, egymást elfogadó tisztességes munkájára, összefogására szükség van.'],
+        en: ['A single-storey family house designed for a young extended family. The central living room opens out into a shared sleeping block for the children and a residence for the parents. Everyone can join in on the shared spaces, but there is also the option of retreat. Its simple mass is given by the truncated gabled building with a square floor plan. Transitional spaces run between the exterior and the interior.',
+          'The building\'s restraint, combined with its persistent attention to detail, creates a delicate, intimate atmosphere. This requires the honest work and cooperation of all participants, who are attentive to and accepting of each other.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Csintalan Csongor, Rácz Noémi\n' + '\n' + 'Diósd\n' + '\n' + '2018'],
+        en: ['Zoltán Berzsák, Csongor Csintalan, Noémi Rácz\n' + '\n' + 'Diósd\n' + '\n' + '2018']
       },
-      images: ['']
+      images: ['diosd-1', 'diosd-2']
     },
     {
-      slug: '',
+      slug: 'godollo-lyceum',
       name: {
-        hu: '',
-        en: ''
+        hu: 'GÖDÖLLŐI LÍCEUM',
+        en: 'GÖDÖLLŐ LYCEUM'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Gödöllői Református Líceum Gimnázium bővítése és felújítása',
+        en: 'Gödöllő Reformed Lyceum'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Gödöllői Református Líceum Gimnázium felújítása és bővítése',
+        en: 'Gödöllő Reformed Lyceum High School'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Gödöllő főterén áll az 1745-ben épült református templom, mely körül nem csak a tér, de a gyülekezet központja is kialakult. A központ része a Református Líceum, mely egyike hazánk legsikeresebb gimnáziumainak. Az 1927-ben épített, részleteiben bővítgetett épület mára már nem felel meg a minőségi oktatás követelményeinek, fejlesztése elengedhetetlenné vált. Közösségi terek – nagyterem, aula - ebédlő, tornaterem kialakítása, szaktantermek, csoportszobák számának bővítése, az épület meglévő régi részeinek, valamint az udvar felújítása szükséges.',
+        'A bővítésre több ütemben a parókia helyén, az udvarban kerül sor új épülettömegben. A régi és új épületszárnyak összekapcsolódnak. Megmaradnak a kis léptékű barátságos tereket, melyek kiegészülnek az új, nagy befogadóképességű, átlátható, fiatalos, átrendezhető közösségi terekkel. Az épületegyüttes arca a templom. Ezért az új épülettömeget a főtértől hátrahúztuk. Új főbejárat készül a templom és a vele párhuzamos új tömeg között, melyet a környezetre jellemző kontyolt nyeregtetővel fedtük le Drapp színű téglaburkolatos tömegét keretezett ablakokkal láttuk el, melyek vizuálisan is csökkentik tömegét.'],
+        en: ['The Reformed church, built in 1745, stands on the main square of Gödöllő, around which not only the square but also the center of the congregation has developed. Part of the center is the Reformed Lyceum, one of the most successful high schools in Hungary. Built in 1927 and expanded in detail, the building no longer meets the requirements of quality education, and its development has become indispensable. Community spaces – a large hall, an auditorium, a dining hall, a gym, specialist classrooms, and an increase in the number of group rooms – need to be created, and the existing old parts of the building and the courtyard need to be renovated.',
+        'The expansion will take place in several phases in a new building complex on the site of the parish in the courtyard. The old and new wings of the building will be connected. The small-scale, friendly spaces will remain, complemented by new, large-capacity, transparent, youthful, reconfigurable community spaces. The face of the building complex is the church. For this reason, the new building has been set back from the main square. A new main entrance will be created between the church and the new building parallel to it, which we have covered with a gabled roof characteristic of the environment. We have provided the Drapp-colored brick-clad building with framed windows, which also reduce its visual mass.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Zacher Eszter, Nyikos László, Tóth Balázs\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (építés alatt)'],
+        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Eszter Zacher, László Nyikos, Balázs Tóth\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (under construction)']
       },
-      images: ['']
+      images: ['godollo-1', 'godollo-2']
     },
     {
-      slug: '',
+      slug: 'vac-high-school',
       name: {
-        hu: '',
-        en: ''
+        hu: 'BERNÁTH KÁLMÁN GIMNÁZIUM',
+        en: 'BERNÁTH KÁLMÁN HIGH SCHOOL'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Bernáth Kálmán Református Gimnázium bővítése',
+        en: 'Bernáth Kálmán Reformed High School'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Bernáth Kálmán Református Gimnázium bővítése',
+        en: 'Bernáth Kálmán Reformed High School - expansion'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['A sokoldalú képzést nyújtó középiskola egy átalakított laktanyaépületben kapott helyet, melyen osztozik egy másik gimnáziummal. Bejárati szintje az első emelet magasságában van, nincs közösségi tere, ebédlője, konyhája, de tornaterme sem. Az épület bővítését egy nagy méretű aula térrel terveztük, mely a jelenleg kihasználatlan, terveink szerint parkosított zöld terület felől, azzal szintben nyílik meg. Ez a tér az épület központi tere; bejárat, közlekedési elosztótér, ebédlő egyaránt. Egy lépcsős lelátóval kapcsolódik az oktatási szinthez és közvetlenül az új főzőkonyhához és tornateremhez. Építészeti megjelenésével a park túloldalán lévő kortárs gimnáziumépülethez kapcsolódtunk.'],
+        en: ['The versatile secondary school is located in a converted barracks building, which it shares with another high school. Its entrance level is at the height of the first floor, and it does not have a community space, dining room, kitchen, or gym. We designed the expansion of the building with a large auditorium space, which opens from the currently unused green area, which we plan to landscape, at the same level. This space is the central space of the building; entrance, traffic distribution area, and dining room. It is connected to the educational level and directly to the new kitchen and gym by a stepped platform. With its architectural appearance, we connected it to the contemporary high school building on the other side of the park.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Szvák Dorottya, Zacher Eszter, Tóth Balázs, Zacher Viktor\n' + '\n' + 'Vác\n' + '\n' + '2022- (építés alatt)'],
+        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Dorottya Szvák, Eszter Zacher, Balázs Tóth, Viktor Zacher\n' + '\n' + 'Vác\n' + '\n' + '2022- (under construction)']
       },
-      images: ['']
+      images: ['bernath-1', 'bernath-2']
     },
     {
-      slug: '',
+      slug: 'ujlak-swimming facility',
       name: {
-        hu: '',
-        en: ''
+        hu: 'ÚJLAK USZODA',
+        en: 'ÚJLAKI SWIMMING FACILITY'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Újlak uszoda és strand fejlesztése',
+        en: 'Újlaki Swimming Facility and Beach development'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Újlak Uszoda és Strand fejlesztése',
+        en: 'Újlaki Swimming Facility and Beach development'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Rákosmente egyetlen uszodája 1986-ban, szovjet típusterv alapján épült. Mérete miatt kizárólag úszásoktatásra alkalmas. Rákosmente Önkormányzatának megbízásából készítettük el az uszoda és a strand fejlesztésének irányát, lehetőségét bemutató koncepciótervet.',
+        'A meglévő uszoda épülete mellett új uszodatér épül, mely alkalmas szabadidős és versenysport, úszásoktatás és kikapcsolódás lehetőségeinek egyidejű biztosítására. Az épület „ölelésében” strand létesül, az épületegyüttes közös főbejáratot és kiszolgálóblokkot kap.'],
+        en: ['The only swimming pool in Rákosmente was built in 1986, based on a Soviet-style design. Due to its size, it is only suitable for swimming lessons. On behalf of the Rákosmente Municipality, we prepared a concept plan showing the direction and possibilities of the development of the swimming pool and beach.',
+          'A new swimming pool area will be built next to the existing swimming pool building, which will be suitable for providing leisure and competitive sports, swimming lessons and relaxation opportunities at the same time. A beach will be built in the "embrace" of the building, and the building complex will have a common main entrance and service block.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka\n' + '\n' + 'Budapest, XVII.\n' + '\n' + '2023'],
+        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2023']
       },
-      images: ['']
+      images: ['ujlaki-1', 'ujlaki-2']
     },
     {
-      slug: '',
+      slug: 'geo-log-office',
       name: {
-        hu: '',
-        en: ''
+        hu: 'IRODAÉPÜLET',
+        en: 'OFFICE BUILDING'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Geo-Log Irodaépület',
+        en: 'Geo-Log Office Building'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Geo-Log Irodaépület',
+        en: 'Geo-Log Office Building'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Közép-kelet Európa egyik vezető geofizikai vállalata úgy döntött, sokszínű szolgáltatásainak helyet adó telephelyeit egy központban egyesíti. Az irodaház ezeknek az eltérő funkcióknak ad teret. A földszinten a terepmunkák kiszolgálására és kiértékelésére szolgáló laborok és műhelyek, míg az emeleten az irodák, tárgyalók, közösségi helyiségek találhatók. Az épület tömegét a funkcionalizmus határozza meg. Az egyszerű tömeg egyetlen kiegészítője az emeleti acél szerkezetű, perforált burkolatú erkély, mely egyszerre tölti be az árnyékolás és az irodák teraszainak, köztes tereinek funkcióját és az épület megjelenésének karakteres elemeként is szolgál.'],
+        en: ['One of Central and Eastern Europe\'s leading geophysical companies decided to consolidate its diverse services into a single location. The office building provides space for these different functions. The ground floor houses laboratories and workshops for fieldwork and evaluation, while the upper floors contain offices, meeting rooms, and common areas. The building\'s mass is defined by functionalism. The only addition to the simple mass is the steel-framed, perforated balcony on the upper floor, which serves as both a shade and a terrace for the offices and intermediate spaces, as well as a distinctive element of the building\'s appearance.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Szvák Dorottya\n' + '\n' + 'Budapest, XIV. ker\n' + '\n' + '2025'],
+        en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Dorottya Szvák\n' + '\n' + 'Budapest, 14th district\n' + '\n' + '2025']
       },
-      images: ['']
+      images: ['geo-log-1', 'geo-log-2']
     },
     {
-      slug: '',
+      slug: 'albertfalvi-church',
       name: {
-        hu: '',
-        en: ''
+        hu: 'ALBERTFALVI TEMPLOM',
+        en: 'ALBERTFALVA CHURCH'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Albertfalvi Református Templom és Közösségi Épület',
+        en: 'Albertfalva Reformed Church and Community Building'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Albertfalvi Református Templom és Közösségi Épület',
+        en: 'Albertfalva Reformed Church and Community Building'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['A garázsból kialakított imaház helyére készült ez a templomterv.',
+        'A saroktelken az ellipszis alaprajzú épület az utca szintjétől kiemelt, az ellipszisből kivágott köztérről nyíló bejárattal fordul a forgalmasabb út felé. Az épületet határoló kemény, védelmet nyújtó (tojás) héj ellenpontjaként puha, légies, hívogató fa szerkezet és áttört lamellás homlokzat alkotja a templom terét és fűzi egybe a gyülekezeti épülettel.',
+        'A belsőben a szerkezet a régi kazettás mennyezetű templomokat idézi. A tér tervezett természetes megvilágítása a nap járásával változik, a fény a térben különleges atmoszférát teremt, a bibliai „lombsátor” hangulatát idézi.'],
+        en: ['This church was designed to replace the prayer house that had been converted from a garage.\n' +
+        'On the corner lot, the elliptical building is elevated from the street level with an entrance from the public square cut out of the ellipse, facing the busier road. The hard, protective (egg) shell that borders the building is counterpointed by a soft, airy, inviting wooden structure and open-fronted lamellar façade that forms the church space and connects it to the congregation building.',
+        'Inside, the structure recalls the old coffered-ceiling churches. The space is designed with natural lighting changes with the sun, the light creates a special atmosphere in the space, evoking the biblical "tabernacle" atmosphere.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' +  '\n' + 'Budapest\n' + '\n' + '2010'],
+        en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Budapest\n' + '\n' + '2010']
       },
-      images: ['']
+      images: ['albertfalvi-1', 'albertfalvi-2']
     },
     {
-      slug: '',
+      slug: 'weores-sandor-theatre',
       name: {
-        hu: '',
-        en: ''
+        hu: 'WEÖRES SÁNDOR SZÍNHÁZ',
+        en: 'WEÖRES SÁNDOR THEATRE'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Weöres Sándor Színház - építészeti és városrendezési ötletpályázat',
+        en: 'Weöres Sándor Theatre - architectural and urban planning idea competition'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Weöres Sándor Színház új épülete - építészeti és városrendezési ötletpályázat',
+        en: 'Weöres Sándor Theatre, competition for architectural and urban planning ideas'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Állandók és változók paradoxona. Rugalmasság és fix pontok.\n' +
+        'Mire van szükségünk? Sarkokra? Fogódzókra? Vagy inkább lüktetésre: újra, frissre, másra? Vagy méginkább: fordulópontokra?',
+        'Válaszokat keresünk:\n' +
+        'hogyan lehet egy városi tér ugyanott és mégis teljesen máshogy,\n' +
+        'hogyan lehet egy homlokzat minden nap vagy minden órában más, miközben ugyanaz marad,\n' +
+        'hogyan lehet egy színpad és egy nézőtér mindig más, pedig ugyanott vagyunk,\n' +
+        'hogyan lehet egy teremben bármit berendezni,\n' +
+        '...',
+        'Most színház van. Színházépület: állandók és változók paradoxona. Mi vagyunk a törpe-király fia-lánya. Építs nekünk köd-falakat. Nagyszabású koncepció. Az épület és a méltatlan helyzetű városi park összekapcsolása. A színház előtere a park, ezért a meglévő rossz állapotú és struktúrájú épületek bontása mellett döntöttünk. A park befut az épület előcsarnokába, így elmosódik a határ a két világ között. Ezt erősíti az épület egy kubusból metszett formája, melyet egyetlen anyag - a réz ural. Ennek hálós, áttört, valamint tömör felhasználása külön-külön réteget alkot. A városi tengelybe az épület oldalhomlokzata került. Rajta hatalmas kivetítőn keresztül a sétálóutca is bekapcsolódhat a kulturális központ életébe.'],
+        en: ['The paradox of constants and variables. Elasticity and fixed points.\n' +
+        'What do we need? Corners? Handholds? Or rather a pulse: new, fresh, different? Or even more: turning points?',
+        'We are looking for answers:\n' +
+        'how an urban space can be in the same place and yet be completely different,\n' +
+        'how a façade can be different every day or every hour while remaining the same,\n' +
+        'how a stage and an auditorium can always be different while we are in the same place,\n' +
+        'how a room can be decorated in any way,\n' +
+        '...',
+        'Now there is theatre. A theatre building: a paradox of constants and variables. We are the son and daughter of the dwarf king. Build us walls of fog. A grand concept. Linking the building and the undignified urban park. The park is the foreground of the theatre, so we decided to demolish the existing buildings with poor condition and structure. The park runs into the lobby of the building, blurring the boundary between the two worlds. This is reinforced by the building\'s cube-shaped form, dominated by a single material - copper - whose use of mesh, openwork and solids creates separate layers. The side facade of the building is placed on the urban axis. A large projection screen allows the pedestrian promenade to enter into the life of the cultural center.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Mravik Csaba, Egri Balázs, Mátis Barna\n' + '\n' + 'Együttműködés: Mátis és Egri Kft.\n' + '\n' + 'Szombathely\n' + '\n' + '2008'],
+        en: ['Zoltán Berzsák, Csaba Mravik, Balázs Egri, Barna Mátis\n' + '\n' + 'Szombathely\n' + '\n' + '2008']
       },
-      images: ['']
+      images: ['weöres-1', 'weöres-2']
     },
     {
-      slug: '',
+      slug: 'hubay-garden',
       name: {
-        hu: '',
-        en: ''
+        hu: 'TÁRSASHÁZ',
+        en: 'RESIDENTIAL PARK'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Hubay Garden hatvan lakásos lakóépület',
+        en: 'Hubay Garden sixty-apartment residential park'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Hubay Garden\n' + 'társasház',
+        en: 'Hubay Garden\n' + 'apartment building'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Rákospalota központjában állt valaha a „Csacsiház”. Nevét korábbi funkciójáról, a két utcára nyíló szódaüzemről kapta, ahol a 120m hosszú, 23m széles udvaron a szamaras kocsik egymást követve sorakoztak árujukért. Később az épületből szükséglakásoksokat alakítottak ki, melynek lakói egyre nagyobb veszélyt jelentettek a környék biztonságára. Ezen a helyen, annak különleges adottságaihoz igazodva alakítottunk ki 60 lakásos társasházat – elsősorban önálló életet kezdő fiatalok számára.',
+        'A szomszédos tűzfal mentén végigfutó közlekedőre kapcsolódnak a keresztben álló lakóblokkok, melyek között kis zöld udvarokat alakítottunk ki. A föld alatt áthajtós parkoló készült. A földszinten, a két utca épületeihez csatlakozó szárnyakban orvosi rendelő és üzlet, kávézó kapott helyet. A látszó beton elemek szintenként különböző nyomatot kaptak; a földszinten csigák, az emeleten ágak, majd levelek és az eget szimbolizáló hullámvonalak oldják a beton monotonitását.'],
+        en: ['The \'Csacsiház\' once stood in the center of Rákospalota. It got its name from its former function, a soda factory opening onto two streets, where donkey carts lined up one after another in the 120-meter-long, 23-meter-wide courtyard to pick up their goods. Later, the building was converted into emergency housing, whose residents posed an increasing threat to the safety of the neighborhood. In keeping with the unique characteristics of this location, we developed a 60-unit condominium complex, primarily for young people starting out on their own.',
+        'The residential blocks, which are connected by a corridor running along the adjacent firewall, are interspersed with small green courtyards. An underground parking garage was built. The ground floor, in the wings connecting the buildings on the two streets, houses a doctor\'s office, a shop, and a café. The exposed concrete elements have been given different textures on each floor; on the ground floor, snails, on the upper floor, branches, then leaves and wavy lines symbolizing the sky break up the monotony of the concrete.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi, Tóth Balázs\n' + '\n' + 'Budapest, XV. ker.\n' + '\n' + '2021',
+        'Grabarics Development Kft. fotói'],
+        en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz, Balázs Tóth\n' + '\n' + 'Budapest, 15th district.\n' + '\n' + '2021',
+        'Photos of Grabarics Development Ltd.']
       },
-      images: ['']
+      images: ['hubay-1', 'hubay-2']
     },
     {
-      slug: '',
+      slug: 'family-house-5',
       name: {
-        hu: '',
-        en: ''
+        hu: 'CSALÁDI HÁZ',
+        en: 'FAMILY HOUSE'
       },
       gridShort: {
-        hu: '',
-        en: ''
+        hu: 'Veszprémi családi ház',
+        en: 'Veszmprém family house'
       },
       shortDescription: {
-        hu: '',
-        en: ''
+        hu: 'Családi ház\n' + 'Veszprém',
+        en: 'Family house\n' + 'Veszprém'
       },
       longDescription: {
-        hu: [''],
-        en: ['']
+        hu: ['Az épület különlegessége az oldalhatáros beépítésre adott egyedi válasz. A síkban egy vonalat követő homlokzati felületek térben eltolódnak. A mozgást a puha kitöltések jelzik.'],
+        en: ['The building\'s special feature is its unique response to the side-bounded construction. The facade surfaces, which follow a line in the plane, shift in space. The movement is indicated by the soft fillings.']
       },
       additionalInfo: {
-        hu: [''],
-        en: ['']
+        hu: ['Berzsák Zoltán, Mravik Csaba, Sztojka Gábor\n' + '\n' + 'Veszprém\n' + '\n' + '2005'],
+        en: ['Zoltán Berzsák, Csaba Mravik, Gábor Sztojka\n' + '\n' + 'Veszprém\n' + '\n' + '2005']
       },
-      images: ['']
+      images: ['veszprem-1', 'veszprem-2']
     }
   ];
 
