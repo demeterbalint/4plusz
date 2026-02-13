@@ -15,7 +15,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: '',
+    imageURL: 'berzsak-kultura',
     link: 'https://kultura.hu/a-templomtereket-szemelyesse-ugyanakkor-szakralis-terkent-is-erzekelhetove-kell-tenni/?fbclid=IwY2xjawN9oK5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeTUeZEvDcmmaaGQyCQcM_0D4btwk3_QGFz-fIpVvhrzmJzpuJGFnQphB1nyc_aem_HquDtCghs8bup_iOixSZ3Q',
     title: {
       hu: '"A templomtereket személyessé, ugyanakkor szakrális térként is érzékelhetővé kell tenni"',
@@ -110,7 +110,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: '',
+    imageURL: 'berzsak-reformatus',
     link: 'https://reformatus.hu/egyhazunk/hirek/berzsak-zoltan-eptiesz-budaors-csomor-raday28/',
     title: {
       hu: '"Fontos az építés drámája"',
@@ -266,7 +266,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: '',
+    imageURL: 'csomor-1',
     link: 'https://meonline.hu/aktualis/tema/a-magveto-haza/',
     title: {
       hu: '"A Magvető Háza"',
