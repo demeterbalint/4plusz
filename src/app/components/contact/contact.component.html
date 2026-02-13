@@ -1,12 +1,12 @@
 <div class="contact-div">
   <div class="contact-background">
-    <img src="{{backgroundURL}}" alt="background img">
+    <img src="{{backgroundURL}}" alt="{{backgroundURL.toString()}}">
     <div class="contact-box">
       <div class="contact-titles">
-        <span class="contact-title">{{ contactData.addressTitle[currentLang] }}</span>
-        <span class="contact-title">{{ contactData.phoneTitle[currentLang] }}</span>
-        <span class="contact-title">{{ contactData.emailTitle[currentLang] }}</span>
-        <span class="contact-title">{{ contactData.followTitle[currentLang] }}</span>
+        <h2 class="contact-title">{{ contactData.addressTitle[currentLang] }}</h2>
+        <h2 class="contact-title">{{ contactData.phoneTitle[currentLang] }}</h2>
+        <h2 class="contact-title">{{ contactData.emailTitle[currentLang] }}</h2>
+        <h2 class="contact-title">{{ contactData.followTitle[currentLang] }}</h2>
       </div>
       <div class="contact-datas">
         <span class="contact-data">{{ contactData.address[currentLang] }}</span>

@@ -18,27 +18,32 @@
   justify-content: center;
 }
 
+.publications-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .publications-titles {
+  position: absolute;
   width: 77.3%;
   height: 55%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
   background-color: white;
 }
 
 .publications-title {
-  margin-left: 3.5rem;
-  margin-top: 6.8rem;
-  font-size: 2.3rem;
-  font-weight: bold;
-  letter-spacing: -1.5px;
+  margin-left: 3.3rem;
+  margin-top: 6.1rem;
+  font-size: 35px;
+  font-weight: 500;
 }
 
 .publications-subtitle {
-  margin-left: 3.5rem;
-  font-size: 0.8rem;
+  margin-left: 3.3rem;
+  font-size: 14px;
 }
 
 .publications-flex {
@@ -82,28 +87,34 @@
   background-color: darkgray;
 }
 
+.item-image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .item-text-div {
   width: 51%;
   align-self: flex-start;
-  margin-top: 2.4rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
+.item-text-div-title {
+  margin-bottom: 0.5rem;
+}
+
 .item-text-div-title,
 .item-text-div-site {
-  font-weight: bold;
-}
-
-.item-text-div-title {
-  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .item-text-div-site {
-  margin-top: 0.9rem;
-  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
   cursor: pointer;
   color: black;
   text-decoration: none;
@@ -112,5 +123,7 @@
 .item-text-div-snippet {
   width: 80%;
   margin-top: 2.3rem;
-  font-size: 0.8rem;
+  font-size: 13px;
+  line-height: 1.5rem;
+  white-space: pre-line;
 }

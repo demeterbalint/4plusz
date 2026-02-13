@@ -24,7 +24,8 @@
 }
 
 h2 {
-  font: var(--studioSubtitleFont);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 span, a {
@@ -38,8 +39,9 @@ a {
 }
 
 .part1-brand {
+  font-family: 'Oswald', sans-serif;
   font-size: 22px;
-  font: var(--studioTitleFont);
+  font-weight: 500;
 }
 
 .part1-text {

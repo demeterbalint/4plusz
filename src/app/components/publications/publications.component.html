@@ -1,7 +1,8 @@
 <div class="publications-div">
   <div class="publications-background">
+    <img src="{{ backgroundURL }}" alt="{{ backgroundURL.toString() }}">
     <div class="publications-titles">
-      <span class="publications-title">{{ title[currentLang] }}</span>
+      <h1 class="publications-title">{{ title[currentLang] }}</h1>
       <span class="publications-subtitle">{{ subtitle[currentLang] }}</span>
     </div>
   </div>
@@ -9,10 +10,10 @@
     <div class="publication-item" *ngFor="let publication of publicationsData">
       <div class="publication-item-width">
         <a class="item-image-div" target="_blank" href="{{ publication.link }}">
-          <img src="{{ publication.imageURL }}" alt="{{ publication.title[currentLang] }}">
+          <img src="{{ publication.imageURL }}" alt="{{ publication.imageURL.toString() }}">
         </a>
         <div class="item-text-div">
-          <span class="item-text-div-title">{{ publication.title[currentLang] }}</span>
+          <h1 class="item-text-div-title">{{ publication.title[currentLang] }}</h1>
           <a target="_blank" href="{{ publication.link }}" class="item-text-div-site">{{ publication.site }}</a>
           <span class="item-text-div-snippet">{{ publication.snippet[currentLang] }}</span>
         </div>

@@ -3,6 +3,7 @@ import {Language, LanguageService} from '../../services/language.service';
 import {PublicationModel} from '../../models/publication--model';
 import {PUBLICATIONS_DATA} from '../../data/publications-data';
 import {NgForOf} from '@angular/common';
+import {imageMap} from '../../image-map';
 
 @Component({
   selector: 'app-publications',
@@ -16,6 +17,8 @@ export class PublicationsComponent implements OnInit {
 
   currentLang: Language = 'hu';
   publicationsData: PublicationModel[] = PUBLICATIONS_DATA;
+  backgroundURL: string = '';
+
   title: any = {
     hu: 'Sajtó megjelenések',
     en: 'Press appearances'
@@ -33,6 +36,8 @@ export class PublicationsComponent implements OnInit {
     this.languageService.language$.subscribe(lang => {
       this.currentLang = lang;
     })
+
+    this.backgroundURL = imageMap['budaorsi-church'].find(image => image.includes('publication'))!
   }
 
 }

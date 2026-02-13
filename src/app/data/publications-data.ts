@@ -1,8 +1,9 @@
 import {PublicationModel} from '../models/publication--model';
+import {imageMap} from '../image-map';
 
 export const PUBLICATIONS_DATA: PublicationModel[] = [
   {
-    imageURL: 'fasor-press',
+    imageURL: imageMap['fasori-church'].find(image => image.includes('fasor-press'))!,
     link: 'https://meonline.hu/aktualis/tema/meg-a-templomnal-is-nagyobb/?fbclid=IwVERTSAOBfxNleHRuA2FlbQIxMABzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR7Kabvxdt294UxkBYK4fQ_-88U_cnzoupjPu5mjHowYdlrlgBz7WiPXA_bVrw_aem_3Jy9TaJqiaA3LkexQG6LnA',
     title: {
       hu: '"Fasori református templom műemléki felújítása"',
@@ -15,7 +16,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'berzsak-kultura',
+    imageURL: 'assets/portraits/berzsak-kultura.jpg',
     link: 'https://kultura.hu/a-templomtereket-szemelyesse-ugyanakkor-szakralis-terkent-is-erzekelhetove-kell-tenni/?fbclid=IwY2xjawN9oK5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeTUeZEvDcmmaaGQyCQcM_0D4btwk3_QGFz-fIpVvhrzmJzpuJGFnQphB1nyc_aem_HquDtCghs8bup_iOixSZ3Q',
     title: {
       hu: '"A templomtereket személyessé, ugyanakkor szakrális térként is érzékelhetővé kell tenni"',
@@ -28,7 +29,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'budaors-home',
+    imageURL: imageMap['budaorsi-church'].find(image => image.includes('budaors-home'))!,
     link: 'https://architizer.com/projects/house-of-gardener/?fbclid=IwY2xjawN9oKlleHRuA2FlbQIxMABicmlkETFPZFZsMFBsT2hFR3JDdmpsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlP5GnQWr-_cfLnmK-W0iJ6beoHyGZH6uacbdzshJ7ppWrsN74sZWJoLK1na_aem_Q9P8yHWtNM_k0jMLDyl3bQ',
     title: {
       hu: '"House of Gardener - Reformed Church and Congregation Home"',
@@ -41,7 +42,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'tihany-historical',
+    imageURL: imageMap['tihany-granary'].find(image => image.includes('tihany-historical'))!,
     link: 'https://epiteszforum.hu/enyeszettol-a-diszkon-at-a-muzeumig--ot-magtar-ot-tortenet?fbclid=IwY2xjawN9neZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe2gkB6RLYDUnY0Xj6NtwR0R-Zhu4OWZtCAF4qYCtd4ixeYVTjRwv3bdOMZYY_aem_4y0gk55VPgm7Ntgz--B9QA',
     title: {
       hu: '"Öt magtár, öt történet"',
@@ -54,7 +55,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'raday-9',
+    imageURL: imageMap['raday-house'].find(image => image.includes('09'))!,
     link: 'https://epiteszforum.hu/epitoipari-nivodij-2023?fbclid=IwY2xjawN9oLtleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEebKh6f1DCScRa-1rCnfY3q9UYfzP9Bw_gmIOEBsgXA2fftJA-gPxR7PqcPZU_aem_1mZV6kXYd5R4ioGsouC24w',
     title: {
       hu: '"Nívódíjat kapott a Ráday-ház"',
@@ -67,7 +68,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'raday-11',
+    imageURL: imageMap['raday-house'].find(image => image.includes('11'))!,
     link: 'https://archello.com/project/raday-house?fbclid=IwY2xjawN9oTRleHRuA2FlbQIxMABicmlkETFPZFZsMFBsT2hFR3JDdmpsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlzfexFeHpcv3WEjrvJ54cy1jJRcjrxIb7nR3qd9MoRKGJzhhe4GaRfjCTuu_aem_xi0ElkO4uqBMLxgcrCzvdg',
     title: {
       hu: '"Ráday - house"',
@@ -80,7 +81,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'budaors-13',
+    imageURL: imageMap['budaorsi-church'].find(image => image.includes('13'))!,
     link: 'https://archello.com/project/house-of-gardener-reformed-church-and-congregation-home?fbclid=IwY2xjawN9oUNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeWr_2CqqmBk9Nwqt6lP6khWjMGohyddNVbbdYXEdwe7ydIRdSMg_C8Bm1V1I_aem_IMO0pKdGjfqre8b7y3mO2Q',
     title: {
       hu: '"House of Gardener - Reformed Church and Congregation Home"',
@@ -93,7 +94,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'raday-press',
+    imageURL: imageMap['raday-house'].find(image => image.includes('raday-press'))!,
     link: 'https://epiteszforum.hu/ujjateremtes--a-reformatus-egyhaz-raday-utcai-puspoki-kozpontja-teologiai-kara-es-kollegiuma',
     title: {
       hu: '"Újjáteremtés"',
@@ -101,16 +102,12 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     },
     site: 'epiteszforum.hu',
     snippet: {
-      hu: '"Az új kollégium pedig, miközben teljesíti a funkciójából adódó legmagasabb elvárásokat, a homlokzatán diadalmasan ragyogó hatalmas fénykeresztje révén új szellemi-művészi jellel gazdagítja a IX. kerület, egyúttal egész Budapest vizuális térképét.\n' +
-        '\n' +
-        'Építész egy munkán belül ennél többet nem tehet."',
-      en: '"The new college, while fulfilling the highest expectations of its function, enriches the visual map of the IX. district, and at the same time of Budapest as a whole, with a new intellectual and artistic sign through its huge cross of light shining triumphantly on its façade.\n' +
-        '\n' +
-        'An architect can do no more in a single work."'
+      hu: '"Az új kollégium pedig, miközben teljesíti a funkciójából adódó legmagasabb elvárásokat, a homlokzatán diadalmasan ragyogó hatalmas fénykeresztje révén új szellemi-művészi jellel gazdagítja a IX. kerület, egyúttal egész Budapest vizuális térképét.\nÉpítész egy munkán belül ennél többet nem tehet."',
+      en: '"The new college, while fulfilling the highest expectations of its function, enriches the visual map of the IX. district, and at the same time of Budapest as a whole, with a new intellectual and artistic sign through its huge cross of light shining triumphantly on its façade.\nAn architect can do no more in a single work."'
     }
   },
   {
-    imageURL: 'berzsak-reformatus',
+    imageURL: 'assets/portraits/berzsak-reformatus.jpg',
     link: 'https://reformatus.hu/egyhazunk/hirek/berzsak-zoltan-eptiesz-budaors-csomor-raday28/',
     title: {
       hu: '"Fontos az építés drámája"',
@@ -123,7 +120,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'raday-2-main',
+    imageURL: imageMap['raday-house'].find(image => image.includes('02'))!,
     link: 'https://epiteszforum.hu/atadtak-az-ujjaepitett-raday-utcai-kollegiumot',
     title: {
       hu: 'Ráday utcai kollégium',
@@ -136,7 +133,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'raday-5',
+    imageURL: imageMap['raday-house'].find(image => image.includes('05'))!,
     link: 'https://meonline.hu/aktualis/tema/a-lelek-gyumolcsei/',
     title: {
       hu: '"A lélek gyümölcsei"',
@@ -149,7 +146,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'budaors-25-main',
+    imageURL: imageMap['budaorsi-church'].find(image => image.includes('25'))!,
     link: 'https://epiteszforum.hu/hivogato-nyitottsag--reformatus-gyulekezeti-kozpont-budaorson',
     title: {
       hu: '"Hívogató nyitottság"',
@@ -162,7 +159,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'budaors-5',
+    imageURL: imageMap['budaorsi-church'].find(image => image.includes('05'))!,
     link: 'https://www.octogon.hu/epiteszet/ahol-ugyanis-ketten-vagy-harman/',
     title: {
       hu: '"Ahol ugyanis ketten vagy hárman..."',
@@ -175,7 +172,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'budaors-18',
+    imageURL: imageMap['budaorsi-church'].find(image => image.includes('18'))!,
     link: 'https://meonline.hu/aktualis/tema/elmozdulasok/',
     title: {
       hu: 'Budaörsi Református Gyülekezeti központ',
@@ -188,7 +185,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'ujpest-11-home',
+    imageURL: imageMap['ujpesti-parish-church'].find(image => image.includes('11'))!,
     link: 'https://proarchitectura.hu/dijazottak-2017',
     title: {
       hu: '2017-es Pro Architectura díj díjazottjai',
@@ -201,7 +198,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'ujpest-2',
+    imageURL: imageMap['ujpesti-parish-church'].find(image => image.includes('02'))!,
     link: 'https://meonline.hu/archivum/ternyitas/',
     title: {
       hu: 'Újpesti Főplébánia',
@@ -214,7 +211,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'ujpest-5',
+    imageURL: imageMap['ujpesti-parish-church'].find(image => image.includes('05'))!,
     link: 'https://epiteszforum.hu/ujpesti-foplebania-kialakitasa-a-zeneiskola-regi-epuleteben',
     title: {
       hu: 'Újpesti Főplébánia',
@@ -227,7 +224,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'ujpest-3-main',
+    imageURL: imageMap['ujpesti-parish-church'].find(image => image.includes('03'))!,
     link: 'https://www.archdaily.com/772133/parish-church-of-the-celestial-queen-4-plusz-epitesz-studio?ad_medium=office_landing&ad_name=article',
     title: {
       hu: 'Parish Church of the Celestial Queen',
@@ -240,7 +237,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'ujpest-1',
+    imageURL: imageMap['ujpesti-parish-church'].find(image => image.includes('01'))!,
     link: 'https://www.octogon.hu/magazin/kozossegi-ter-teremtes/',
     title: {
       hu: '"Közösségi tér - teremtés"',
@@ -253,7 +250,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'csomor-16',
+    imageURL: imageMap['csomori-church'].find(image => image.includes('16'))!,
     link: 'https://epiteszforum.hu/hagyomanyba-oltott-modernitas--reformatus-templom-es-gyulekezeti-kozpont-csomoron',
     title: {
       hu: '"Hagyományba oltott modernitás"',
@@ -266,7 +263,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'csomor-1',
+    imageURL: imageMap['csomori-church'].find(image => image.includes('01'))!,
     link: 'https://meonline.hu/aktualis/tema/a-magveto-haza/',
     title: {
       hu: '"A Magvető Háza"',
@@ -279,7 +276,7 @@ export const PUBLICATIONS_DATA: PublicationModel[] = [
     }
   },
   {
-    imageURL: 'copperhouse-4',
+    imageURL: imageMap['keresztur-restaurant-office'].find(image => image.includes('04'))!,
     link: 'https://epiteszforum.hu/mult-es-jovo-osszeforrasztasa-rezhaz-rakosmenten',
     title: {
       hu: '"Múlt és jövő összeforrasztása"',

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Language, LanguageService} from '../../services/language.service';
 import {ContactModel} from '../../models/contact-model';
 import {CONTACT_DATA} from '../../data/contact-data';
+import {imageMap} from '../../image-map';
 
 /*declare let L: any;*/
 
@@ -14,7 +15,7 @@ import {CONTACT_DATA} from '../../data/contact-data';
 export class ContactComponent implements OnInit {
 
   currentLang: Language = 'hu';
-  backgroundURL: string = ''; //raday-5
+  backgroundURL: string = '';
 
   constructor(private languageService: LanguageService) {
   }
@@ -43,6 +44,8 @@ export class ContactComponent implements OnInit {
     this.languageService.language$.subscribe(lang => {
       this.currentLang = lang;
     })
+
+    this.backgroundURL = imageMap['raday-house'].find(image => image.includes('05'))!
   }
 
   contactData: ContactModel = CONTACT_DATA;

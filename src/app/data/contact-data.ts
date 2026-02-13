@@ -6,8 +6,8 @@ export const CONTACT_DATA: ContactModel = {
     en: 'Address'
   },
   address: {
-    hu: '1111 Budapest, Bartók Béla út 18',
-    en: '1111 Budapest, Bartók Béla street 18'
+    hu: '1111 Budapest,\nBartók Béla út 18',
+    en: '1111 Budapest, \nBartók Béla street 18'
   },
   phoneTitle: {
     hu: 'Telefonszám',

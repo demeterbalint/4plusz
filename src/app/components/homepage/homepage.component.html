@@ -4,7 +4,7 @@
          [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
       <div class="home-image" *ngFor="let project of loopedProjects">
         <img [src]="project.image" [alt]="project.image.toString()">
-        <span>{{ project.project.name[currentLang] }}</span>
+        <h1>{{ project.project.name[currentLang] }}</h1>
       </div>
     </div>
   </div>
