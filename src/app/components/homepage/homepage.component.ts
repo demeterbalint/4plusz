@@ -35,7 +35,7 @@ export class HomepageComponent implements OnInit {
       this.currentLang = lang;
     })
 
-    const homeProjects = this.projectLoader.HOMEPAGE_PROJECT_DATA;
+    const homeProjects = this.projectLoader.getHomepageProjects();
 
     this.homePageProjects = homeProjects;
     this.numberOfImages = homeProjects.length;
