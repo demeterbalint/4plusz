@@ -21,13 +21,17 @@
 
   <div class="part3">
     <div class="part3-left">
-      <h2 class="part3-name">{{ studio.part3Name[currentLang] }}</h2>
-      <div class="part3-name-text">
-        <span>{{ studio.part3NameText[currentLang][0] }}</span>
-        <span class="part3-name-text-2">{{ studio.part3NameText[currentLang][1] }}</span>
+      <div class="part3-top-part">
+        <h2 class="part3-name">{{ studio.part3Name[currentLang] }}</h2>
+        <div class="part3-name-text">
+          <span>{{ studio.part3NameText[currentLang][0] }}</span>
+          <span class="part3-name-text-2">{{ studio.part3NameText[currentLang][1] }}</span>
+        </div>
       </div>
-      <h2 class="part3-title">{{ studio.part3Title[currentLang] }}</h2>
-      <span class="part3-title-text">{{ studio.part3TitleText[currentLang] }}</span>
+      <div class="part3-bottom-part">
+        <h2 class="part3-title">{{ studio.part3Title[currentLang] }}</h2>
+        <span class="part3-title-text">{{ studio.part3TitleText[currentLang] }}</span>
+      </div>
     </div>
     <div class="part3-right">
       <img src="{{ studio.part3ImageURL }}" alt="berzsi kep">

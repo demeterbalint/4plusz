@@ -24,12 +24,14 @@
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 span, a {
   line-height: 1.88em;
+  font-size: 13px;
+
 }
 
 a {
@@ -51,8 +53,12 @@ a {
   gap: 2rem;
 }
 
-.part1-text span {
+.part1-text-left {
   width: 44%;
+}
+
+.part1-text-right {
+  width: 50%;
 }
 
 .part2-text {
@@ -62,27 +68,44 @@ a {
 
 .part3 {
   display: flex;
-  justify-content: space-between;
 }
 
 .part3-left, .part3-right {
   width: 47%;
 }
 
+.part3-left {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.part3-name {
+  margin-top: 0;
+}
+
 .part3-name-text {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
 }
 
 .part3-name-text-2 {
   font-style: italic;
 }
 
+.part3-bottom-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .part3-right {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%;
+  margin-left: 2rem;
 }
 
 .part3-right img {
