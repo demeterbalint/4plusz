@@ -33,25 +33,41 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
     this.languageService.language$.subscribe(lang => {
       this.currentLang = lang;
-    })
+    });
 
     const homeProjects = this.projectLoader.getHomepageProjects();
 
-    this.homePageProjects = homeProjects;
-    this.numberOfImages = homeProjects.length;
+    this.preloadImages(homeProjects.map(p => p.image)).then(() => {
+      this.homePageProjects = homeProjects;
+      this.numberOfImages = homeProjects.length;
 
-    if (homeProjects.length > 0) {
-      const first = homeProjects[0];
-      const last = homeProjects[homeProjects.length - 1];
+      if (homeProjects.length > 0) {
+        const first = homeProjects[0];
+        const last = homeProjects[homeProjects.length - 1];
+        this.loopedProjects = [last, ...homeProjects, first];
+        this.imageIndex = 1;
+      } else {
+        this.loopedProjects = [];
+        this.imageIndex = -1;
+      }
 
-      this.loopedProjects = [last, ...homeProjects, first];
-      this.imageIndex = 1;
-    } else {
-      this.loopedProjects = [];
-      this.imageIndex = -1;
-    }
-    this.startAutoSlide();
+      this.startAutoSlide();
+    });
   }
+
+  async preloadImages(urls: string[]): Promise<void> {
+    await Promise.all(
+      urls.map(
+        src => new Promise<void>(resolve => {
+          const img = new Image();
+          img.src = src;
+          img.onload = () => resolve();
+          img.onerror = () => resolve();
+        })
+      )
+    );
+  }
+
 
   startAutoSlide() {
     this.intervalId = setInterval(() => {

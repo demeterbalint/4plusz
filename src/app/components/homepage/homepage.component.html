@@ -3,7 +3,7 @@
     <div class="home-images-track" [style.transform]="'translateX(-' + imageIndex * 100 + '%)'"
          [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
       <div class="home-image" *ngFor="let project of loopedProjects">
-        <img [src]="project.image" [alt]="project.image.toString()">
+        <img [src]="project.image" [alt]="project.image.toString()" loading="eager" decoding="async">
         <h1>{{ project.project.name[currentLang] }}</h1>
       </div>
     </div>
