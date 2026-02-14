@@ -4,11 +4,19 @@ import {ProjectsComponent} from './components/projects/projects.component';
 import {PublicationsComponent} from './components/publications/publications.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {HomepageComponent} from './components/homepage/homepage.component';
+import {ProjectListsComponent} from './components/project-lists/project-lists.component';
+import {ProjectReferenceWorksComponent} from './components/project-reference-works/project-reference-works.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent  },
   { path: 'studio', component: StudioComponent  },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'projects/public-buildings', component: ProjectListsComponent, data: { category: 'public-buildings' } },
+  { path: 'projects/religious-buildings', component: ProjectListsComponent, data: { category: 'religious-buildings' } },
+  { path: 'projects/residental-buildings', component: ProjectListsComponent, data: { category: 'residental-buildings' }},
+  { path: 'projects/historical-buildings', component: ProjectListsComponent, data: { category: 'historical-buildings' } },
+  { path: 'projects/conceptual-designs', component: ProjectListsComponent, data: { category: 'conceptual-designs' } },
+  { path: 'projects/reference-works', component: ProjectReferenceWorksComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: 'contact', component: ContactComponent }
 ];

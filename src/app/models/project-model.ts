@@ -8,6 +8,10 @@ export interface ProjectModel {
     hu: string,
     en: string
   },
+  projectTypeName: {
+    hu: string,
+    en: string
+  }
   shortDescription: {
     hu: string,
     en: string

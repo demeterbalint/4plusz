@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {NgForOf, NgIf} from '@angular/common';
 import {Language, LanguageService} from '../../services/language.service';
 import {HomepageProjectModel} from '../../models/homepage-project-model';
-import {HOMEPAGE_PROJECT_DATA} from '../../data/homepage-project-data';
+import {ProjectLoaderService} from '../../services/project-loader.service';
 
 @Component({
   selector: 'app-homepage',
@@ -26,7 +26,8 @@ export class HomepageComponent implements OnInit {
   intervalId: any;
   isPaused: boolean = false;
 
-  constructor(private languageService: LanguageService) {
+  constructor(private languageService: LanguageService,
+              private projectLoader: ProjectLoaderService) {
   }
 
   ngOnInit(): void {
@@ -34,7 +35,7 @@ export class HomepageComponent implements OnInit {
       this.currentLang = lang;
     })
 
-    const homeProjects = HOMEPAGE_PROJECT_DATA;
+    const homeProjects = this.projectLoader.HOMEPAGE_PROJECT_DATA;
 
     this.homePageProjects = homeProjects;
     this.numberOfImages = homeProjects.length;

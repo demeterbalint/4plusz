@@ -21,6 +21,10 @@ export class ProjectService {
         hu: 'Budaörsi Református Templom és Gyülekezeti Központ - a "Szőlősgazda háza"',
         en: 'Budaörs Reformed Church and Congregation Centre'
       },
+      projectTypeName: {
+        hu: 'Budaörsi Református Templom és Gyülekezeti Központ',
+        en: 'Budaörs Reformed Church and Congregation Centre'
+      },
       shortDescription: {
         hu: 'Budaörsi Református Templom és Gyülekezeti Központ - a "Szőlősgazda háza"',
         en: 'Budaörs Reformed Church and Congregation Centre'
@@ -46,6 +50,10 @@ export class ProjectService {
         en: "ÚJPEST PARISH CHURCH"
       },
       gridShort: {
+        hu: 'Egek Királynéja Római Katolikus Főplébánia',
+        en: 'Parish Church of the Celestial Queen'
+      },
+      projectTypeName: {
         hu: 'Egek Királynéja Római Katolikus Főplébánia',
         en: 'Parish Church of the Celestial Queen'
       },
@@ -78,6 +86,10 @@ export class ProjectService {
         hu: 'Kapy utcai öt lakásos társaház',
         en: 'Kapy street five-apartment building'
       },
+      projectTypeName: {
+        hu: 'Kapy Utcai Társasház',
+        en: 'Kapy Street Apartment Building'
+      },
       shortDescription: {
         hu: 'Társasház\n' + 'Kapy utca',
         en: 'Apartment building\n' + 'Kapy street'
@@ -101,6 +113,10 @@ export class ProjectService {
         en: 'RADAY-HOUSE'
       },
       gridShort: {
+        hu: 'Dunamelléki Református Egyházkerület Székház és Konferenciaközpont',
+        en: 'Dunamelléki Reformed Church District Headquarters and Conference Centre'
+      },
+      projectTypeName: {
         hu: 'Dunamelléki Református Egyházkerület Székház és Konferenciaközpont',
         en: 'Dunamelléki Reformed Church District Headquarters and Conference Centre'
       },
@@ -134,6 +150,10 @@ export class ProjectService {
         hu: 'Külső-Kelenföldi Református Templom - meghívásos tervpályázat',
         en: 'Külső-Kelenföld Refordmed Church - invitational tender'
       },
+      projectTypeName: {
+        hu: 'Külső-Kelenföldi Református Templom - pályázati terv',
+        en: 'Külső-Kelenföld Reformed Church - invitational tender'
+      },
       shortDescription: {
         hu: 'Külső-Kelenföldi Református Egyházközség új temploma meghívásos tervpályázat',
         en: 'Külső-Kelenföld Reformed Church\n' + 'invitational tender'
@@ -161,6 +181,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Csömöri Református Templom és Gyülekezeti Otthon - a "Magvető háza"',
         en: 'Csömör Reformed Church and Congregation Home'
+      },
+      projectTypeName: {
+        hu: 'Csömöri Református Templom és Gyülekezeti Otthon',
+        en: 'Csömör Reformed Church and Congregation Centre'
       },
       shortDescription: {
         hu: 'Csömöri Református Templom és Gyülekezeti Otthon - a "Magvető háza"',
@@ -190,6 +214,10 @@ export class ProjectService {
         hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
         en: 'Budapest-Fasor Reformed College Csipkebokor Kindergarten'
       },
+      projectTypeName: {
+        hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
+        en: 'Budapest-Fasori Reformed College Csipkebokor Kindergarten'
+      },
       shortDescription: {
         hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
         en: 'Budapest-Fasori Reformed College Csipkebokor Kindergarten'
@@ -215,6 +243,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Bicskei Tanuszoda és bővítése',
         en: 'Bicske Swimming Facility and its expansion'
+      },
+      projectTypeName: {
+        hu: 'Bicskei Tanuszoda',
+        en: 'Bicske Swimming Facility'
       },
       shortDescription: {
         hu: 'Bicskei Tanuszoda',
@@ -244,6 +276,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Keresztúr Étterem és Irodaépület',
         en: 'Keresztúr restaurant and office building'
+      },
+      projectTypeName: {
+        hu: 'Keresztúr Étterem és Irodaház',
+        en: 'Keresztúr Restaurant and Office Building'
       },
       shortDescription: {
         hu: 'Keresztúr Étterem és Irodaépület',
@@ -277,6 +313,10 @@ export class ProjectService {
         hu: 'Pesthidegkúti Református Templom és Gyülekezeti Központ',
         en: 'Pesthidegkút Reformed Church and Congregational Center'
       },
+      projectTypeName: {
+        hu: 'Pesthidegkúti Református Templom és Gyülekezeti Központ',
+        en: 'Pesthidegkút Reformed Church and Congregation Center'
+      },
       longDescription: {
         hu: ['„…épüljetek fel lelki házzá…” /1.Péter 2:5/',
         'A templom számunkra a közösség találkozóhelye. A gyülekezet, a közösség és a személyes találkozás helye és ideje egymással és együtt Istennel. A templom ennek a kerete. Ha nincs találkozás, ha nincs gyülekezet, akkor templom sincs. A kövek, az építőelemek mi magunk vagyunk, akiket Isten formált úgy, hogy beleilleszkedjünk az Ő „építményébe”. Mindenkinek – mint egy épületben – meg van a saját helye tálentumai, hite, odaszánása szerint.',
@@ -303,6 +343,10 @@ export class ProjectService {
         hu: 'Hétszínvirág Óvoda Tagóvodája',
         en: 'Hétszínvirág Kindergarten'
       },
+      projectTypeName: {
+        hu: 'Hétszínvirág Óvoda Tagóvodája',
+        en: 'Hétszínvirág Kindergarten'
+      },
       longDescription: {
         hu: ['A XVII. kerület egyik új lakóparkjában épült fel ez a három foglalkoztatós új óvoda. Az épület kialakítását nagyban meghatározta a rendelkezésre álló minimális költségvetés, melyet maximálisan a gyerekek javára igyekeztünk fordítani. Az épületbe a szűkös keretek ellenére is több megújuló, illetve korszerű, energiatakarékos rendszert integráltunk.'],
         en: ['This new nursery school with three places of work was built in a new residential area in the XVII district. The design of the building was largely determined by the minimum budget available, which we tried to maximize for the benefit of the children. Despite the limited space available, we integrated a number of renewable and modern energy-saving systems.']
@@ -322,6 +366,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Budapest-Fasori Református Templom felújítása',
         en: 'Budapest-Fasor Reformed Church - renovation'
+      },
+      projectTypeName: {
+        hu: 'Budapest-Fasori Református Templom - felújítás',
+        en: 'Fasori Reformed Church - renovation'
       },
       shortDescription: {
         hu: 'Budapest-Fasori Református Templom felújítása',
@@ -355,6 +403,10 @@ export class ProjectService {
         hu: 'Családi ház\n' + 'Kakukkhegyi út',
         en: 'Family house\n' + 'Kakukkhegyi Road'
       },
+      projectTypeName: {
+        hu: 'Kakukkhegyi Úti Családi Ház',
+        en: 'Kakukkhegyi Road Family House'
+      },
       longDescription: {
         hu: ['Több generációs család számára terveztük egy remek kilátással rendelkező telekre ezt a kísérletező családi házat. Az épület közös terei a összefogják egymással, a hozzájuk kapcsolódó önállóan is egységes lakóblokkok szeparálják egymástól a család tagjainak életét. A telek lejtését kihasználva az alsó szinten kaptak helyet a kiszolgáló helyiségek, a felső szintről élvezhető a panoráma, ugyanakkor a lejtésviszonyokat kihasználva intim kertkapcsolattal is rendelkezik valamennyi közös tés és lakóegység. Időtálló, visszafogott anyaghasználat és tömegképzés, árnyékoló szereppel és átmeneti térként is funkcionáló fedett teraszok fűzik egységessé az épület tömegét.'],
         en: ['We designed this experimental family house for a multi-generational family on a plot with a great view. The common spaces of the building unite each other, while the independently unified residential blocks connected to them separate the lives of the family members from each other. Taking advantage of the slope of the plot, the service rooms were located on the lower level, the panorama can be enjoyed from the upper level, and at the same time, taking advantage of the slope conditions, all common areas and residential units have an intimate garden connection. Timeless, restrained use of materials and massing, covered terraces that also function as shading and transitional spaces, unify the mass of the building.']
@@ -379,6 +431,10 @@ export class ProjectService {
         hu: 'Tihanyi Uradalmi Magtár',
         en: 'Tihany Manor Granary'
       },
+      projectTypeName: {
+        hu: 'Tihany Uradalmi Magtár',
+        en: 'Tihany Manor Granary'
+      },
       longDescription: {
         hu: ['Az 1720-as években Grasso Villebrand és Lécs Ágoston tihanyi apátok megrendelésére az Tihanyi Apátság barokk kori átépítése idején épült „granárium”, uradalmi magtár egyszerű funkciója ellenére nagy történelmi múlttal rendelkezik. A kor ipari épülete nagy magassággal, vastag falakkal készült, benne fa szerkezetű, sűsű alátámasztott fafödémekek tárolták az igen nagy mennyiségű gabonát. Az épület fennmaradt elemei közül kiemelkedő a barokk fedélszerkezet, a zömök falak, párkányzat, valamint a jellegzetes kicsi nyílások.',
         'A II. világháború utáni államosítást követően sorsa megpecsételődni látszott. A 60-as években azonban a romos épület megmentése érdekében Callmeyer Ferenc és Dr. Tóth Kálmán nagyon igényes tervei szerint mozivá alakították. Az épületbe új födémek és hozzá kapcsolódó bővítmények készültek, melyet a következő évtizedekben felismerhetetlenségig átalakítottak. Az épületből az apátság környezetének nagyszabású átalakításával összefüggésben a rendezvények háttereként szolgáló kulturális és turisztikai központot alakítottunk ki. Az épület műemléki felújítása mellett a belső térben a korabeli magtárakat megidéző fa szerkezetű födémet és bútorként a térbe állított közlekedő rendszert terveztünk.'],
@@ -400,6 +456,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Veresegyházi családi ház',
         en: 'Veresegyház family house'
+      },
+      projectTypeName: {
+        hu: 'Veresegyházi Családi Ház',
+        en: 'Veresegyháza Family House'
       },
       shortDescription: {
         hu: 'Családi ház\n' + 'Veresegyháza',
@@ -425,6 +485,10 @@ export class ProjectService {
         hu: 'Pilisszentlászlói családi ház',
         en: 'Pilisszentlászló family house'
       },
+      projectTypeName: {
+        hu: 'Pilisszentlászlói Családi Ház',
+        en: 'Pilisszentlászló Family House'
+      },
       shortDescription: {
         hu: 'Családi ház\n' + 'Pilisszentlászló',
         en: 'Family house\n' + 'Pilisszentlászló'
@@ -448,6 +512,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Pécsely családi kápolna - meghívásos tervpályázat',
         en: 'Pécsely family chapel - invitational tender'
+      },
+      projectTypeName: {
+        hu: 'Pécsely Családi Kápolna - meghívásos tervpályázat',
+        en: 'Pécsely Family Chapel - invitational tender'
       },
       shortDescription: {
         hu: 'Pécsely Családi Kápolna meghívásos tervpályázat',
@@ -482,6 +550,10 @@ export class ProjectService {
         hu: 'Családi ház\n' + 'Diósd',
         en: 'Family house\n' + 'Diósd'
       },
+      projectTypeName: {
+        hu: 'Diósdi Családi Ház',
+        en: 'Diósd Family House'
+      },
       longDescription: {
         hu: ['Fiatal nagycsalád számára készült földszintes családi ház. A központi nappali teréből külön nyílik a gyermekek közös hálóblokkja, és a szülők rezidenciája. Mindenki bekapcsolódhat a közös terekbe, de az elvonulás lehetősége is adott. Egyszerű tömegét négyzet alaprajzú oromfalas épület csonkolása adja. A külső és a belső között átmeneti terek húzódnak.',
         'Az épület visszafogottsága a részletekkel szemben is kitartó igényességgel együtt teremti meg a belőle áradó finom, bensőséges hangulatot. Ehhez minden résztvevő egymásra figyelő, egymást elfogadó tisztességes munkájára, összefogására szükség van.'],
@@ -503,6 +575,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Gödöllői Református Líceum Gimnázium bővítése és felújítása',
         en: 'Gödöllő Reformed Lyceum'
+      },
+      projectTypeName: {
+        hu: 'Gödöllői Református Líceum Gimnázium',
+        en: 'Gödöllő Reformed Lyceum High School'
       },
       shortDescription: {
         hu: 'Gödöllői Református Líceum Gimnázium felújítása és bővítése',
@@ -530,6 +606,10 @@ export class ProjectService {
         hu: 'Bernáth Kálmán Református Gimnázium bővítése',
         en: 'Bernáth Kálmán Reformed High School'
       },
+      projectTypeName: {
+        hu: 'Bernáth Kálmán Református Gimnázium',
+        en: 'Bernáth Kálmán Reformed High School'
+      },
       shortDescription: {
         hu: 'Bernáth Kálmán Református Gimnázium bővítése',
         en: 'Bernáth Kálmán Reformed High School - expansion'
@@ -553,6 +633,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Újlak uszoda és strand fejlesztése',
         en: 'Újlaki Swimming Facility and Beach development'
+      },
+      projectTypeName: {
+        hu: 'Újlak Uszoda és Strand',
+        en: 'Újlak Swimming Facilities and Beach'
       },
       shortDescription: {
         hu: 'Újlak Uszoda és Strand fejlesztése',
@@ -580,6 +664,10 @@ export class ProjectService {
         hu: 'Geo-Log Irodaépület',
         en: 'Geo-Log Office Building'
       },
+      projectTypeName: {
+        hu: 'Geo-Log Irodaépület',
+        en: 'Geo-Log Office Building'
+      },
       shortDescription: {
         hu: 'Geo-Log Irodaépület',
         en: 'Geo-Log Office Building'
@@ -601,6 +689,10 @@ export class ProjectService {
         en: 'ALBERTFALVA CHURCH'
       },
       gridShort: {
+        hu: 'Albertfalvi Református Templom és Közösségi Épület',
+        en: 'Albertfalva Reformed Church and Community Building'
+      },
+      projectTypeName: {
         hu: 'Albertfalvi Református Templom és Közösségi Épület',
         en: 'Albertfalva Reformed Church and Community Building'
       },
@@ -631,6 +723,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Weöres Sándor Színház - építészeti és városrendezési ötletpályázat',
         en: 'Weöres Sándor Theatre - architectural and urban planning idea competition'
+      },
+      projectTypeName: {
+        hu: 'Weöres Sándor Színház - építészeti és városrendezési ötletpályázat',
+        en: 'Weöres Sándor Theatre - architecture and urban planning competition'
       },
       shortDescription: {
         hu: 'Weöres Sándor Színház új épülete - építészeti és városrendezési ötletpályázat',
@@ -672,6 +768,10 @@ export class ProjectService {
         hu: 'Hubay Garden hatvan lakásos lakóépület',
         en: 'Hubay Garden sixty-apartment residential park'
       },
+      projectTypeName: {
+        hu: 'Hubay Garden Társasház',
+        en: 'Hubay Garden Apartment Building'
+      },
       shortDescription: {
         hu: 'Hubay Garden\n' + 'társasház',
         en: 'Hubay Garden\n' + 'apartment building'
@@ -699,6 +799,10 @@ export class ProjectService {
       gridShort: {
         hu: 'Veszprémi családi ház',
         en: 'Veszmprém family house'
+      },
+      projectTypeName: {
+        hu: 'Veszprémi Családi Ház',
+        en: 'Veszprém Family House'
       },
       shortDescription: {
         hu: 'Családi ház\n' + 'Veszprém',
