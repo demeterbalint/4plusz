@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {ProjectListModel} from '../../models/project-list-model';
+import {Language, LanguageService} from '../../services/language.service';
 
 @Component({
   selector: 'app-project-lists',
@@ -13,12 +14,18 @@ export class ProjectListsComponent implements OnInit {
 
   category!: string;
   projects!: ProjectListModel;
+  currentLang: Language = 'hu';
 
   constructor(private route: ActivatedRoute,
-              private projectLoader: ProjectLoaderService) {
+              private projectLoader: ProjectLoaderService,
+              private languageService: LanguageService) {
   }
 
   ngOnInit(): void {
+    this.languageService.language$.subscribe(lang => {
+      this.currentLang = lang;
+    })
+
     this.route.data.subscribe(data => {
       this.category = data['category'];
       this.loadProjects(this.category);
