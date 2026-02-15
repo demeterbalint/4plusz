@@ -37,7 +37,7 @@ export class PublicationsComponent implements OnInit {
       this.currentLang = lang;
     })
 
-    this.backgroundURL = imageMap['budaorsi-church'].find(image => image.includes('publication'))!
+    this.backgroundURL = imageMap['budaors-church'].find(image => image.includes('publication'))!
   }
 
 }

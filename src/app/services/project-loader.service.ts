@@ -18,11 +18,11 @@ export class ProjectLoaderService {
     const projects = this.projectService.getProjects();
 
     const raday = projects.find(p => p.slug === 'raday-house')!;
-    const csomor = projects.find(p => p.slug === 'csomori-church')!;
-    const fasor = projects.find(p => p.slug === 'fasori-church')!;
+    const csomor = projects.find(p => p.slug === 'csomor-church')!;
+    const fasor = projects.find(p => p.slug === 'fasor-church')!;
     const kapy = projects.find(p => p.slug === 'kapy')!;
-    const budaors = projects.find(p => p.slug === 'budaorsi-church')!;
-    const ujpest = projects.find(p => p.slug === 'ujpesti-parish-church')!;
+    const budaors = projects.find(p => p.slug === 'budaors-church')!;
+    const ujpest = projects.find(p => p.slug === 'ujpest-parish-church')!;
     const rezhaz = projects.find(p => p.slug === 'keresztur-restaurant-office')!;
 
     return [
@@ -46,18 +46,18 @@ export class ProjectLoaderService {
   }
 
   //slugs for project-types
-  publicBuildingSlugs: string[] = ['raday-house', 'ujpesti-parish-church', 'fasori-church', 'keresztur-restaurant-office', 'vac-high-school', 'budaorsi-church', 'csomor-ichurch',
-    'tihany-granary', 'godollo-lyceum', 'ujlak-swimming-facility', 'bicske-swimming-facility', 'pesthidegkuti-church', 'csipkebokor-kindergarten', 'geo-log-office', 'hetszinvirag-kindergarten']
+  publicBuildingSlugs: string[] = ['raday-house', 'ujpest-parish-church', 'fasor-church', 'keresztur-restaurant-office', 'vac-high-school', 'budaors-church', 'csomor-ichurch',
+    'tihany-granary', 'godollo-lyceum', 'ujlak-swimming-facility', 'bicske-swimming-facility', 'pesthidegkut-church', 'csipkebokor-kindergarten', 'geo-log-office', 'hetszinvirag-kindergarten']
 
-  religiousBuildingSlugs: string[] = ['fasori-church', 'budaorsi-church', 'csomori-church', 'raday-house', 'ujpesti-parish-church', 'pesthidegkuti-church',
-    'kulso-kelenfoldi-church', 'albertfalvi-church', 'pecsely-chapel']
+  religiousBuildingSlugs: string[] = ['fasor-church', 'budaors-church', 'csomor-church', 'raday-house', 'ujpest-parish-church', 'pesthidegkut-church',
+    'kulso-kelenfold-church', 'albertfalva-church', 'pecsely-chapel']
 
   residentalBuildingSlugs: string[] = ['kapy', 'hubay-garden', 'family-house-3', 'family-house-1', 'family-house-4', 'family-house-2', 'family-house-5']
 
-  historicalBuildingSlugs: string[] = ['fasori-church', 'tihany-granary', 'ujpesti-parish-church', 'csipkebokor-kindergarten']
+  historicalBuildingSlugs: string[] = ['fasor-church', 'tihany-granary', 'ujpest-parish-church', 'csipkebokor-kindergarten']
 
-  conceptualDesignSlugs: string[] = ['godollo-lyceum', 'vac-high-school', 'pesthidegkuti-church', 'pecsely-chapel', 'kulso-kelenfoldi-church', 'ujlak-swimming-facility',
-  'geo-log-office', 'family-house-3', 'family-house-1', 'albertfalvi-church', 'weores-sandor-theatre']
+  conceptualDesignSlugs: string[] = ['godollo-lyceum', 'vac-high-school', 'pesthidegkut-church', 'pecsely-chapel', 'kulso-kelenfold-church', 'ujlak-swimming-facility',
+  'geo-log-office', 'family-house-3', 'family-house-1', 'albertfalva-church', 'weores-sandor-theatre']
 
   //methods for project-types
   getPublicBuildings(): ProjectListModel {

@@ -38,7 +38,7 @@ export const STUDIO_DATA: StudioModel = {
       'European Copper in Architecture Award 15 – competition, exhibition Bruxelles - Keresztúr Restaurant and Office Building',
       'Facade of the year III. place – Bp. Kiscelli road apartment building',
       'Roof of the year II. place – Szarvaskút guest house',
-      '„Jövőt építünk!” competition award – Fasori Reformed College Csipkebokor Kindergarden',
+      '„Jövőt építünk!” competition award – Fasor Reformed College Csipkebokor Kindergarden',
       'BIG ZAVOD exhibition and competition invitation – Ljubljana']
   },
   part3Name: {

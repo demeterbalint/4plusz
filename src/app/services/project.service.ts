@@ -12,10 +12,10 @@ export class ProjectService {
 
   private projects: ProjectModel[] = [
     {
-      slug: 'budaorsi-church',
+      slug: 'budaors-church',
       name: {
         hu: 'BUDAÖRSI TEMPLOM',
-        en: 'BUDAÖRSI CHURCH'
+        en: 'BUDAÖRS CHURCH'
       },
       gridShort: {
         hu: 'Budaörsi Református Templom és Gyülekezeti Központ - a "Szőlősgazda háza"',
@@ -41,10 +41,10 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Katalin Konyha, Dorottya Szvák, Noémi Rácz, Csongor Csintalan\n' + '\n' + 'Budaörs\n' + '\n' + '2019',
         'Photographs of József Hajdú and Zsolt Hlinka']
       },
-      images: imageMap['budaorsi-church']
+      images: imageMap['budaors-church']
     },
     {
-      slug: 'ujpesti-parish-church',
+      slug: 'ujpest-parish-church',
       name: {
         hu: 'ÚJPESTI FŐBLÉBÁNIA',
         en: "ÚJPEST PARISH CHURCH"
@@ -84,7 +84,7 @@ export class ProjectService {
       },
       gridShort: {
         hu: 'Kapy utcai öt lakásos társaház',
-        en: 'Kapy street five-apartment building'
+        en: 'Kapy street apartment building'
       },
       projectTypeName: {
         hu: 'Kapy Utcai Társasház',
@@ -141,7 +141,7 @@ export class ProjectService {
       images: ['raday-1', 'raday-2']
     },
     {
-      slug: 'kulso-kelenfoldi-church',
+      slug: 'kulso-kelenfold-church',
       name: {
         hu: 'KÜLSŐ-KELENFÖLDI TEPLOM',
         en: 'KÜLSŐ-KELENFÖLD CHURCH'
@@ -173,7 +173,7 @@ export class ProjectService {
       images: ['kelefold-1', "kelefold-2"]
     },
     {
-      slug: 'csomori-church',
+      slug: 'csomor-church',
       name: {
         hu: 'CSÖMÖRI TEMPLOM',
         en: 'CSÖMÖR CHURCH'
@@ -216,16 +216,16 @@ export class ProjectService {
       },
       projectTypeName: {
         hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
-        en: 'Budapest-Fasori Reformed College Csipkebokor Kindergarten'
+        en: 'Budapest-Fasor Reformed College Csipkebokor Kindergarten'
       },
       shortDescription: {
         hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
-        en: 'Budapest-Fasori Reformed College Csipkebokor Kindergarten'
+        en: 'Budapest-Fasor Reformed College Csipkebokor Kindergarten'
       },
       longDescription: {
         hu: ['A Fasori Református Egyházközség óvodájának egy társasház nagyobb földszinti lakása szolgált otthonul egy évtizeden keresztül. Az iskola kiköltözésével a templom udvarán lévő, 1926-ban átadott Julianna iskola épülete megüresedett. Kézenfekvőnek tűnt, hogy itt alakítsunk ki új otthont az óvoda számára. Az épület azonban korent sem látszott alaklamasnak az új funkcióra. Hosszas vizsgálódás után, a Megrendelő feltétlen bizalmát élvezve döntöttünk amellett, hogy az épületet a gyülekezet, az iskola és az óvoda számára egyaránt használhatóvá tesszük.',
         'A földszint terei közös haszálatban maradtak, az emeleti szintekre az óvodai funkciók kerültek, az alagsoron a gyülekezet ifjúsága és az óvoda osztozik. Az épület eredeti megjelenését megtartottuk, szükséges kiegészítését kortárs elemekkel, de az épület funkciójához és a környezethez illeszkedő visszafogottsággal kezeltük.'],
-        en: ['The kindergarten of the Reformed Church of Fasori served as its home for a decade in a larger ground floor apartment of an apartment building. With the school moving out, the Julianna school building in the church yard, which was opened in 1926, became vacant. It seemed obvious that we would create a new home for the kindergarten here. However, the building did not seem suitable for the new function at all. After a long investigation, enjoying the unconditional trust of the Client, we decided to make the building usable for the congregation, the school and the kindergarten.',
+        en: ['The kindergarten of the Reformed Church of Fasor served as its home for a decade in a larger ground floor apartment of an apartment building. With the school moving out, the Julianna school building in the church yard, which was opened in 1926, became vacant. It seemed obvious that we would create a new home for the kindergarten here. However, the building did not seem suitable for the new function at all. After a long investigation, enjoying the unconditional trust of the Client, we decided to make the building usable for the congregation, the school and the kindergarten.',
         'The ground floor spaces remained in common use, the upper floors were used for kindergarten functions, and the basement is shared by the youth of the congregation and the kindergarten. We retained the original appearance of the building, adding the necessary additions with contemporary elements, but with restraint that matched the function of the building and the environment.']
       },
       additionalInfo: {
@@ -300,7 +300,7 @@ export class ProjectService {
       images: ['copperhouse-1', 'copperhouse-2']
     },
     {
-      slug: 'pesthidegkuti-church',
+      slug: 'pesthidegkut-church',
       name: {
         hu: 'PESTHIDEGKÚTI TEMPLOM',
         en: 'PESTHIDEGKÚT CHURCH'
@@ -358,10 +358,10 @@ export class ProjectService {
       images: ['hetszinvirag-1', 'hetszinvirag-2']
     },
     {
-      slug: 'fasori-church',
+      slug: 'fasor-church',
       name: {
         hu: 'FASORI TEMPLOM',
-        en: 'FASORI CHURCH'
+        en: 'FASOR CHURCH'
       },
       gridShort: {
         hu: 'Budapest-Fasori Református Templom felújítása',
@@ -369,11 +369,11 @@ export class ProjectService {
       },
       projectTypeName: {
         hu: 'Budapest-Fasori Református Templom - felújítás',
-        en: 'Fasori Reformed Church - renovation'
+        en: 'Fasor Reformed Church - renovation'
       },
       shortDescription: {
         hu: 'Budapest-Fasori Református Templom felújítása',
-        en: 'Budapest-Fasori Reformed Church renovation'
+        en: 'Budapest-Fasor Reformed Church renovation'
       },
       longDescription: {
         hu: ['Árkay Aladár 1913-ban épült csodálatos református templomának utolsó felújítására az 1980-as években került sor. Komoly, éveken át tartó előkészítések után kerülhetett sor az épület mostani, átfogó felújítására, mely több szakaszban valósult meg. Az építési bizottságban kialakított fejlesztési koncepció mentén 2012-ben terveink szerint valósult meg az épület kertje. A jelenlegi felújítás első lépése a templom külsejének műemléki felújítása volt, mely a Grafit Műterem tervei szerint valósult meg. Irodánk a templom belső terének műemléki felújítása mellett a szükséges közösségi funkciók kialakítását, a lakások átalakítását, a teljes épület korszerűsítésének terveit készítette.',
@@ -432,7 +432,7 @@ export class ProjectService {
         en: 'Tihany Manor Granary'
       },
       projectTypeName: {
-        hu: 'Tihany Uradalmi Magtár',
+        hu: 'Tihanyi Uradalmi Magtár',
         en: 'Tihany Manor Granary'
       },
       longDescription: {
@@ -683,7 +683,7 @@ export class ProjectService {
       images: ['geo-log-1', 'geo-log-2']
     },
     {
-      slug: 'albertfalvi-church',
+      slug: 'albertfalva-church',
       name: {
         hu: 'ALBERTFALVI TEMPLOM',
         en: 'ALBERTFALVA CHURCH'
@@ -712,7 +712,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' +  '\n' + 'Budapest\n' + '\n' + '2010'],
         en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Budapest\n' + '\n' + '2010']
       },
-      images: ['albertfalvi-1', 'albertfalvi-2']
+      images: ['albertfalva-1', 'albertfalva-2']
     },
     {
       slug: 'weores-sandor-theatre',

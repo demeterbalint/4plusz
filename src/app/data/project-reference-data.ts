@@ -100,7 +100,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Budapest-Fasori Református Templom és Gyülekezeti ház átalakítás, felújítás - műemlék',
-      en: 'Budapest-Fasori Reformed Church and Parish House conversion, renovation - historic building'
+      en: 'Budapest-Fasor Reformed Church and Parish House conversion, renovation - historic building'
     },
     location: 'Budapest',
     year: '2024',
@@ -340,7 +340,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Budapest-Fasori Református Kollégium Csipkebokor Óvodája',
-      en: 'Budapest-Fasori Reformed College Csipkebokor Kindergarden'
+      en: 'Budapest-Fasor Reformed College Csipkebokor Kindergarden'
     },
     location: 'Budapest',
     year: '2018',
@@ -692,7 +692,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Fasori református templom kert kialakítás, lelkészi hivatal átalakítás - műemlék',
-      en: 'Fasori Reformed Church garden landscaping, parsonage renovation - historic monument'
+      en: 'Fasor Reformed Church garden landscaping, parsonage renovation - historic monument'
     },
     location: 'Budapest',
     year: '2012',
@@ -739,8 +739,8 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   },
   {
     name: {
-      hu: 'Albertfalvai Református Templom és Közösségi Épület',
-      en: 'Albertfalvai Reformed Church and Community Centre'
+      hu: 'albertfalvi Református Templom és Közösségi Épület',
+      en: 'albertfalva Reformed Church and Community Centre'
     },
     location: 'Budapest',
     year: '2010',
@@ -852,7 +852,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Bicskei Tanuszoda és bővítése',
-      en: 'Bicskei Swimming facility and expansion'
+      en: 'Bicske Swimming facility and expansion'
     },
     location: 'Bicske',
     year: '2009',
