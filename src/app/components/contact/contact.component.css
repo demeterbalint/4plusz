@@ -31,10 +31,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.3rem;
   background-color: white;
   width: 77.5%;
   height: 10rem;
+  opacity: 0.9;
 }
 
 .contact-titles,
@@ -45,6 +45,11 @@
   justify-content: space-evenly;
   gap: 2rem;
   text-align: center;
+}
+
+.contact-datas a:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .contact-title {
