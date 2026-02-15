@@ -35,11 +35,11 @@ export class AppComponent implements OnInit {
     this.languageService.setLanguage('hu');
   }
 
-  protected goToHome() {
+  /*protected goToHome() {
     if (this.router.isActive('/', true)) {
       window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     } else {
       this.router.navigate(['/']);
     }
-  }
+  }*/
 }
