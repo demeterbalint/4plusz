@@ -133,6 +133,11 @@ footer {
   cursor: pointer;
 }
 
+.footer-address:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .socials-footer {
   display: flex;
   justify-content: center;

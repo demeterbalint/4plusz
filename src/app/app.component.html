@@ -32,7 +32,7 @@
     <div class="footer-contact-div">
       <a class="footer-name" routerLink="/contact">{{ navFooText.footerBrand[currentLang] }}</a>
       <span>{{ navFooText.phone[currentLang] }}</span>
-      <span>{{ navFooText.address[currentLang] }}</span>
+      <span class="footer-address" (click)="openMaps()">{{ navFooText.address[currentLang] }}</span>
       <div class="socials-footer">
         <div class="facebook">
           <a class="fab fa-facebook-f" target="_blank" href="https://www.facebook.com/4plusz"></a>

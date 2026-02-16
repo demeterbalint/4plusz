@@ -77,4 +77,9 @@ export class ContactComponent implements OnInit {
       }
     }, delay);
   }
+
+  protected openMaps() {
+    const url = 'https://www.google.com/maps/dir//4+Plusz+Kft.,+Budapest,+Bart%C3%B3k+B%C3%A9la+%C3%BAt+18,+1111/@47.4814979,19.0527283,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4741ddb65e482c5d:0x93de8965a16efc54!2m2!1d19.0527283!2d47.4814979?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D'
+    window.open(url, '_blank');
+  }
 }
