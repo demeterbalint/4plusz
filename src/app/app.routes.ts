@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: '', component: HomepageComponent  },
   { path: 'studio', component: StudioComponent  },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'projects:slug', component: ProjectPageComponent },
+  { path: 'projects/:slug', component: ProjectPageComponent },
   { path: 'projects/public-buildings', component: ProjectListsComponent, data: { category: 'public-buildings' } },
   { path: 'projects/religious-buildings', component: ProjectListsComponent, data: { category: 'religious-buildings' } },
   { path: 'projects/residental-buildings', component: ProjectListsComponent, data: { category: 'residental-buildings' }},

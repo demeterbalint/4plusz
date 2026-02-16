@@ -6,6 +6,7 @@
   --languagePipeColor: rgb(230, 224, 211);
   --languageColor: rgb(51, 51, 51);
   --languageHoverColor: rgb(149, 149, 149);
+  --gridTextColor: #696969;
 }
 
 html, body {
