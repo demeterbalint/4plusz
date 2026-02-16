@@ -73,6 +73,46 @@
   }
 }
 
+.li-project {
+  position: relative;
+}
+
+.li-project:hover .project-types {
+  display: flex;
+}
+
+.project-types {
+  z-index: 2000;
+  position: absolute;
+  top: 1rem;
+  right: -0.5rem;
+  width: max-content;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 4px 4px 4px 4px;
+  background: white !important;
+  border-top: white solid 1.3rem;
+}
+
+.project-types a {
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: var(--menuColor);
+}
+
+.project-types a:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.project-types a.active-link {
+  color: black;
+  font-weight: 500;
+}
+
 .socials-header {
   display: flex;
   margin-right: -0.8rem;

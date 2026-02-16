@@ -1,14 +1,19 @@
 <div class="main-container">
   <header>
     <nav class="navbar">
-      <a class="negyplusz" routerLink="/">{{ navFooText.headerBrand[currentLang] }}</a>
+      <a class="negyplusz" [routerLink]="['/']">{{ navFooText.headerBrand[currentLang] }}</a>
       <div class="nav-right">
         <ul class="nav-list">
-          <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.home[currentLang] }}</a></li>
-          <li><a routerLink="/studio" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.studio[currentLang] }}</a></li>
-          <li><a routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.projects[currentLang] }}</a></li>
-          <li><a routerLink="/publications" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.publications[currentLang] }}</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.contact[currentLang] }}</a></li>
+          <li><a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.home[currentLang] }}</a></li>
+          <li><a [routerLink]="['/studio']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.studio[currentLang] }}</a></li>
+          <li class="li-project">
+            <a [routerLink]="['/projects']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: false}">{{ navFooText.projects[currentLang] }}</a>
+            <div class="project-types">
+              <a *ngFor="let type of projectTypes[currentLang]" [routerLink]="['/projects', type.route]" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ type.name }}</a>
+            </div>
+          </li>
+          <li><a [routerLink]="['/publications']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.publications[currentLang] }}</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.contact[currentLang] }}</a></li>
         </ul>
         <div class="socials-header">
           <div class="facebook">
@@ -30,7 +35,7 @@
 
   <footer>
     <div class="footer-contact-div">
-      <a class="footer-name" routerLink="/contact">{{ navFooText.footerBrand[currentLang] }}</a>
+      <a class="footer-name" [routerLink]="['/contact']">{{ navFooText.footerBrand[currentLang] }}</a>
       <span>{{ navFooText.phone[currentLang] }}</span>
       <span class="footer-address" (click)="openMaps()">{{ navFooText.address[currentLang] }}</span>
       <div class="socials-footer">
