@@ -18,12 +18,13 @@ export class StudioComponent implements OnInit {
   currentLang: Language = 'hu';
   studio: StudioModel = STUDIO_DATA;
 
-  constructor(public languageService: LanguageService) {}
+  constructor(public languageService: LanguageService) {
+  }
 
   ngOnInit(): void {
-      this.languageService.language$.subscribe(lang => {
-        this.currentLang = lang;
-      })
+    this.languageService.language$.subscribe(lang => {
+      this.currentLang = lang;
+    })
   }
 
 }

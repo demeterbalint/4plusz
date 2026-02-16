@@ -10,9 +10,7 @@ import {imageMap} from '../image-map';
 })
 export class ProjectLoaderService {
 
-  constructor(private projectService: ProjectService) {
-
-  }
+  constructor(private projectService: ProjectService) {}
 
   getHomepageProjects(): HomepageProjectModel[] {
     const projects = this.projectService.getProjects();
@@ -112,5 +110,9 @@ export class ProjectLoaderService {
 
   getProjectBySlug(slug: string): ProjectModel {
     return this.projectService.getProjects().find(project => project.slug === slug)!;
+  }
+
+  getMainImage(project: ProjectModel) {
+    return imageMap[project.slug].find(img => img.includes('main'))!;
   }
 }
