@@ -20,9 +20,21 @@ export interface ProjectModel {
     hu: string[],
     en: string[]
   },
-  additionalInfo: {
-    hu: string[],
-    en: string[]
+  architects: {
+    hu: string,
+    en: string
+  },
+  location: {
+    hu: string,
+    en: string
+  },
+  year: {
+    hu: string,
+    en: string
+  },
+  photographers?: {
+    hu: string,
+    en: string
   },
   images: string[]
 }

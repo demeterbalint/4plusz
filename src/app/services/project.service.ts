@@ -35,11 +35,21 @@ export class ProjectService {
         en: ['The new Reformed church, which also serves as the community center, was built on the town\'s main street, next to the Lutheran church. The transparent building proclaims openness and invitation. Its tower is the same height as the tower of the Lutheran church. Its white color symbolizes purity and simplicity, in keeping with our Reformed traditions.',
         'The perforated grapevine pattern on the facade evokes the congregation\'s motto, weaving together the façade and the tower. The street side of the building features a large foyer, which also serves as a café and tea room, a place for meeting and socializing, opening up to the people on the street. From here, you can access the various community rooms on the ground floor and first floor, as well as the church hall. The building seeks to continue tradition not only in the continuation of formal elements, but also in the contemporary interpretation and respect of common roots.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Szvák Dorottya, Rácz Noémi, Csintalan Csongor\n' + '\n' + 'Budaörs\n' + '\n' + '2019',
-        'Hajdú József és Hlinka Zsolt fotói'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Dorottya Szvák, Noémi Rácz, Csongor Csintalan\n' + '\n' + 'Budaörs\n' + '\n' + '2019',
-        'Photographs of József Hajdú and Zsolt Hlinka']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Szvák Dorottya, Rácz Noémi, Csintalan Csongor',
+        en: 'Zoltán Berzsák, Katalin Konyha, Dorottya Szvák, Noémi Rácz, Csongor Csintalan'
+      },
+      location: {
+        hu: 'Budaörs',
+        en: 'Budaörs'
+      },
+      year: {
+        hu: '2019',
+        en: '2019'
+      },
+      photographers: {
+        hu: 'Hajdú József, Hlinka Zsolt',
+        en: 'József Hajdú, Zsolt Hlinka'
       },
       images: imageMap['budaors-church']
     },
@@ -68,11 +78,21 @@ export class ProjectService {
         'In the main square of Újpest, on Szent István Square, in an eclectic building built in the 1870s, the Roman Catholic parish of the Queen of Egek has been given a new location. Thanks to an exchange agreement with the local government, the building of the former Erkel Ferenc Music School was transformed into the home of the congregation\'s community events and gatherings.',
         'The reconstruction was designed on the basis of contemporary photographs, the latter intervention being based on two cross-wings with a modern tone, which were designed to be fully transparent and permeable at ground level, both visually and functionally. The functions of the rooms are based on the density of use, and the use of materials and colors has been deliberately restrained to reflect the many ecclesiastical "heritages". The most important aspect of community building is its impact on the community (including its usability, practicality and the message it conveys to its immediate and wider environment.)']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Stanisewszki Andrea\n' + '\n' + 'Budapest, IV. ker.\n' + '\n' + '2015',
-        'Albertszki Tamás fotói'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Andrea Stanisewszki\n' + '\n' + 'Budapest, 4th district.\n' + '\n' + '2015',
-          'Photographs of Tamás Albertszki']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Stanisewszki Andrea',
+        en: 'Zoltán Berzsák, Katalin Konyha, Andrea Stanisewszki'
+      },
+      location: {
+        hu: 'Budapest, IV. ker.',
+        en: 'Budapest, 4th district'
+      },
+      year: {
+        hu: '2015',
+        en: '2015'
+      },
+      photographers: {
+        hu: 'Albertszki Tamás',
+        en: 'Tamás Albertszki'
       },
       images: imageMap['ujpest-parish-church']
     },
@@ -98,11 +118,21 @@ export class ProjectService {
         hu: ['A Pasaréti tér és a város fölött fákkal sűrűn benőtt telken épült ez a kívül-belül igényes és minden kényelmet biztosító luxustársasház. Az épület a növényzethez és a domboldal lejtéséhez igazodik, a korábbi családi ház helyére került. A lakások a kilátás, illetve a kert valamennyi látványa fel átmeneti terekkel nyílnak meg. A kevés számú felhasznált anyag minőségi és tartós. A kényelmes, nagy méretű lakások valamennyi 21. században elképzelhető kényelmi felszereléssel ellátottak a központi szellőzéstől a geotermikus rendszerű fűtés-hűtésen keresztül az okosotthon rendszerig. Az épület a nagy múltú beruházó - kivitelező cég és irodánk minőségi igényeit egyaránt tükrözi.'],
         en: ['This luxurious apartment building, sophisticated both inside and out and offering every comfort, was built on a plot densely covered with trees above Pasaréti Square and the city. The building blends in with the vegetation and the slope of the hillside, replacing a former family home. The apartments open up to transitional spaces with views of the landscape and the garden. The few materials used are high-quality and durable. The comfortable, large apartments are equipped with all the amenities imaginable in the 21st century, from central ventilation and geothermal heating and cooling to a smart home system. The building reflects the quality standards of both the long-established investor-contractor and our office.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Balogh Eszter, Eperjesi Blanka, Monori-Szabó Edit, Puskás Levente\n' + '\n' + 'Budapest, II. ker.\n' + '\n' + '2025',
-          'Grabarics Development Kft. fotói'],
-        en: ['Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskás\n' + '\n' + 'Budapest, 2nd district.\n' + '\n' + '2025',
-        'Photos of Grabarics Development Ltd.']
+      architects: {
+        hu: 'Berzsák Zoltán, Balogh Eszter, Eperjesi Blanka, Monori-Szabó Edit, Puskás Levente',
+        en: 'Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskás'
+      },
+      location: {
+        hu: 'Budapest, II. ker.',
+        en: 'Budapest, 2nd district'
+      },
+      year: {
+        hu: '2025',
+        en: '2025'
+      },
+      photographers: {
+        hu: 'Grabarics Development Kft.',
+        en: 'Grabarics Development Ltd.'
       },
       images: imageMap['kapy']
     },
@@ -132,11 +162,21 @@ export class ProjectService {
         'In January 2019, a fire broke out in the building, which made it necessary to renovate and transform the building complex, as well as to build a new dormitory wing. In addition to functional clarity and ensuring characteristically different usage needs, it was important to us that the building represent with every movement what the Reformation brought, what the Reformed Church stands for. Lightness, transparency, openness.',
         'The unity of the past, present and future is symbolized by the renovation of the old parts of the building to a monument level, as well as the contemporary architectural formulation of the new parts, which are connected by the dark-colored metal sheet that falls on the building like a mantle on the pastors. On the corner of the building, which opens completely towards Markusovszky Square, the cross appears both outside and inside, in the place of the blazing fire. At the intersection of the arms of the cross, the symbol of the Reformed Church, the Star of Bethlehem, which leads to Christ.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Berzsák Barna, Csintalan Csongor, Eperjesi Blanka, Konyha Katalin, Rácz Nóémi, Szvák Dorottya, Zacher Eszter\n' + '\n' + 'Budapest, IX.\n' + '\n' + '2022',
-        'Hajdú József, Hlinka Zsolt és Mártonffy Gábor fotói'],
-        en: ['Zoltán Berzsák, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Katalin Konyha, Nóémi Rácz, Dorottya Szvák, Esther Zacher\n' + '\n' + 'Budapest\n' + '\n' + '2022',
-        'Photographs of József Hajdú, Zsolt Hlinka and Gábor Mártonffy']
+      architects: {
+        hu: 'Berzsák Zoltán, Berzsák Barna, Csintalan Csongor, Eperjesi Blanka, Konyha Katalin, Rácz Nóémi, Szvák Dorottya, Zacher Eszter',
+        en: 'Zoltán Berzsák, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Katalin Konyha, Nóémi Rácz, Dorottya Szvák, Esther Zacher'
+      },
+      location: {
+        hu: 'Budapest, IX. ker.',
+        en: 'Budapest 19th district'
+      },
+      year: {
+        hu: '2022',
+        en: '2022'
+      },
+      photographers: {
+        hu: 'Hajdú József, Hlinka Zsolt, Mártonffy Gábor',
+        en: 'József Hajdú, Zsolt Hlinka, Gábor Mártonffy'
       },
       images: imageMap['raday-house']
     },
@@ -166,9 +206,17 @@ export class ProjectService {
         'We were strangers to each other, but in Jesus Christ we became close. We became a new people, a new community. Together we form the church, which represents Christ in the world. The church is built first and foremost in the heart! Compared to the start at Gellért Square, Bartók Béla Road ends in an undeserved manner. According to our plan, the end of the road will be closed by two towers, the tower of the new Reformed church next to the St. Gellért church. On the plot, which is designed as a public park, the mass of the building set back from the street addresses the incompleteness and deficiency of the neighboring rows of buildings. Its base is a brick "pedestal" that is completely open in the middle.',
         'The exterior and interior spaces merge both visually and functionally. The superstructure covered with perforated elements on the pedestal combines the church, the community space, and the apartment—everything that represents the congregation. It is as if two strong hands are holding a delicate, airy, breezy feather. At the corner, the superstructure grows into a tower, forming a cross from its perforated cladding elements. Above it is the Star of Bethlehem, which leads to the cross, to Christ. Light and openness play the leading role in the interior. In both the passageways and the church interior, the constantly changing light shapes and transforms the atmosphere of the spaces, offering variety to those inside and elevating the spaces above the profane. The spaces flow into one another, the exterior and interior becoming one.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya\n' + '\n' + 'Budapest, XI. ker.\n' + '\n' + '2025'],
-        en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskás, Dorottya Szvák\n' + '\n' + 'Budapest, 11th district.\n' + '\n' + '2024']
+      architects: {
+        hu: 'Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya',
+        en: 'Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskás, Dorottya Szvák'
+      },
+      location: {
+        hu: 'Budapest, XI. ker.',
+        en: 'Budapest 11th district'
+      },
+      year: {
+        hu: '2024',
+        en: '2024'
       },
       images: imageMap['kulso-kelenfold-church']
     },
@@ -196,11 +244,21 @@ export class ProjectService {
         en: ['The majority of the Reformed people of Csömör moved to the settlement near Budapest from across the border. In 2013 they decided to build a church and a congregational home for the growing community.',
         'The Church is located close to the centre of the village, bordered by the cemetery and the railway. By its installation and massing, we tried to make the building complex a dominant element of the settlement\'s landscape, a modern reinterpretation of our Reformed traditions, a church that would give the people of the area the image and feel of the settlements they left behind. The low wall surrounding the complex is a symbolic yet important sign of the separation between the profane and the sacred. It surrounds and protects the \'seeds\' that grow within it, the church or parish building. The ceiling is made from photographs of nine painted cassettes of the nine ancient churches where the members of the congregation originated. The unadorned, white walls are purist in the Reformed tradition, the play of lights constantly transforming and transforming the space.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Rácz Noémi, Csintalan Csongor, Nyikos László\n' + '\n' + 'Csömör\n' + '\n' + '2020',
-        'Hajdú József és Füle Tamás fotói'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Noémi Rácz, Csongor Csintalan, László Nyikos\n' + '\n' + 'Csömör\n' + '\n' + '2020',
-        'Photographs of József Hajdú and Tamás Füle']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Rácz Noémi, Csintalan Csongor, Nyikos László',
+        en: 'Zoltán Berzsák, Katalin Konyha, Noémi Rácz, Csongor Csintalan, László Nyikos'
+      },
+      location: {
+        hu: 'Csömör',
+        en: 'Csömör'
+      },
+      year: {
+        hu: '2020',
+        en: '2020'
+      },
+      photographers: {
+        hu: 'Hajdú József, Füle Tamás',
+        en: 'József Hajdú, Tamás Füle'
       },
       images: imageMap['csomor-church']
     },
@@ -228,9 +286,17 @@ export class ProjectService {
         en: ['The kindergarten of the Reformed Church of Fasor served as its home for a decade in a larger ground floor apartment of an apartment building. With the school moving out, the Julianna school building in the church yard, which was opened in 1926, became vacant. It seemed obvious that we would create a new home for the kindergarten here. However, the building did not seem suitable for the new function at all. After a long investigation, enjoying the unconditional trust of the Client, we decided to make the building usable for the congregation, the school and the kindergarten.',
         'The ground floor spaces remained in common use, the upper floors were used for kindergarten functions, and the basement is shared by the youth of the congregation and the kindergarten. We retained the original appearance of the building, adding the necessary additions with contemporary elements, but with restraint that matched the function of the building and the environment.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi\n' + '\n' + 'Budapest, VII.\n' + '\n' + '2017'],
-        en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz\n' + '\n' + 'Budapest\n' + '\n' + '2017']
+      architects: {
+        hu: 'Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi',
+        en: 'Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz'
+      },
+      location: {
+        hu: 'Budapest VII. ker.',
+        en: 'Budapest 7th district'
+      },
+      year: {
+        hu: '2017',
+        en: '2017'
       },
       images: imageMap['csipkebokor-kindergarten']
     },
@@ -256,14 +322,21 @@ export class ProjectService {
         hu: ['Az épület tervezését és megvalósítását a tanuszoda-program keretében, a Kerex Kft.-vel közösen, pályázati úton nyertük el. Komoly kihívást jelentett, hogy a terület Bicske legmélyebben fekvő, mocsaras területe, melyet sokáig szemétlerakónak is használtak.',
         'Az épület tervezésénél – környezetrendezési terv hiányában - környezetének hosszú távú kialakítását is végig kellett gondolnunk. A rendelkezésre álló anyagiak minimál megoldásokat követeltek, amelyeket maximálisan igyekeztünk az épület előnyére fordítani. A belső térben a fényes és matt fehér felületek uralkodnak, melyet a medencék kékje, a pezsgőmedencék zöldje és az fa elemek ellenpontoznak.',
         'Az uszoda 2009. augusztus 20-tól áll a közönség rendelkezésére. 2015-ben a megnövekedett igények kiszolgálására az uszoda kibővítését terveztük, mely a meglévő medencéket kiegészítő strandot, új öltözőblokkokat és vízilabda medencét foglalt magában.'],
-        en: ['\n' +
-        'The design and construction of the building were carried out within the framework of the school swimming pool program, in cooperation with Kerex Ltd, which was awarded through a tender. A major challenge was that the site is the deepest, swampiest area of Bicske, which was also used as a landfill for a long time.',
+        en: ['The design and construction of the building were carried out within the framework of the school swimming pool program, in cooperation with Kerex Ltd, which was awarded through a tender. A major challenge was that the site is the deepest, swampiest area of Bicske, which was also used as a landfill for a long time.',
         'In the absence of an environmental plan, the design of the building also had to take into account the long-term development of its surroundings. The availability of funds required minimal solutions, which we tried to maximize to the benefit of the building. The interior is dominated by glossy and matt-white finishes, contrasted by the blue of the pools, the green of the hot tubs and the wooden elements.',
         'The swimming pool has been open to the public since 20 August 2009. In 2015, to cope with increased demand, we planned an extension to the pool, including a beach to complement the existing pools, new changing blocks and a water polo pool.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' + '\n' + 'Bicske\n' + '\n' + '2009'],
-        en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Bicske\n' + '\n' + '2009']
+      architects: {
+        hu: 'Berzsák Zoltán, Mravik Csaba, Konyha Katalin',
+        en: 'Zoltán Berzsák, Csaba Mravik, Katalin Konyha'
+      },
+      location: {
+        hu: 'Bicske',
+        en: 'Bicske'
+      },
+      year: {
+        hu: '2009',
+        en: '2009'
       },
       images: imageMap['bicske-swimming-facility']
     },
@@ -291,11 +364,21 @@ export class ProjectService {
         en: ['The building, which is an extension of the Mayor\'s Office designed by Gábor Preisich, stands in the park of the neighboring Fuchs Castle, embraced by the trees there. The building forms a transition between the castle park and the lean modernist block.',
         'The restaurant opens up to the park both visually and physically, becoming a part of it. The constantly changing colour and quality of the copper is connected to the brick-clad mass of the Office as a living tissue. The building is part of the renewal concept of the main square and its surroundings. In 2011, the building was exhibited in Brussels as part of the “European Copper in Architecture Award 15”.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Mravik Csaba, Tóth Balázs, Bálint Sándor\n' + '\n' + 'Budapest, XVII.\n' + '\n' + '2009',
-        'Hajdú József fotói'],
-        en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha, Balázs Tóth, Sándor Bálint\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2009',
-        'Photographs of József Hajdú']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Mravik Csaba, Tóth Balázs, Bálint Sándor',
+        en: 'Zoltán Berzsák, Csaba Mravik, Katalin Konyha, Balázs Tóth, Sándor Bálint'
+      },
+      location: {
+        hu: 'Budapest, XVII. ker.',
+        en: 'Budapest, 17th district'
+      },
+      year: {
+        hu: '2009',
+        en: '2009'
+      },
+      photographers: {
+        hu: 'Hajdú József',
+        en: 'József Hajdú'
       },
       images: imageMap['keresztur-restaurant-office']
     },
@@ -323,9 +406,17 @@ export class ProjectService {
         'A parkszerű környezetbe illesztett épület védett belső udvart ölel körül. A terepadottságait kihasználva a az utcáról megközalíthető felső szinten a templom és a lelkészi hivatal terei, a kert szintjén a gyülekezeti élet terei kaptak helyet. A szinteket átnyitott, szellős fénnyel teli terek teszik otthonossá.'],
         en: ['']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Balogh Eszter, Eperjesi Blanka, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya\n' + '\n' + 'Budapest, II. ker.\n' + '\n' + '2023- (építés alatt)'],
-        en: ['Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák\n' + '\n' + 'Budapest, 2nd district.\n' + '\n' + '2023- (under construction)']
+      architects: {
+        hu: 'Berzsák Zoltán, Balogh Eszter, Eperjesi Blanka, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya',
+        en: 'Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák'
+      },
+      location: {
+        hu: 'Budapest, II. ker.',
+        en: 'Budapest, 2nd district'
+      },
+      year: {
+        hu: '2023- (építés alatt)',
+        en: '2023- (under construction)'
       },
       images: imageMap['pesthidegkut-church']
     },
@@ -351,9 +442,17 @@ export class ProjectService {
         hu: ['A XVII. kerület egyik új lakóparkjában épült fel ez a három foglalkoztatós új óvoda. Az épület kialakítását nagyban meghatározta a rendelkezésre álló minimális költségvetés, melyet maximálisan a gyerekek javára igyekeztünk fordítani. Az épületbe a szűkös keretek ellenére is több megújuló, illetve korszerű, energiatakarékos rendszert integráltunk.'],
         en: ['This new nursery school with three places of work was built in a new residential area in the XVII district. The design of the building was largely determined by the minimum budget available, which we tried to maximize for the benefit of the children. Despite the limited space available, we integrated a number of renewable and modern energy-saving systems.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Mravik Csaba\n' + '\n' + 'Budapest, XVII. ker.\n' + '\n' + '2009'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Csaba Mravik\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2009']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Mravik Csaba',
+        en: 'Zoltán Berzsák, Katalin Konyha, Csaba Mravik'
+      },
+      location: {
+        hu: 'Budapest, XVII. ker.',
+        en: 'Budapest, 17th district'
+      },
+      year: {
+        hu: '2009',
+        en: '2009'
       },
       images: imageMap['hetszinvirag-kindergarten']
     },
@@ -381,11 +480,21 @@ export class ProjectService {
         en: ['The last renovation of Aladár Árkay\'s magnificent Reformed church, built in 1913, took place in the 1980s. After years of serious preparation, the current comprehensive renovation of the building was carried out in several stages. In accordance with the development concept formulated by the building committee, the garden of the building was completed in 2012 according to our plans. The first step in the current renovation was the restoration of the exterior of the church, which was carried out according to the plans of Grafit Studio. In addition to the restoration of the interior of the church, our office prepared plans for the necessary community functions, the conversion of the apartments, and the modernization of the entire building.',
         'In addition to the meticulous restoration of the church interior, modern lighting, the installation of audiovisual equipment, the integration of new heating and cooling systems, the restoration of the original spatial layout, and the necessary functional alterations and additions were completed. We planned all this so that these changes would blend into this masterpiece. The other spaces in the building needed to be rearranged to create new community spaces, which are connected by a new winter garden for community use.']
       },
-      additionalInfo: {
-        hu: ['Belső tér és kert: Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Gerák Miklós\n' + '\n' + 'Külső: Grafit Építész Műterem Kft.\n' + '\n' + 'Budapest, VII. ker.\n' + '\n' + '2024',
-        'Hajdú József fotói'],
-        en: ['Interior and garden: Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Miklós Gerák\n' + '\n' + 'Exterior renovation: Grafit Ltd.\n' + '\n' + 'Budapest, VII. district.\n' + '\n' + '2024',
-        'Photos by József Hajdú']
+      architects: {
+        hu: 'Belső tér és kert: Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Gerák Miklós\nKülső: Grafit Építész Műterem Kft.',
+        en: 'Interior and garden: Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Miklós Gerák\nExterior renovation: Grafit Ltd.'
+      },
+      location: {
+        hu: 'Budapest, VII. ker.',
+        en: 'Budapest, 7th district'
+      },
+      year: {
+        hu: '2024',
+        en: '2024'
+      },
+      photographers: {
+        hu: 'Hajdú József',
+        en: 'József Hajdú'
       },
       images: imageMap['fasor-church']
     },
@@ -411,9 +520,17 @@ export class ProjectService {
         hu: ['Több generációs család számára terveztük egy remek kilátással rendelkező telekre ezt a kísérletező családi házat. Az épület közös terei a összefogják egymással, a hozzájuk kapcsolódó önállóan is egységes lakóblokkok szeparálják egymástól a család tagjainak életét. A telek lejtését kihasználva az alsó szinten kaptak helyet a kiszolgáló helyiségek, a felső szintről élvezhető a panoráma, ugyanakkor a lejtésviszonyokat kihasználva intim kertkapcsolattal is rendelkezik valamennyi közös tés és lakóegység. Időtálló, visszafogott anyaghasználat és tömegképzés, árnyékoló szereppel és átmeneti térként is funkcionáló fedett teraszok fűzik egységessé az épület tömegét.'],
         en: ['We designed this experimental family house for a multi-generational family on a plot with a great view. The common spaces of the building unite each other, while the independently unified residential blocks connected to them separate the lives of the family members from each other. Taking advantage of the slope of the plot, the service rooms were located on the lower level, the panorama can be enjoyed from the upper level, and at the same time, taking advantage of the slope conditions, all common areas and residential units have an intimate garden connection. Timeless, restrained use of materials and massing, covered terraces that also function as shading and transitional spaces, unify the mass of the building.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Szvák Dorottya\n' + '\n' + 'Budapest, XI. ker.\n' + '\n' + '2023'],
-        en: ['Zoltán Berzsák, Dorottya Szvák\n' + '\n' + 'Budapest, 11th district.\n' + '\n' + '2023']
+      architects: {
+        hu: 'Berzsák Zoltán, Szvák Dorottya',
+        en: 'Zoltán Berzsák, Dorottya Szvák'
+      },
+      location: {
+        hu: 'Budapest, XI. ker.',
+        en: 'Budapest, 11th district'
+      },
+      year: {
+        hu: '2023',
+        en: '2023'
       },
       images: imageMap['family-house-3']
     },
@@ -441,9 +558,17 @@ export class ProjectService {
         en: ['The “granarium”, built in the 1720s during the Baroque reconstruction of the Tihany Abbey by the order of the abbots of Grasso Villebrand and Lécs Ágoston during the period of the Tihany Abbey’s reconstruction, has a long historical past despite its simple function as a manorial granary. The industrial building of the time was made with high ceilings and thick walls, and the large quantities of grain were stored in wooden structures and thickly supported wooden ceilings. The surviving elements of the building include the Baroque roof structure, the squat walls, the cornice, and the characteristic small openings.',
         'After the nationalization after World War II, its fate seemed to be sealed. In the 1960s, however, in order to save the dilapidated building, it was converted into a cinema according to the very demanding plans of Ferenc Callmeyer and Dr. Kálmán Tóth. New ceilings and related extensions were made to the building, which was transformed beyond recognition in the following decades. In connection with the large-scale transformation of the abbey\'s surroundings, we developed the building into a cultural and tourist center serving as a backdrop for events. In addition to the historic renovation of the building, we designed a wooden ceiling in the interior reminiscent of the granaries of the time and a transportation system installed as furniture in the space.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Szvák Dorottya, Rácz Noémi\n' + '\n' + 'Együttműködés: Szakra Stúdió Kft.\n' + '\n' + 'Tihany\n' + '\n' + '2018'],
-        en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Dorottya Szvák, Noémi Rácz\n' + '\n' + 'Collaboration: Szakra Studio Ltd.\n' + '\n' + 'Tihany\n' + '\n' + '2018']
+      architects: {
+        hu: 'Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Szvák Dorottya, Rácz Noémi\nEgyüttműködés: Szakra Stúdió Kft.',
+        en: 'Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Dorottya Szvák, Noémi Rácz\nCollaboration: Szakra Studio Ltd.'
+      },
+      location: {
+        hu: 'Tihany',
+        en: 'Tihany'
+      },
+      year: {
+        hu: '2018',
+        en: '2018'
       },
       images: imageMap['tihany-granary']
     },
@@ -469,9 +594,17 @@ export class ProjectService {
         hu: ['Kedves, igényes régi megrendelők új háza. Remek adottságú telek. Erős lejtés, gyönyörű kilátással. Érkezés a felső szinten - az emeleten, lakószinten a panorámára nyíló galériára. Alatta helyezkedik el a nappali blokk teljes kertkapcsolattal. A két, egymásra merőleges, oromfalas épülettömeg a terepre illeszkedik, a pala és kőburkolatok'],
         en: ['A new house for a nice, demanding old client. A plot with great features. A steep slope, with a beautiful view. Arrival on the upper level - on the first floor, on the residential level, to the gallery opening onto the panorama. Below is the living block with full garden access. The two, perpendicular, gabled building masses fit into the terrain, the slate and stone coverings']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Rácz Noémi\n' + '\n' + 'Veresegyház\n' + '\n' + '2016'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Noémi Rácz\n' + '\n' + 'Veresegyház\n' + '\n' + '2016']
+      architects: {
+        hu: 'Berzsák Zoltán, Konyha Katalin, Rácz Noémi',
+        en: 'Zoltán Berzsák, Katalin Konyha, Noémi Rácz'
+      },
+      location: {
+        hu: 'Veresegyház',
+        en: 'Veresegyház'
+      },
+      year: {
+        hu: '2016',
+        en: '2016'
       },
       images: imageMap['family-house-2']
     },
@@ -497,9 +630,17 @@ export class ProjectService {
         hu: ['Gyönyörű természeti környezet. Erdő, domboldal, sűrű növényzet, jó levegő. A nagy család jelen- és jövőbeni életének kerete. Az épület kialakítása magában hordozza a gyermekek és szülők folyamatos változó közös és külön életterének kialakítási lehetőségét. Egyszerű tömegével, kialakításával belesímul a tájba. Az átmeneti terek biztosítják a közvetlen környezeti kapcsolatot.'],
         en: ['Beautiful natural surroundings. Forest, hillsides, dense vegetation, fresh air. The framework for the present and future life of a large family. The design of the building allows for the continuous transformation of the shared and separate living spaces of children and parents. Its simple mass and design blend into the landscape. Transitional spaces ensure direct contact with the environment.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Berzsák Barna, Szvák Dorottya\n' + '\n' + 'Pilisszentlászló\n' + '\n' + '2023'],
-        en: ['Zoltán Berzsák, Barna Berzsák, Dorottya Szvák\n' + '\n' + 'Pilisszentlászló\n' + '\n' + '2023']
+      architects: {
+        hu: 'Berzsák Zoltán, Berzsák Barna, Szvák Dorottya',
+        en: 'Zoltán Berzsák, Barna Berzsák, Dorottya Szvák'
+      },
+      location: {
+        hu: 'Pilisszentlászló',
+        en: 'Pilisszentlászló'
+      },
+      year: {
+        hu: '2023',
+        en: '2023'
       },
       images: imageMap['family-house-1']
     },
@@ -530,9 +671,17 @@ export class ProjectService {
           'Life and death – blessing and curse. This chapel accompanies man\'s earthly journey from birth through baptism, marriage, family and church celebrations to earthly death. Is this the end? The 14th station? Our project plan seeks to answer this question that preoccupies us all. Two materials – local stone, the material of the former wine press house, symbolizes eternity, while iron, the door of the former cellar, appears strong but is consumed by time. The introduction follows the path of God who became man. Under the symbolic bell tower, we can enter the building between the family tomb, which will be created from the existing cellar, and the chapel. The simple chapel, reminiscent of a wine press house, turns away from the axis of the cellar. Upon entering the building, the tomb is on the left and the chapel is on the right, which opens up towards the lake opposite the sanctuary. Outside, an iron cross proclaims the resurrection of Jesus Christ.',
           '"Jesus said to her, \'I am the resurrection and the life. He who believes in me will live, even though he dies; and whoever lives and believes in me will never die. Do you believe this?\'" (John 11:25-26)']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya, Berzsák Bulcsú\n' + '\n' + 'Pécsely\n' + '\n' + '2025'],
-        en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák, Berzák Bulcsú\n' + '\n' + 'Pécsely\n' + '\n' + '2025']
+      architects: {
+        hu: 'Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya, Berzsák Bulcsú',
+        en: 'Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák, Bulcsú Berzsák'
+      },
+      location: {
+        hu: 'Pécsely',
+        en: 'Pécsely'
+      },
+      year: {
+        hu: '2025',
+        en: '2025'
       },
       images: imageMap['pecsely-chapel']
     },
@@ -560,9 +709,17 @@ export class ProjectService {
         en: ['A single-storey family house designed for a young extended family. The central living room opens out into a shared sleeping block for the children and a residence for the parents. Everyone can join in on the shared spaces, but there is also the option of retreat. Its simple mass is given by the truncated gabled building with a square floor plan. Transitional spaces run between the exterior and the interior.',
           'The building\'s restraint, combined with its persistent attention to detail, creates a delicate, intimate atmosphere. This requires the honest work and cooperation of all participants, who are attentive to and accepting of each other.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Csintalan Csongor, Rácz Noémi\n' + '\n' + 'Diósd\n' + '\n' + '2018'],
-        en: ['Zoltán Berzsák, Csongor Csintalan, Noémi Rácz\n' + '\n' + 'Diósd\n' + '\n' + '2018']
+      architects: {
+        hu: 'Berzsák Zoltán, Csintalan Csongor, Rácz Noémi',
+        en: 'Zoltán Berzsák, Csongor Csintalan, Noémi Rácz'
+      },
+      location: {
+        hu: 'Diósd',
+        en: 'Diósd'
+      },
+      year: {
+        hu: '2018',
+        en: '2018'
       },
       images: imageMap['family-house-4']
     },
@@ -590,9 +747,17 @@ export class ProjectService {
         en: ['The Reformed church, built in 1745, stands on the main square of Gödöllő, around which not only the square but also the center of the congregation has developed. Part of the center is the Reformed Lyceum, one of the most successful high schools in Hungary. Built in 1927 and expanded in detail, the building no longer meets the requirements of quality education, and its development has become indispensable. Community spaces – a large hall, an auditorium, a dining hall, a gym, specialist classrooms, and an increase in the number of group rooms – need to be created, and the existing old parts of the building and the courtyard need to be renovated.',
         'The expansion will take place in several phases in a new building complex on the site of the parish in the courtyard. The old and new wings of the building will be connected. The small-scale, friendly spaces will remain, complemented by new, large-capacity, transparent, youthful, reconfigurable community spaces. The face of the building complex is the church. For this reason, the new building has been set back from the main square. A new main entrance will be created between the church and the new building parallel to it, which we have covered with a gabled roof characteristic of the environment. We have provided the Drapp-colored brick-clad building with framed windows, which also reduce its visual mass.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Zacher Eszter, Nyikos László, Tóth Balázs\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (építés alatt)'],
-        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Eszter Zacher, László Nyikos, Balázs Tóth\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (under construction)']
+      architects: {
+        hu: 'Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Zacher Eszter, Nyikos László, Tóth Balázs',
+        en: 'Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Eszter Zacher, László Nyikos, Balázs Tóth'
+      },
+      location: {
+        hu: 'Gödöllő',
+        en: 'Gödöllő'
+      },
+      year: {
+        hu: '2021- (építés alatt)',
+        en: '2021- (under construction)'
       },
       images: imageMap['godollo-lyceum']
     },
@@ -618,9 +783,17 @@ export class ProjectService {
         hu: ['A sokoldalú képzést nyújtó középiskola egy átalakított laktanyaépületben kapott helyet, melyen osztozik egy másik gimnáziummal. Bejárati szintje az első emelet magasságában van, nincs közösségi tere, ebédlője, konyhája, de tornaterme sem. Az épület bővítését egy nagy méretű aula térrel terveztük, mely a jelenleg kihasználatlan, terveink szerint parkosított zöld terület felől, azzal szintben nyílik meg. Ez a tér az épület központi tere; bejárat, közlekedési elosztótér, ebédlő egyaránt. Egy lépcsős lelátóval kapcsolódik az oktatási szinthez és közvetlenül az új főzőkonyhához és tornateremhez. Építészeti megjelenésével a park túloldalán lévő kortárs gimnáziumépülethez kapcsolódtunk.'],
         en: ['The versatile secondary school is located in a converted barracks building, which it shares with another high school. Its entrance level is at the height of the first floor, and it does not have a community space, dining room, kitchen, or gym. We designed the expansion of the building with a large auditorium space, which opens from the currently unused green area, which we plan to landscape, at the same level. This space is the central space of the building; entrance, traffic distribution area, and dining room. It is connected to the educational level and directly to the new kitchen and gym by a stepped platform. With its architectural appearance, we connected it to the contemporary high school building on the other side of the park.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Szvák Dorottya, Zacher Eszter, Tóth Balázs, Zacher Viktor\n' + '\n' + 'Vác\n' + '\n' + '2022- (építés alatt)'],
-        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Dorottya Szvák, Eszter Zacher, Balázs Tóth, Viktor Zacher\n' + '\n' + 'Vác\n' + '\n' + '2022- (under construction)']
+      architects: {
+        hu: 'Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Szvák Dorottya, Zacher Eszter, Tóth Balázs, Zacher Viktor',
+        en: 'Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Dorottya Szvák, Eszter Zacher, Balázs Tóth, Viktor Zacher'
+      },
+      location: {
+        hu: 'Vác',
+        en: 'Vác'
+      },
+      year: {
+        hu: '2022- (építés alatt)',
+        en: '2022- (under construction)'
       },
       images: imageMap['vac-high-school']
     },
@@ -648,9 +821,17 @@ export class ProjectService {
         en: ['The only swimming pool in Rákosmente was built in 1986, based on a Soviet-style design. Due to its size, it is only suitable for swimming lessons. On behalf of the Rákosmente Municipality, we prepared a concept plan showing the direction and possibilities of the development of the swimming pool and beach.',
           'A new swimming pool area will be built next to the existing swimming pool building, which will be suitable for providing leisure and competitive sports, swimming lessons and relaxation opportunities at the same time. A beach will be built in the "embrace" of the building, and the building complex will have a common main entrance and service block.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka\n' + '\n' + 'Budapest, XVII.\n' + '\n' + '2023'],
-        en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2023']
+      architects: {
+        hu: 'Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka',
+        en: 'Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi'
+      },
+      location: {
+        hu: 'Budapest, XVII. ker.',
+        en: 'Budapest, 17th district'
+      },
+      year: {
+        hu: '2023',
+        en: '2023'
       },
       images: imageMap['ujlak-swimming-facility']
     },
@@ -676,9 +857,17 @@ export class ProjectService {
         hu: ['Közép-kelet Európa egyik vezető geofizikai vállalata úgy döntött, sokszínű szolgáltatásainak helyet adó telephelyeit egy központban egyesíti. Az irodaház ezeknek az eltérő funkcióknak ad teret. A földszinten a terepmunkák kiszolgálására és kiértékelésére szolgáló laborok és műhelyek, míg az emeleten az irodák, tárgyalók, közösségi helyiségek találhatók. Az épület tömegét a funkcionalizmus határozza meg. Az egyszerű tömeg egyetlen kiegészítője az emeleti acél szerkezetű, perforált burkolatú erkély, mely egyszerre tölti be az árnyékolás és az irodák teraszainak, köztes tereinek funkcióját és az épület megjelenésének karakteres elemeként is szolgál.'],
         en: ['One of Central and Eastern Europe\'s leading geophysical companies decided to consolidate its diverse services into a single location. The office building provides space for these different functions. The ground floor houses laboratories and workshops for fieldwork and evaluation, while the upper floors contain offices, meeting rooms, and common areas. The building\'s mass is defined by functionalism. The only addition to the simple mass is the steel-framed, perforated balcony on the upper floor, which serves as both a shade and a terrace for the offices and intermediate spaces, as well as a distinctive element of the building\'s appearance.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Szvák Dorottya\n' + '\n' + 'Budapest, XIV. ker\n' + '\n' + '2025'],
-        en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Dorottya Szvák\n' + '\n' + 'Budapest, 14th district\n' + '\n' + '2025']
+      architects: {
+        hu: 'Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Szvák Dorottya',
+        en: 'Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Dorottya Szvák'
+      },
+      location: {
+        hu: 'Budapest, XIV. ker.',
+        en: 'Budapest, 14th district'
+      },
+      year: {
+        hu: '2025',
+        en: '2025'
       },
       images: imageMap['geo-log-office']
     },
@@ -708,9 +897,17 @@ export class ProjectService {
         'On the corner lot, the elliptical building is elevated from the street level with an entrance from the public square cut out of the ellipse, facing the busier road. The hard, protective (egg) shell that borders the building is counterpointed by a soft, airy, inviting wooden structure and open-fronted lamellar façade that forms the church space and connects it to the congregation building.',
         'Inside, the structure recalls the old coffered-ceiling churches. The space is designed with natural lighting changes with the sun, the light creates a special atmosphere in the space, evoking the biblical "tabernacle" atmosphere.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' +  '\n' + 'Budapest\n' + '\n' + '2010'],
-        en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Budapest\n' + '\n' + '2010']
+      architects: {
+        hu: 'Berzsák Zoltán, Mravik Csaba, Konyha Katalin',
+        en: 'Zoltán Berzsák, Csaba Mravik, Katalin Konyha'
+      },
+      location: {
+        hu: 'Budapest.',
+        en: 'Budapest'
+      },
+      year: {
+        hu: '2010',
+        en: '2010'
       },
       images: imageMap['albertfalva-church']
     },
@@ -752,9 +949,17 @@ export class ProjectService {
         '...',
         'Now there is theatre. A theatre building: a paradox of constants and variables. We are the son and daughter of the dwarf king. Build us walls of fog. A grand concept. Linking the building and the undignified urban park. The park is the foreground of the theatre, so we decided to demolish the existing buildings with poor condition and structure. The park runs into the lobby of the building, blurring the boundary between the two worlds. This is reinforced by the building\'s cube-shaped form, dominated by a single material - copper - whose use of mesh, openwork and solids creates separate layers. The side facade of the building is placed on the urban axis. A large projection screen allows the pedestrian promenade to enter into the life of the cultural center.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Mravik Csaba, Egri Balázs, Mátis Barna\n' + '\n' + 'Együttműködés: Mátis és Egri Kft.\n' + '\n' + 'Szombathely\n' + '\n' + '2008'],
-        en: ['Zoltán Berzsák, Csaba Mravik, Balázs Egri, Barna Mátis\n' + '\n' + 'Szombathely\n' + '\n' + '2008']
+      architects: {
+        hu: 'Berzsák Zoltán, Mravik Csaba, Egri Balázs, Mátis Barna\nEgyüttműködés: Mátis és Egri Kft.',
+        en: 'Zoltán Berzsák, Csaba Mravik, Balázs Egri, Barna Mátis\nCollaboration: Mátis és Egri Ltd.'
+      },
+      location: {
+        hu: 'Szombathely',
+        en: 'Szombathely'
+      },
+      year: {
+        hu: '2008',
+        en: '2008'
       },
       images: imageMap['weores-sandor-theatre']
     },
@@ -782,11 +987,21 @@ export class ProjectService {
         en: ['The \'Csacsiház\' once stood in the center of Rákospalota. It got its name from its former function, a soda factory opening onto two streets, where donkey carts lined up one after another in the 120-meter-long, 23-meter-wide courtyard to pick up their goods. Later, the building was converted into emergency housing, whose residents posed an increasing threat to the safety of the neighborhood. In keeping with the unique characteristics of this location, we developed a 60-unit condominium complex, primarily for young people starting out on their own.',
         'The residential blocks, which are connected by a corridor running along the adjacent firewall, are interspersed with small green courtyards. An underground parking garage was built. The ground floor, in the wings connecting the buildings on the two streets, houses a doctor\'s office, a shop, and a café. The exposed concrete elements have been given different textures on each floor; on the ground floor, snails, on the upper floor, branches, then leaves and wavy lines symbolizing the sky break up the monotony of the concrete.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi, Tóth Balázs\n' + '\n' + 'Budapest, XV. ker.\n' + '\n' + '2021',
-        'Grabarics Development Kft. fotói'],
-        en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz, Balázs Tóth\n' + '\n' + 'Budapest, 15th district.\n' + '\n' + '2021',
-        'Photos of Grabarics Development Ltd.']
+      architects: {
+        hu: 'Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi, Tóth Balázs',
+        en: 'Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz, Balázs Tóth'
+      },
+      location: {
+        hu: 'Budapest, XV. ker.',
+        en: 'Budapest, 15th district'
+      },
+      year: {
+        hu: '2021',
+        en: '2021'
+      },
+      photographers: {
+        hu: 'Grabarics Development Kft.',
+        en: 'Grabarics Development Ltd.'
       },
       images: imageMap['hubay-garden']
     },
@@ -812,9 +1027,17 @@ export class ProjectService {
         hu: ['Az épület különlegessége az oldalhatáros beépítésre adott egyedi válasz. A síkban egy vonalat követő homlokzati felületek térben eltolódnak. A mozgást a puha kitöltések jelzik.'],
         en: ['The building\'s special feature is its unique response to the side-bounded construction. The facade surfaces, which follow a line in the plane, shift in space. The movement is indicated by the soft fillings.']
       },
-      additionalInfo: {
-        hu: ['Berzsák Zoltán, Mravik Csaba, Sztojka Gábor\n' + '\n' + 'Veszprém\n' + '\n' + '2005'],
-        en: ['Zoltán Berzsák, Csaba Mravik, Gábor Sztojka\n' + '\n' + 'Veszprém\n' + '\n' + '2005']
+      architects: {
+        hu: 'Berzsák Zoltán, Mravik Csaba, Sztojka Gábor',
+        en: 'Zoltán Berzsák, Csaba Mravik, Gábor Sztojka'
+      },
+      location: {
+        hu: 'Veszprém',
+        en: 'Veszprém'
+      },
+      year: {
+        hu: '2005',
+        en: '2005'
       },
       images: imageMap['family-house-5']
     }
