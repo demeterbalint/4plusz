@@ -116,7 +116,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Pesthidegkúti Református Templom és Gyülekezeti Központ',
-      en: 'Pesthidegkút Reformed Church and Community Center'
+      en: 'Pesthidegkút Reformed Church and Congregation Center'
     },
     location: 'Budapest',
     year: '2023-',
@@ -276,7 +276,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Budaörsi Református Templom és Gyülekezeti Központ',
-      en: 'Budaörs Reformed Church and Community Center'
+      en: 'Budaörs Reformed Church and Congregation Center'
     },
     location: 'Budaörs',
     year: '2019',
@@ -356,7 +356,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
   {
     name: {
       hu: 'Csömöri Református Templom és Gyülekezeti Otthon',
-      en: 'Csömör Reformed Church and Community Home'
+      en: 'Csömör Reformed Church and Congregation Home'
     },
     location: 'Csömör',
     year: '2018',

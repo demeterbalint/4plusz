@@ -33,7 +33,7 @@ export class ProjectService {
         hu: ['A város főutcájában, az evangélikus templom szomszédságában épült meg a reformátusok új temploma, mely egyben a közösség otthona is. A transzparens épület a hívogatást, nyitottságot hirdeti. Tornya az evangélikus templom tornyával megegyező magasságú. Fehér színe a tisztaságot, az egyszerűséget jelképezi, alkalmazkodik református hagyományainkhoz.',
           'A homlokzaton megjelenő perforált szőlőinda minta megidézi a gyülekezet vezérigéjét, egybeszövi a homlokzatot és a tornyot. Az épület utcai traktusa egy nagyméretű előtér, mely egyben kávézó, teázó, a találkozás, a kapcsolatfelvétel helye, nyitás az utca embere felé. Innét érhetők el a földszint és az emelet különböző közösségi helyiségei, illetve a templomtér. Az épület a hagyományt nem pusztán formai elemek továbbvitelében, hanem a közös gyökerek mai értelmezésében, tiszteletében igyekszik folytatni.'],
         en: ['The new Reformed church, which also serves as the community center, was built on the town\'s main street, next to the Lutheran church. The transparent building proclaims openness and invitation. Its tower is the same height as the tower of the Lutheran church. Its white color symbolizes purity and simplicity, in keeping with our Reformed traditions.',
-        'The perforated grapevine pattern on the façade evokes the congregation\'s motto, weaving together the façade and the tower. The street side of the building features a large foyer, which also serves as a café and tea room, a place for meeting and socializing, opening up to the people on the street. From here, you can access the various community rooms on the ground floor and first floor, as well as the church hall. The building seeks to continue tradition not only in the continuation of formal elements, but also in the contemporary interpretation and respect of common roots.']
+        'The perforated grapevine pattern on the facade evokes the congregation\'s motto, weaving together the façade and the tower. The street side of the building features a large foyer, which also serves as a café and tea room, a place for meeting and socializing, opening up to the people on the street. From here, you can access the various community rooms on the ground floor and first floor, as well as the church hall. The building seeks to continue tradition not only in the continuation of formal elements, but also in the contemporary interpretation and respect of common roots.']
       },
       additionalInfo: {
         hu: ['Berzsák Zoltán, Konyha Katalin, Szvák Dorottya, Rácz Noémi, Csintalan Csongor\n' + '\n' + 'Budaörs\n' + '\n' + '2019',
@@ -307,7 +307,7 @@ export class ProjectService {
       },
       gridShort: {
         hu: 'Pesthidegkúti Református Templom és Gyülekezeti Központ',
-        en: 'Pesthidegkút Reformed Church and Community Center'
+        en: 'Pesthidegkút Reformed Church and Congregation Center'
       },
       shortDescription: {
         hu: 'Pesthidegkúti Református Templom és Gyülekezeti Központ',
