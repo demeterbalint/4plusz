@@ -422,7 +422,7 @@ export const PROJECT_REFERENCE_DATA: ProjectReferenceModel[] = [
       hu: 'Családi ház',
       en: 'Family house'
     },
-    location: 'Veresegyháza',
+    location: 'Veresegyház',
     year: '2016',
     category: {
       hu: 'Lakó',

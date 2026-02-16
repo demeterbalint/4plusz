@@ -74,7 +74,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Katalin Konyha, Andrea Stanisewszki\n' + '\n' + 'Budapest, 4th district.\n' + '\n' + '2015',
           'Photographs of Tamás Albertszki']
       },
-      images: ['ujpest', 'ujpest-2']
+      images: imageMap['ujpest-parish-church']
     },
     {
       slug: 'kapy',
@@ -104,7 +104,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskás\n' + '\n' + 'Budapest, 2nd district.\n' + '\n' + '2025',
         'Photos of Grabarics Development Ltd.']
       },
-      images: ['kapy-1', 'kapy-2']
+      images: imageMap['kapy']
     },
     {
       slug: 'raday-house',
@@ -138,7 +138,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Katalin Konyha, Nóémi Rácz, Dorottya Szvák, Esther Zacher\n' + '\n' + 'Budapest\n' + '\n' + '2022',
         'Photographs of József Hajdú, Zsolt Hlinka and Gábor Mártonffy']
       },
-      images: ['raday-1', 'raday-2']
+      images: imageMap['raday-house']
     },
     {
       slug: 'kulso-kelenfold-church',
@@ -170,7 +170,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya\n' + '\n' + 'Budapest, XI. ker.\n' + '\n' + '2025'],
         en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskás, Dorottya Szvák\n' + '\n' + 'Budapest, 11th district.\n' + '\n' + '2024']
       },
-      images: ['kelefold-1', "kelefold-2"]
+      images: imageMap['kulso-kelenfold-church']
     },
     {
       slug: 'csomor-church',
@@ -202,7 +202,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Katalin Konyha, Noémi Rácz, Csongor Csintalan, László Nyikos\n' + '\n' + 'Csömör\n' + '\n' + '2020',
         'Photographs of József Hajdú and Tamás Füle']
       },
-      images: ['csomor-1', "csomor-2"]
+      images: imageMap['csomor-church']
     },
     {
       slug: 'csipkebokor-kindergarten',
@@ -232,7 +232,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Rácz Noémi\n' + '\n' + 'Budapest, VII.\n' + '\n' + '2017'],
         en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz\n' + '\n' + 'Budapest\n' + '\n' + '2017']
       },
-      images: ['fasor-1', 'fasor-2']
+      images: imageMap['csipkebokor-kindergarten']
     },
     {
       slug: 'bicske-swimming-facility',
@@ -265,7 +265,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' + '\n' + 'Bicske\n' + '\n' + '2009'],
         en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Bicske\n' + '\n' + '2009']
       },
-      images: ['bicske-1', 'bicske-2']
+      images: imageMap['bicske-swimming-facility']
     },
     {
       slug: 'keresztur-restaurant-office',
@@ -297,7 +297,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha, Balázs Tóth, Sándor Bálint\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2009',
         'Photographs of József Hajdú']
       },
-      images: ['copperhouse-1', 'copperhouse-2']
+      images: imageMap['keresztur-restaurant-office']
     },
     {
       slug: 'pesthidegkut-church',
@@ -327,7 +327,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Balogh Eszter, Eperjesi Blanka, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya\n' + '\n' + 'Budapest, II. ker.\n' + '\n' + '2023- (építés alatt)'],
         en: ['Zoltán Berzsák, Eszter Balogh, Blanka Eperjesi, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák\n' + '\n' + 'Budapest, 2nd district.\n' + '\n' + '2023- (under construction)']
       },
-      images: ['pesthidegkut-1', 'pesthidegkut-2']
+      images: imageMap['pesthidegkut-church']
     },
     {
       slug: 'hetszinvirag-kindergarten',
@@ -355,7 +355,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Konyha Katalin, Mravik Csaba\n' + '\n' + 'Budapest, XVII. ker.\n' + '\n' + '2009'],
         en: ['Zoltán Berzsák, Katalin Konyha, Csaba Mravik\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2009']
       },
-      images: ['hetszinvirag-1', 'hetszinvirag-2']
+      images: imageMap['hetszinvirag-kindergarten']
     },
     {
       slug: 'fasor-church',
@@ -387,7 +387,7 @@ export class ProjectService {
         en: ['Interior and garden: Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Miklós Gerák\n' + '\n' + 'Exterior renovation: Grafit Ltd.\n' + '\n' + 'Budapest, VII. district.\n' + '\n' + '2024',
         'Photos by József Hajdú']
       },
-      images: ['fasor-1', 'fasor-2']
+      images: imageMap['fasor-church']
     },
     {
       slug: 'family-house-3',
@@ -415,7 +415,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Szvák Dorottya\n' + '\n' + 'Budapest, XI. ker.\n' + '\n' + '2023'],
         en: ['Zoltán Berzsák, Dorottya Szvák\n' + '\n' + 'Budapest, 11th district.\n' + '\n' + '2023']
       },
-      images: ['kakukk-1', 'kakukk-2']
+      images: imageMap['family-house-3']
     },
     {
       slug: 'tihany-granary',
@@ -445,7 +445,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Csintalan Csongor, Konyha Katalin, Szvák Dorottya, Rácz Noémi\n' + '\n' + 'Együttműködés: Szakra Stúdió Kft.\n' + '\n' + 'Tihany\n' + '\n' + '2018'],
         en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Dorottya Szvák, Noémi Rácz\n' + '\n' + 'Collaboration: Szakra Studio Ltd.\n' + '\n' + 'Tihany\n' + '\n' + '2018']
       },
-      images: ['tihany-1', 'tihany-2']
+      images: imageMap['tihany-granary']
     },
     {
       slug: 'family-house-2',
@@ -459,21 +459,21 @@ export class ProjectService {
       },
       projectTypeName: {
         hu: 'Veresegyházi Családi Ház',
-        en: 'Veresegyháza Family House'
+        en: 'Veresegyház Family House'
       },
       shortDescription: {
-        hu: 'Családi ház\n' + 'Veresegyháza',
-        en: 'Family house\n' + 'Veresegyháza'
+        hu: 'Családi ház\n' + 'Veresegyház',
+        en: 'Family house\n' + 'Veresegyház'
       },
       longDescription: {
         hu: ['Kedves, igényes régi megrendelők új háza. Remek adottságú telek. Erős lejtés, gyönyörű kilátással. Érkezés a felső szinten - az emeleten, lakószinten a panorámára nyíló galériára. Alatta helyezkedik el a nappali blokk teljes kertkapcsolattal. A két, egymásra merőleges, oromfalas épülettömeg a terepre illeszkedik, a pala és kőburkolatok'],
         en: ['A new house for a nice, demanding old client. A plot with great features. A steep slope, with a beautiful view. Arrival on the upper level - on the first floor, on the residential level, to the gallery opening onto the panorama. Below is the living block with full garden access. The two, perpendicular, gabled building masses fit into the terrain, the slate and stone coverings']
       },
       additionalInfo: {
-        hu: ['Berzsák Zoltán, Konyha Katalin, Rácz Noémi\n' + '\n' + 'Veresegyháza\n' + '\n' + '2016'],
-        en: ['Zoltán Berzsák, Katalin Konyha, Noémi Rácz\n' + '\n' + 'Veresegyháza\n' + '\n' + '2016']
+        hu: ['Berzsák Zoltán, Konyha Katalin, Rácz Noémi\n' + '\n' + 'Veresegyház\n' + '\n' + '2016'],
+        en: ['Zoltán Berzsák, Katalin Konyha, Noémi Rácz\n' + '\n' + 'Veresegyház\n' + '\n' + '2016']
       },
-      images: ['veres-1', 'veers-2']
+      images: imageMap['family-house-2']
     },
     {
       slug: 'family-house-1',
@@ -501,7 +501,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Berzsák Barna, Szvák Dorottya\n' + '\n' + 'Pilisszentlászló\n' + '\n' + '2023'],
         en: ['Zoltán Berzsák, Barna Berzsák, Dorottya Szvák\n' + '\n' + 'Pilisszentlászló\n' + '\n' + '2023']
       },
-      images: ['pilis-1', 'pilis-2']
+      images: imageMap['family-house-1']
     },
     {
       slug: 'pecsely-chapel',
@@ -534,7 +534,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Puskás Levente, Szvák Dorottya, Berzsák Bulcsú\n' + '\n' + 'Pécsely\n' + '\n' + '2025'],
         en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Levente Puskas, Dorottya Szvák, Berzák Bulcsú\n' + '\n' + 'Pécsely\n' + '\n' + '2025']
       },
-      images: ['pecsely-1', 'pecsely-2']
+      images: imageMap['pecsely-chapel']
     },
     {
       slug: 'family-house-4',
@@ -564,7 +564,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Csintalan Csongor, Rácz Noémi\n' + '\n' + 'Diósd\n' + '\n' + '2018'],
         en: ['Zoltán Berzsák, Csongor Csintalan, Noémi Rácz\n' + '\n' + 'Diósd\n' + '\n' + '2018']
       },
-      images: ['diosd-1', 'diosd-2']
+      images: imageMap['family-house-4']
     },
     {
       slug: 'godollo-lyceum',
@@ -594,7 +594,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Zacher Eszter, Nyikos László, Tóth Balázs\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (építés alatt)'],
         en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Eszter Zacher, László Nyikos, Balázs Tóth\n' + '\n' + 'Gödöllő\n' + '\n' + '2021- (under construction)']
       },
-      images: ['godollo-1', 'godollo-2']
+      images: imageMap['godollo-lyceum']
     },
     {
       slug: 'vac-high-school',
@@ -622,17 +622,17 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka, Konyha Katalin, Monori-Szabó Edit, Szvák Dorottya, Zacher Eszter, Tóth Balázs, Zacher Viktor\n' + '\n' + 'Vác\n' + '\n' + '2022- (építés alatt)'],
         en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi, Katalin Konyha, Edit Monori-Szabó, Dorottya Szvák, Eszter Zacher, Balázs Tóth, Viktor Zacher\n' + '\n' + 'Vác\n' + '\n' + '2022- (under construction)']
       },
-      images: ['bernath-1', 'bernath-2']
+      images: imageMap['vac-high-school']
     },
     {
       slug: 'ujlak-swimming facility',
       name: {
         hu: 'ÚJLAK USZODA',
-        en: 'ÚJLAKI SWIMMING FACILITY'
+        en: 'ÚJLAK SWIMMING FACILITY'
       },
       gridShort: {
         hu: 'Újlak uszoda és strand fejlesztése',
-        en: 'Újlaki Swimming Facility and Beach development'
+        en: 'Újlak Swimming Facility and Beach development'
       },
       projectTypeName: {
         hu: 'Újlak Uszoda és Strand',
@@ -640,7 +640,7 @@ export class ProjectService {
       },
       shortDescription: {
         hu: 'Újlak Uszoda és Strand fejlesztése',
-        en: 'Újlaki Swimming Facility and Beach development'
+        en: 'Újlak Swimming Facility and Beach development'
       },
       longDescription: {
         hu: ['Rákosmente egyetlen uszodája 1986-ban, szovjet típusterv alapján épült. Mérete miatt kizárólag úszásoktatásra alkalmas. Rákosmente Önkormányzatának megbízásából készítettük el az uszoda és a strand fejlesztésének irányát, lehetőségét bemutató koncepciótervet.',
@@ -652,7 +652,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka\n' + '\n' + 'Budapest, XVII.\n' + '\n' + '2023'],
         en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2023']
       },
-      images: ['ujlaki-1', 'ujlaki-2']
+      images: imageMap['ujlak-swimming facility']
     },
     {
       slug: 'geo-log-office',
@@ -680,7 +680,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Balogh Eszter, Monori-Szabó Edit, Szvák Dorottya\n' + '\n' + 'Budapest, XIV. ker\n' + '\n' + '2025'],
         en: ['Zoltán Berzsák, Eszter Balogh, Edit Monori-Szabó, Dorottya Szvák\n' + '\n' + 'Budapest, 14th district\n' + '\n' + '2025']
       },
-      images: ['geo-log-1', 'geo-log-2']
+      images: imageMap['geo-log-office']
     },
     {
       slug: 'albertfalva-church',
@@ -712,7 +712,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Mravik Csaba, Konyha Katalin\n' +  '\n' + 'Budapest\n' + '\n' + '2010'],
         en: ['Zoltán Berzsák, Csaba Mravik, Katalin Konyha\n' + '\n' + 'Budapest\n' + '\n' + '2010']
       },
-      images: ['albertfalva-1', 'albertfalva-2']
+      images: imageMap['albertfalva-church']
     },
     {
       slug: 'weores-sandor-theatre',
@@ -756,7 +756,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Mravik Csaba, Egri Balázs, Mátis Barna\n' + '\n' + 'Együttműködés: Mátis és Egri Kft.\n' + '\n' + 'Szombathely\n' + '\n' + '2008'],
         en: ['Zoltán Berzsák, Csaba Mravik, Balázs Egri, Barna Mátis\n' + '\n' + 'Szombathely\n' + '\n' + '2008']
       },
-      images: ['weöres-1', 'weöres-2']
+      images: imageMap['weores-sandor-theatre']
     },
     {
       slug: 'hubay-garden',
@@ -788,7 +788,7 @@ export class ProjectService {
         en: ['Zoltán Berzsák, Csongor Csintalan, Katalin Konyha, Noémi Rácz, Balázs Tóth\n' + '\n' + 'Budapest, 15th district.\n' + '\n' + '2021',
         'Photos of Grabarics Development Ltd.']
       },
-      images: ['hubay-1', 'hubay-2']
+      images: imageMap['hubay-garden']
     },
     {
       slug: 'family-house-5',
@@ -816,7 +816,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Mravik Csaba, Sztojka Gábor\n' + '\n' + 'Veszprém\n' + '\n' + '2005'],
         en: ['Zoltán Berzsák, Csaba Mravik, Gábor Sztojka\n' + '\n' + 'Veszprém\n' + '\n' + '2005']
       },
-      images: ['veszprem-1', 'veszprem-2']
+      images: imageMap['family-house-5']
     }
   ];
 
