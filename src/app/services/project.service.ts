@@ -625,7 +625,7 @@ export class ProjectService {
       images: imageMap['vac-high-school']
     },
     {
-      slug: 'ujlak-swimming facility',
+      slug: 'ujlak-swimming-facility',
       name: {
         hu: 'ÚJLAK USZODA',
         en: 'ÚJLAK SWIMMING FACILITY'
@@ -652,7 +652,7 @@ export class ProjectService {
         hu: ['Berzsák Zoltán, Berzsák Barna, Eperjesi Blanka\n' + '\n' + 'Budapest, XVII.\n' + '\n' + '2023'],
         en: ['Zoltán Berzsák, Barna Berzsák, Blanka Eperjesi\n' + '\n' + 'Budapest, 17th district.\n' + '\n' + '2023']
       },
-      images: imageMap['ujlak-swimming facility']
+      images: imageMap['ujlak-swimming-facility']
     },
     {
       slug: 'geo-log-office',

@@ -6,11 +6,13 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HomepageComponent} from './components/homepage/homepage.component';
 import {ProjectListsComponent} from './components/project-lists/project-lists.component';
 import {ProjectReferenceWorksComponent} from './components/project-reference-works/project-reference-works.component';
+import {ProjectPageComponent} from './components/project-page/project-page.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent  },
   { path: 'studio', component: StudioComponent  },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'projects:slug', component: ProjectPageComponent },
   { path: 'projects/public-buildings', component: ProjectListsComponent, data: { category: 'public-buildings' } },
   { path: 'projects/religious-buildings', component: ProjectListsComponent, data: { category: 'religious-buildings' } },
   { path: 'projects/residental-buildings', component: ProjectListsComponent, data: { category: 'residental-buildings' }},

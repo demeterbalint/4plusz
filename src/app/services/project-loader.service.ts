@@ -111,4 +111,7 @@ export class ProjectLoaderService {
   }
 
 
+  getProjectBySlug(slug: string) {
+    return this.projectService.getProjects().find(project => project.slug === slug);
+  }
 }
