@@ -40,8 +40,8 @@ export class ProjectListsComponent implements OnInit {
       case 'religious-buildings':
         this.projects = this.projectLoader.getReligiousBuildings();
         break;
-      case 'residental-buildings':
-        this.projects = this.projectLoader.getResidentalBuildings();
+      case 'residential-buildings':
+        this.projects = this.projectLoader.getResidentialBuildings();
         break;
       case 'historical-buildings':
         this.projects = this.projectLoader.getHistoricalBuildings();

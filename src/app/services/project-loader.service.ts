@@ -50,7 +50,7 @@ export class ProjectLoaderService {
   religiousBuildingSlugs: string[] = ['fasor-church', 'budaors-church', 'csomor-church', 'raday-house', 'ujpest-parish-church', 'pesthidegkut-church',
     'kulso-kelenfold-church', 'albertfalva-church', 'pecsely-chapel']
 
-  residentalBuildingSlugs: string[] = ['kapy', 'hubay-garden', 'family-house-3', 'family-house-1', 'family-house-4', 'family-house-2', 'family-house-5']
+  residentialBuildingSlugs: string[] = ['kapy', 'hubay-garden', 'family-house-3', 'family-house-1', 'family-house-4', 'family-house-2', 'family-house-5']
 
   historicalBuildingSlugs: string[] = ['fasor-church', 'tihany-granary', 'ujpest-parish-church', 'csipkebokor-kindergarten']
 
@@ -78,13 +78,13 @@ export class ProjectLoaderService {
     }
   }
 
-  getResidentalBuildings() {
+  getResidentialBuildings() {
     return {
       title: {
         hu: 'Lakóépületek',
-        en: 'Residental\nBuildings'
+        en: 'Residential\nBuildings'
       },
-      projects: this.projectService.getProjects().filter(project => this.residentalBuildingSlugs.includes(project.slug))
+      projects: this.projectService.getProjects().filter(project => this.residentialBuildingSlugs.includes(project.slug))
     }
   }
 

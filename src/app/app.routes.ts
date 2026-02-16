@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: 'projects/:slug', component: ProjectPageComponent },
   { path: 'projects/public-buildings', component: ProjectListsComponent, data: { category: 'public-buildings' } },
   { path: 'projects/religious-buildings', component: ProjectListsComponent, data: { category: 'religious-buildings' } },
-  { path: 'projects/residental-buildings', component: ProjectListsComponent, data: { category: 'residental-buildings' }},
+  { path: 'projects/residential-buildings', component: ProjectListsComponent, data: { category: 'residential-buildings' }},
   { path: 'projects/historical-buildings', component: ProjectListsComponent, data: { category: 'historical-buildings' } },
   { path: 'projects/conceptual-designs', component: ProjectListsComponent, data: { category: 'conceptual-designs' } },
   { path: 'projects/reference-works', component: ProjectReferenceWorksComponent },
