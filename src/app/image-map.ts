@@ -163,8 +163,8 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/fasor-church/fasor-20.webp",
     "assets/buildings/fasor-church/fasor-21.webp",
     "assets/buildings/fasor-church/fasor-22.webp",
+    "assets/buildings/fasor-church/fasor-23-main.webp",
     "assets/buildings/fasor-church/fasor-grid.jpg",
-    "assets/buildings/fasor-church/fasor-main.webp",
     "assets/buildings/fasor-church/fasor-press.jpg"
 ],
   'geo-log-office': [
@@ -230,10 +230,10 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/kapy/kapy-10.webp",
     "assets/buildings/kapy/kapy-11.webp",
     "assets/buildings/kapy/kapy-12.webp",
-    "assets/buildings/kapy/kapy-13.webp",
+    "assets/buildings/kapy/kapy-13-main.webp",
     "assets/buildings/kapy/kapy-14.webp",
-    "assets/buildings/kapy/kapy-grid.jpg",
-    "assets/buildings/kapy/kapy-main.webp"
+    "assets/buildings/kapy/kapy-15.webp",
+    "assets/buildings/kapy/kapy-grid.jpg"
 ],
   'keresztur-restaurant-office': [
     "assets/buildings/keresztur-restaurant-office/copperhouse-01.webp",
@@ -290,7 +290,7 @@ export const imageMap: Record<string, string[]> = {
 ],
   'raday-house': [
     "assets/buildings/raday-house/raday-01.webp",
-    "assets/buildings/raday-house/raday-02.webp",
+    "assets/buildings/raday-house/raday-02-main.webp",
     "assets/buildings/raday-house/raday-03.webp",
     "assets/buildings/raday-house/raday-04.webp",
     "assets/buildings/raday-house/raday-05.webp",
@@ -329,9 +329,9 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/tihany-granary/tihany-09.webp",
     "assets/buildings/tihany-granary/tihany-10.webp",
     "assets/buildings/tihany-granary/tihany-11.webp",
+    "assets/buildings/tihany-granary/tihany-12-main.webp",
     "assets/buildings/tihany-granary/tihany-grid.jpg",
-    "assets/buildings/tihany-granary/tihany-historical.jpg",
-    "assets/buildings/tihany-granary/tihany-main.webp"
+    "assets/buildings/tihany-granary/tihany-historical.jpg"
 ],
   'ujlak-swimming-facility': [
     "assets/buildings/ujlak-swimming-facility/ujlak-01.webp",
@@ -373,8 +373,8 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/vac-high-school/bernath-06.webp",
     "assets/buildings/vac-high-school/bernath-07.webp",
     "assets/buildings/vac-high-school/bernath-08.webp",
-    "assets/buildings/vac-high-school/bernath-grid.jpg",
-    "assets/buildings/vac-high-school/bernath-main.webp"
+    "assets/buildings/vac-high-school/bernath-09-main.webp",
+    "assets/buildings/vac-high-school/bernath-grid.jpg"
 ],
   'weores-sandor-theatre': [
     "assets/buildings/weores-sandor-theatre/weores-01.webp",
