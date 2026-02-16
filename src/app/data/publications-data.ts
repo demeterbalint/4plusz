@@ -1,4 +1,4 @@
-import {PublicationModel} from '../models/publication--model';
+import {PublicationModel} from '../models/publication-model';
 import {imageMap} from '../image-map';
 
 export const PUBLICATIONS_DATA: PublicationModel[] = [

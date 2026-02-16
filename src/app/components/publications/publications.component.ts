@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Language, LanguageService} from '../../services/language.service';
-import {PublicationModel} from '../../models/publication--model';
+import {PublicationModel} from '../../models/publication-model';
 import {PUBLICATIONS_DATA} from '../../data/publications-data';
 import {NgForOf} from '@angular/common';
 import {imageMap} from '../../image-map';
