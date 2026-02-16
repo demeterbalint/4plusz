@@ -1,1 +1,22 @@
-<p>{{ project.name[currentLang] }}</p>
+<div class="projectpage-div">
+  <div class="pp-main-image">
+    <img [src]="mainImage" [alt]="mainImage.toString()">
+  </div>
+  <div class="pp-text-div">
+    <div class="pp-text-data">
+      <h1 class="pp-name">{{ project.shortDescription[currentLang] }}</h1>
+      <span class="pp-architects">{{ archName[currentLang] + project.architects[currentLang] }}</span>
+      <span *ngIf="project.photographers" class="pp-photos">{{ photoName[currentLang] + project.photographers[currentLang] }}</span>
+      <span class="pp-location">{{ project.location[currentLang] }}</span>
+      <span class="pp-year">{{ project.year[currentLang] }}</span>
+    </div>
+    <div class="pp-text-description">
+      <span *ngFor="let part of project.longDescription[currentLang]">{{ part }}</span>
+    </div>
+  </div>
+  <div class="pp-image-grid">
+<!--    <div class="pp-image-grid-item" *ngFor="let image of project.images">-->
+      <img *ngFor="let image of projectImages" [src]="image" [alt]="image.toString()">
+<!--    </div>-->
+  </div>
+</div>
