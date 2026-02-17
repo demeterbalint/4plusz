@@ -73,8 +73,9 @@
   color: white;
 }
 
-.home-image-arrows i {
-  opacity: 0.5;
+.home-image-arrows span {
+  font-size: 5rem;
+  opacity: 0.7;
   text-shadow: 1px 1px 10px black;
   cursor: pointer;
 }
