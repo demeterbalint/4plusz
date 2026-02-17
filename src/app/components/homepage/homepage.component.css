@@ -116,10 +116,13 @@
 .home-gallery-close {
   position: absolute;
   top: 0;
-  right: 2.5%;
+  right: 2.7rem;
+  height: 3.4rem;
+  width: 3rem;
   color: white;
   font-size: 3rem;
   cursor: pointer;
+  text-align: center;
 }
 
 .home-gallery-arrows {
@@ -133,10 +136,11 @@
 }
 
 .home-gallery-arrows span {
+  width: 4rem;
+  height: 7rem;
   font-size: 5rem;
-  opacity: 0.7;
-  text-shadow: 1px 1px 10px black;
   cursor: pointer;
+  text-align: center;
 }
 
 .home-gallery-div {
