@@ -163,8 +163,8 @@ export class ProjectService {
         'The unity of the past, present and future is symbolized by the renovation of the old parts of the building to a monument level, as well as the contemporary architectural formulation of the new parts, which are connected by the dark-colored metal sheet that falls on the building like a mantle on the pastors. On the corner of the building, which opens completely towards Markusovszky Square, the cross appears both outside and inside, in the place of the blazing fire. At the intersection of the arms of the cross, the symbol of the Reformed Church, the Star of Bethlehem, which leads to Christ.']
       },
       architects: {
-        hu: 'Berzsák Zoltán, Berzsák Barna, Csintalan Csongor, Eperjesi Blanka, Konyha Katalin, Rácz Nóémi, Szvák Dorottya, Zacher Eszter',
-        en: 'Zoltán Berzsák, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Katalin Konyha, Nóémi Rácz, Dorottya Szvák, Esther Zacher'
+        hu: 'Berzsák Zoltán, Berzsák Barna, Csintalan Csongor, Eperjesi Blanka, Konyha Katalin, Rácz Noémi, Szvák Dorottya, Zacher Eszter',
+        en: 'Zoltán Berzsák, Barna Berzsák, Csongor Csintalan, Blanka Eperjesi, Katalin Konyha, Noémi Rácz, Dorottya Szvák, Esther Zacher'
       },
       location: {
         hu: 'Budapest, IX. ker.',
