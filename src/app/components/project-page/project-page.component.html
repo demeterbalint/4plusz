@@ -6,7 +6,8 @@
     <div class="pp-text-data">
       <h1 class="pp-name">{{ project.shortDescription[currentLang] }}</h1>
       <span class="pp-architects">{{ archName[currentLang] + project.architects[currentLang] }}</span>
-      <span *ngIf="project.photographers" class="pp-photos">{{ photoName[currentLang] + project.photographers[currentLang] }}</span>
+      <span *ngIf="project.photographers"
+            class="pp-photos">{{ photoName[currentLang] + project.photographers[currentLang] }}</span>
       <span class="pp-location">{{ project.location[currentLang] }}</span>
       <span class="pp-year">{{ project.year[currentLang] }}</span>
     </div>
@@ -15,8 +16,19 @@
     </div>
   </div>
   <div class="pp-image-grid">
-<!--    <div class="pp-image-grid-item" *ngFor="let image of project.images">-->
-      <img *ngFor="let image of projectImages" [src]="image" [alt]="image.toString()">
-<!--    </div>-->
+    <div class="pp-image-grid-item" *ngFor="let image of projectImages" (click)="openGallery(projectImages.indexOf(image))">
+      <img [src]="image" [alt]="image.toString()">
+      <div class="pp-image-grid-hover"></div>
+    </div>
+  </div>
+  <div *ngIf="isGalleryOpen" class="pp-gallery">
+    <div class="pp-gallery-div">
+      <img [src]="projectImages[galleryIndex]" [alt]="projectImages[galleryIndex].toString()">
+    </div>
+    <span class="pp-gallery-close" (click)="closeGallery()">×</span>
+    <div class="pp-gallery-arrows">
+      <span (click)="previousGalleryProject()">‹</span>
+      <span (click)="nextGalleryProject()">›</span>
+    </div>
   </div>
 </div>

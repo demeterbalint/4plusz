@@ -4,8 +4,6 @@ import {ProjectLoaderService} from '../../services/project-loader.service';
 import {Language, LanguageService} from '../../services/language.service';
 import {ActivatedRoute} from '@angular/router';
 import {NgForOf, NgIf} from '@angular/common';
-// import imagesLoaded from 'imagesloaded';
-// import Packery from 'packery';
 
 @Component({
   selector: 'app-project-page',
@@ -30,25 +28,13 @@ export class ProjectPageComponent implements OnInit {
     hu: string,
     en: string
   }
+  isGalleryOpen: boolean = false;
+  galleryIndex: number = 0;
 
   constructor(private projectLoader: ProjectLoaderService,
               private languageService: LanguageService,
               private route: ActivatedRoute) {
   }
-
-  /*ngAfterViewInit(): void {
-    const grid = document.querySelector('.pp-image-grid') as HTMLElement | null;
-    if (!grid) return;
-    imagesLoaded(grid, () => {
-      imagesLoaded(grid, () => {
-        new Packery(grid, {
-          itemSelector: '.pp-image-grid-item',
-          gutter: 6,
-          percentPosition: true
-        });
-      });
-    });
-  }*/
 
   ngOnInit(): void {
     this.languageService.language$.subscribe(language => {
@@ -78,4 +64,28 @@ export class ProjectPageComponent implements OnInit {
     this.projectImages = this.project.images.filter(image => regex.test(image))
   }
 
+  protected openGallery(index: number) {
+    this.isGalleryOpen = true;
+    this.galleryIndex = index;
+  }
+
+  protected previousGalleryProject() {
+    if (this.galleryIndex == 0) {
+      this.galleryIndex = this.projectImages.length - 1;
+    } else {
+      this.galleryIndex--;
+    }
+  }
+
+  protected nextGalleryProject() {
+    if (this.galleryIndex == this.projectImages.length - 1) {
+      this.galleryIndex = 0;
+    } else {
+      this.galleryIndex++;
+    }
+  }
+
+  protected closeGallery() {
+    this.isGalleryOpen = false;
+  }
 }
