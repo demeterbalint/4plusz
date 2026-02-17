@@ -3,12 +3,14 @@ import {NgForOf, NgIf} from '@angular/common';
 import {Language, LanguageService} from '../../services/language.service';
 import {HomepageProjectModel} from '../../models/homepage-project-model';
 import {ProjectLoaderService} from '../../services/project-loader.service';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
   imports: [
     NgForOf,
     NgIf,
+    RouterLink,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
@@ -19,6 +21,10 @@ export class HomepageComponent implements OnInit {
   imageIndex: number = 0;
   numberOfImages: number = 0;
   currentLang: Language = 'hu';
+
+  //gallery
+  isGalleryOpen: boolean = false;
+  galleryIndex: number = 0;
 
   //animation
   isAnimating: boolean = false;
@@ -144,4 +150,34 @@ export class HomepageComponent implements OnInit {
   }
 
 
+  protected openGallery(index: number) {
+    this.isGalleryOpen = true;
+    this.galleryIndex = index;
+    this.isPaused = true;
+  }
+
+  protected previousGalleryProject() {
+    if (!this.isGalleryOpen) return;
+
+    if (this.galleryIndex == 0) {
+      this.galleryIndex = this.homePageProjects.length - 1;
+    } else {
+      this.galleryIndex--;
+    }
+  }
+
+  protected nextGalleryProject() {
+    if (!this.isGalleryOpen) return;
+
+    if (this.galleryIndex == this.homePageProjects.length - 1) {
+      this.galleryIndex = 0;
+    } else {
+      this.galleryIndex++;
+    }
+  }
+
+  protected closeGallery() {
+    this.isGalleryOpen = false;
+    this.isPaused = false;
+  }
 }

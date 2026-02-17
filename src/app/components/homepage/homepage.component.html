@@ -3,19 +3,29 @@
     <div class="home-images-track" [style.transform]="'translateX(-' + imageIndex * 100 + '%)'"
          [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
       <div class="home-image" *ngFor="let project of loopedProjects">
-        <img [src]="project.image" [alt]="project.image.toString()" loading="eager" decoding="async">
+        <img [src]="project.image" [alt]="project.image.toString()" loading="eager" decoding="async"
+             (click)="openGallery(homePageProjects.indexOf(project))">
         <h1>{{ project.project.name[currentLang] }}</h1>
       </div>
     </div>
   </div>
-  <div class="home-image-arrows">
-    <span (click)="previousProject()">‹</span>
-    <span (click)="nextProject()">›</span>
-  </div>
+  <span class="home-image-arrow-left" (click)="previousProject()">‹</span>
+  <span class="home-image-arrow-right" (click)="nextProject()">›</span>
   <div class="home-image-stop-count">
     <!--    <span class="home-image-stop">||</span>-->
     <i *ngIf="!isPaused" class="fa-solid fa-pause" (click)="pauseAutoSlide()"></i>
     <i *ngIf="isPaused" class="fa-solid fa-caret-right" (click)="resumeAutoSlide()"></i>
     <span class="home-image-count">{{ displayIndex }}/{{ numberOfImages }}</span>
+  </div>
+  <div *ngIf="isGalleryOpen" class="home-gallery-wrapper">
+    <span class="home-gallery-close" (click)="closeGallery()">×</span>
+    <div class="home-gallery-arrows">
+      <span (click)="previousGalleryProject()">‹</span>
+      <span (click)="nextGalleryProject()">›</span>
+    </div>
+    <div class="home-gallery-div">
+      <img [src]="homePageProjects[galleryIndex].image" [alt]="homePageProjects[galleryIndex].image.toString()">
+    </div>
+    <h1 class="home-gallery-name" [routerLink]="['/projects', homePageProjects[galleryIndex].project.slug]">{{ homePageProjects[galleryIndex].project.name[currentLang] }}</h1>
   </div>
 </div>
