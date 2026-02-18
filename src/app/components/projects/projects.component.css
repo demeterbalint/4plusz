@@ -24,7 +24,7 @@
   transform: translateZ(0);
 }
 
-.grid-link {
+.grid-item a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -58,15 +58,13 @@
   color: var(--gridTextColor);
 }
 
-.grid-text h1 {
+.grid-text h2 {
   margin-top: 2rem;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 .grid-text span {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: var(--size-small);
+  font-weight: var(--weight-semibold);
 }
 
 .grid-text,

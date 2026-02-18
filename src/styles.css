@@ -1,12 +1,14 @@
 :root {
-  --brandFont: normal 200 16px 'Oswald-extralight', 'Oswald', sans-serif;
-  --menuColor: rgb(105, 105, 105);
+  --menuColor: #696969;
   --backgroundColor: white;
   --languageActiveColor: rgb(254, 97, 97);
   --languagePipeColor: rgb(230, 224, 211);
   --languageColor: rgb(51, 51, 51);
   --languageHoverColor: rgb(149, 149, 149);
   --gridTextColor: #696969;
+
+  --brandFont: var(--weight-extralight) var(--size-regular) var(--font-oswald);
+  --menuFont: var(--weight-regular) var(--size-small-min1) var(--font-roboto);
 
   --font-roboto: 'Roboto', sans-serif;
   --font-oswald: 'Oswald', sans-serif;
@@ -20,9 +22,16 @@
   --weight-bold: 700;
 
   /* optional default sizes */
-  --size-small: 11px;
+  --size-small-min1: 11px;
+  --size-small: 12px;
+  --size-small-plus1: 13px;
+  --size-small-plus2: 14px;
+  --size-regular-min1: 15px;
   --size-regular: 16px;
-  --size-large: 22px;
+  --size-regular-plus1: 17px;
+  --size-regular-plus2: 18px;
+  --size-large: 20px;
+  --size-large-plus2: 22px;
 
   -webkit-font-smoothing: antialiased; /* for Chrome/Safari on macOS */
   -moz-osx-font-smoothing: grayscale;  /* for Firefox on macOS */
@@ -36,22 +45,17 @@ html, body {
 }
 
 span, a {
-  font: normal 100 11px 'Roboto', sans-serif;
-  /*font-family: var(--font-roboto), sans-serif;
-  font-size: var(--size-small);
-  font-weight: var(--weight-roboto-superlight);*/
+  font: var(--weight-roboto-superlight) var(--size-small-plus2) var(--font-roboto);
 }
 
 h1 {
-  font: 22px 'Oswald', sans-serif;
-  /*font-family: var(--font-oswald), sans-serif;
-  font-size: var(--size-large);
-  font-weight: var(--weight-medium);*/
+  font: var(--weight-medium) var(--size-large-plus2) var(--font-oswald);
 }
 
 h2 {
-  font: 18px 'Oswald', sans-serif;
-  /*font-family: var(--font-oswald), sans-serif;
-  font-size: var(--size-regular);
-  font-weight: var(--weight-regular);*/
+  font: var(--weight-medium) var(--size-large) var(--font-oswald);
+}
+
+h3 {
+  font: var(--weight-medium) var(--size-regular-plus2) var(--font-oswald);
 }

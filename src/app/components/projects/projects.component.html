@@ -1,12 +1,12 @@
 <div class="projects-div">
   <div class="projects-grid">
     <div class="grid-item" *ngFor="let item of projects">
-      <a class="grid-link" [routerLink]="['/projects', item.slug]">
+      <a [routerLink]="['/projects', item.slug]">
         <img [src]="getGridImage(item)" [alt]="getGridImage(item).toString()">
         <div class="text-background"></div>
         <div class="grid-text">
-          <h1 class="grid-title">{{ item.name[currentLang] }}</h1>
-          <span class="grid-short">{{ item.gridShort[currentLang] }}</span>
+          <h2>{{ item.name[currentLang] }}</h2>
+          <span>{{ item.gridShort[currentLang] }}</span>
         </div>
       </a>
     </div>

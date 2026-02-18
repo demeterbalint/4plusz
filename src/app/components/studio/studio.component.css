@@ -25,13 +25,11 @@
 
 h2 {
   font-size: 15px;
-  font-weight: 500;
 }
 
 span, a {
   line-height: 1.88em;
-  font-size: 11px;
-
+  font-size: var(--size-small-plus2);
 }
 
 a {
@@ -40,10 +38,8 @@ a {
   color: black;
 }
 
-.part1-brand {
-  font-family: 'Oswald', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
+h1 {
+  cursor: pointer;
 }
 
 .part1-text {

@@ -35,7 +35,6 @@
 }
 
 .pp-text-data h1 {
-  font-weight: 500;
   margin-top: 0;
 }
 
@@ -51,7 +50,6 @@
 }
 
 .pp-text-description span {
-  font-size: 14px;
   text-align: justify;
   line-height: 1.5;
 }

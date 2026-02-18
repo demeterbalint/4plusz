@@ -5,7 +5,7 @@
       <div class="home-image" *ngFor="let project of loopedProjects">
         <img [src]="project.image" [alt]="project.image.toString()" loading="eager" decoding="async"
              (click)="openGallery(homePageProjects.indexOf(project))">
-        <h1>{{ project.project.name[currentLang] }}</h1>
+        <h2>{{ project.project.name[currentLang] }}</h2>
       </div>
     </div>
   </div>

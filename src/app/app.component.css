@@ -57,20 +57,16 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
 
-  a {
-    color: var(--menuColor);
-  }
+.nav-list a {
+  color: var(--menuColor);
+  font: var(--menuFont);
+}
 
-  a:hover {
-    color: black;
-    font-weight: 500;
-  }
-
-  a.active-link {
-    color: black;
-    font-weight: 500;
-  }
+.nav-list a:hover,
+.nav-list a.active-link {
+  color: black;
 }
 
 .li-project {
@@ -103,18 +99,14 @@
   color: var(--menuColor);
 }
 
-.project-types a:hover {
-  color: black;
-  font-weight: 500;
-}
-
+.project-types a:hover,
 .project-types a.active-link {
   color: black;
-  font-weight: 500;
 }
 
 .socials-header {
   display: flex;
+  align-items: center;
   margin-right: -0.8rem;
   gap: 0.6rem;
 }
@@ -124,10 +116,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.facebook a {
-  font-size: 14px;
 }
 
 .instagram a {
@@ -157,25 +145,19 @@ footer {
   color: black;
 }
 
-.footer-contact-div span {
-  font-size: 14px;
-}
-
 .footer-contact-div a {
   text-decoration: none;
   color: black;
 }
 
 .footer-name {
-  font-family: 'Oswald', sans-serif;
   font-size: 17px;
-  font-weight: 500;
   cursor: pointer;
 }
 
 .footer-address:hover {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: var(--weight-semibold);
 }
 
 .socials-footer {
@@ -187,28 +169,29 @@ footer {
 
 .language {
   display: flex;
+  align-items: center;
   color: var(--menuColor);
+}
 
-  button {
-    height: 2rem;
-    width: 3rem;
-    border: none;
-    font-size: 0.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--languageColor);
-  }
+.language button {
+  height: 2rem;
+  width: 3rem;
+  border: none;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--languageColor);
+}
 
-  button:hover {
-    color: var(--languageHoverColor);
-  }
+.language button:hover {
+  color: var(--languageHoverColor);
+}
 
-  button.active {
-    color: var(--languageActiveColor);
-  }
+.language button.active {
+  color: var(--languageActiveColor);
+}
 
-  .bt-hu {
-    border-right: 1px solid var(--languagePipeColor);
-  }
+.language .bt-hu {
+  border-right: 1px solid var(--languagePipeColor);
 }

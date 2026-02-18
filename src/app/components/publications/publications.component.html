@@ -2,7 +2,7 @@
   <div class="publications-background">
     <img [src]="backgroundURL" [alt]="backgroundURL.toString()">
     <div class="publications-titles">
-      <h1 class="publications-title">{{ title[currentLang] }}</h1>
+      <h1>{{ title[currentLang] }}</h1>
       <span class="publications-subtitle">{{ subtitle[currentLang] }}</span>
     </div>
   </div>
@@ -14,7 +14,9 @@
         </a>
         <div class="item-text-div">
           <h1 class="item-text-div-title">{{ publication.title[currentLang] }}</h1>
-          <a target="_blank" href="{{ publication.link }}" class="item-text-div-site">{{ publication.site }}</a>
+          <a target="_blank" href="{{ publication.link }}">
+            <h3>{{ publication.site }}</h3>
+          </a>
           <span class="item-text-div-snippet">{{ publication.snippet[currentLang] }}</span>
         </div>
       </div>
