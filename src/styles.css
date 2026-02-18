@@ -7,22 +7,51 @@
   --languageColor: rgb(51, 51, 51);
   --languageHoverColor: rgb(149, 149, 149);
   --gridTextColor: #696969;
+
+  --font-roboto: 'Roboto', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+
+  --weight-roboto-superlight: 100;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* optional default sizes */
+  --size-small: 11px;
+  --size-regular: 16px;
+  --size-large: 22px;
+
+  -webkit-font-smoothing: antialiased; /* for Chrome/Safari on macOS */
+  -moz-osx-font-smoothing: grayscale;  /* for Firefox on macOS */
 }
 
 html, body {
   height: 100%;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 span, a {
-  /*font: normal 12px 'Futura LT W01 Medium', 'Futura', sans-serif;*/
   font: normal 100 11px 'Roboto', sans-serif;
+  /*font-family: var(--font-roboto), sans-serif;
+  font-size: var(--size-small);
+  font-weight: var(--weight-roboto-superlight);*/
 }
 
 h1 {
   font: 22px 'Oswald', sans-serif;
+  /*font-family: var(--font-oswald), sans-serif;
+  font-size: var(--size-large);
+  font-weight: var(--weight-medium);*/
 }
 
 h2 {
   font: 18px 'Oswald', sans-serif;
+  /*font-family: var(--font-oswald), sans-serif;
+  font-size: var(--size-regular);
+  font-weight: var(--weight-regular);*/
 }
