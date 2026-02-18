@@ -11,7 +11,7 @@
       <span class="pp-location">{{ project.location[currentLang] }}</span>
       <span class="pp-year">{{ project.year[currentLang] }}</span>
     </div>
-    <div class="pp-text-description">
+    <div class="pp-text-description" [class.two-part]="project.longDescription[currentLang].length == 2">
       <span *ngFor="let part of project.longDescription[currentLang]">{{ part }}</span>
     </div>
   </div>
