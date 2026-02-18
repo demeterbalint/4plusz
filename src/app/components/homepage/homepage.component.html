@@ -24,8 +24,16 @@
       <span (click)="nextGalleryProject()">›</span>
     </div>
     <div class="home-gallery-div">
-      <img [src]="homePageProjects[galleryIndex].image" [alt]="homePageProjects[galleryIndex].image.toString()">
+      <img
+        [src]="homePageProjects[galleryIndex].image"
+        [alt]="homePageProjects[galleryIndex].image.toString()"
+        [class.fade-out]="isFadingOut"
+        [class.fade-in]="isFadingIn"
+      />
+      <h1 class="home-gallery-name"
+          [routerLink]="['/projects', homePageProjects[galleryIndex].project.slug]"
+          [class.fade-out]="isFadingOut"
+          [class.fade-in]="isFadingIn">{{ homePageProjects[galleryIndex].project.name[currentLang] }}</h1>
     </div>
-    <h1 class="home-gallery-name" [routerLink]="['/projects', homePageProjects[galleryIndex].project.slug]">{{ homePageProjects[galleryIndex].project.name[currentLang] }}</h1>
   </div>
 </div>

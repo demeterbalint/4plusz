@@ -26,6 +26,11 @@ export class HomepageComponent implements OnInit {
   isGalleryOpen: boolean = false;
   galleryIndex: number = 0;
 
+  //gallery animation
+  isFadingOut = false;
+  isFadingIn = false;
+  fadeDuration = 400; // ms
+
   //animation
   isAnimating: boolean = false;
   loopedProjects: HomepageProjectModel[] = [];
@@ -157,23 +162,43 @@ export class HomepageComponent implements OnInit {
   }
 
   protected previousGalleryProject() {
-    if (!this.isGalleryOpen) return;
+    if (!this.isGalleryOpen || this.isAnimating) return;
+    this.isAnimating = true;
 
-    if (this.galleryIndex == 0) {
-      this.galleryIndex = this.homePageProjects.length - 1;
-    } else {
-      this.galleryIndex--;
-    }
+    this.isFadingOut = true;
+
+    setTimeout(() => {
+      this.galleryIndex =
+        this.galleryIndex === 0 ? this.homePageProjects.length - 1 : this.galleryIndex - 1;
+
+      this.isFadingOut = false;
+      this.isFadingIn = true;
+
+      setTimeout(() => {
+        this.isFadingIn = false;
+        this.isAnimating = false;
+      }, this.fadeDuration);
+    }, this.fadeDuration);
   }
 
   protected nextGalleryProject() {
-    if (!this.isGalleryOpen) return;
+    if (!this.isGalleryOpen || this.isAnimating) return;
+    this.isAnimating = true;
+    this.isFadingOut = true;
 
-    if (this.galleryIndex == this.homePageProjects.length - 1) {
-      this.galleryIndex = 0;
-    } else {
-      this.galleryIndex++;
-    }
+    setTimeout(() => {
+      // switch image after fade-out
+      this.galleryIndex =
+        this.galleryIndex === this.homePageProjects.length - 1 ? 0 : this.galleryIndex + 1;
+
+      this.isFadingOut = false;
+      this.isFadingIn = true;
+
+      setTimeout(() => {
+        this.isFadingIn = false;
+        this.isAnimating = false;
+      }, this.fadeDuration);
+    }, this.fadeDuration);
   }
 
   protected closeGallery() {
