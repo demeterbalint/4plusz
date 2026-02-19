@@ -1,3 +1,5 @@
+import {StudioAwardModel} from './studio-award-model';
+
 export interface StudioModel {
   brand: {
     hu: string,
@@ -15,10 +17,7 @@ export interface StudioModel {
     hu: string,
     en: string
   },
-  part2Text: {
-    hu: string[],
-    en: string[]
-  },
+  part2Text: StudioAwardModel[],
   part3Name: {
     hu: string,
     en: string

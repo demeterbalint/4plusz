@@ -2,14 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {Language, LanguageService} from '../../services/language.service';
 import {StudioModel} from '../../models/studio-model';
 import {STUDIO_DATA} from '../../data/studio-data';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-studio',
   imports: [
     NgForOf,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   templateUrl: './studio.component.html',
   styleUrl: './studio.component.css'

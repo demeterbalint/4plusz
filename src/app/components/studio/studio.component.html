@@ -13,7 +13,10 @@
   <div class="part2">
     <h2 class="part2-title">{{ studio.part2Title[currentLang] }}</h2>
     <div class="part2-text">
-      <a *ngFor="let line of studio.part2Text[currentLang]">{{ line }}</a>
+      <span *ngFor="let line of studio.part2Text">
+        {{ line[currentLang] }}
+        <a *ngIf="line.route" class="link" [routerLink]="['/projects', line.route]"></a>
+      </span>
     </div>
   </div>
 
