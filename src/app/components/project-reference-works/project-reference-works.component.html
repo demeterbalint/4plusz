@@ -1,1 +1,34 @@
-<p>project-reference-works works!</p>
+<div class="reference-wrapper">
+  <div class="reference-div">
+    <h1>{{ baseData.title[currentLang] }}</h1>
+    <table class="reference-table">
+      <colgroup>
+        <col style="width: 58%">
+        <col style="width: 13%">
+        <col style="width: 7%">
+        <col style="width: 10%">
+        <col style="width: 12%">
+      </colgroup>
+
+      <thead>
+      <tr>
+        <th>{{ baseData.name[currentLang] }}</th>
+        <th>{{ baseData.location[currentLang] }}</th>
+        <th>{{ baseData.year[currentLang] }}</th>
+        <th>{{ baseData.category[currentLang] }}</th>
+        <th>{{ baseData.status[currentLang] }}</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{ row.name[currentLang] }}</td>
+        <td>{{ row.location }}</td>
+        <td>{{ row.year }}</td>
+        <td>{{ row.category[currentLang] }}</td>
+        <td>{{ row.status[currentLang] }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

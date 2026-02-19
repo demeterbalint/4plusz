@@ -4,10 +4,13 @@ import {ProjectReferenceBaseModel} from '../../models/project-reference-base-mod
 import {ProjectReferenceModel} from '../../models/project-reference-model';
 import {PROJECT_REFERENCE_DATA} from '../../data/project-reference-data';
 import {Language, LanguageService} from '../../services/language.service';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-project-reference-works',
-  imports: [],
+  imports: [
+    NgForOf
+  ],
   templateUrl: './project-reference-works.component.html',
   styleUrl: './project-reference-works.component.css'
 })
