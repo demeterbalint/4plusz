@@ -18,8 +18,8 @@
     <span class="home-image-count">{{ displayIndex }}/{{ numberOfImages }}</span>
   </div>
   <div *ngIf="isGalleryOpen" class="home-gallery-wrapper">
-    <span class="home-gallery-close" (click)="closeGallery()">×</span>
-    <div class="home-gallery-arrows">
+    <span class="home gallery-close" (click)="closeGallery()">×</span>
+    <div class="home gallery-arrows">
       <span (click)="previousGalleryProject()">‹</span>
       <span (click)="nextGalleryProject()">›</span>
     </div>

@@ -119,15 +119,15 @@
 }
 
 .instagram a {
-  font-size: 16px;
+  font-size: var(--size-regular);
 }
 
 .socials-footer .facebook a {
-  font-size: 16px;
+  font-size: var(--size-regular);
 }
 
 .socials-footer .instagram a {
-  font-size: 18px;
+  font-size: var(--size-regular-plus2);
 }
 
 footer {
@@ -151,20 +151,29 @@ footer {
 }
 
 .footer-name {
-  font-size: 17px;
+  font-size: var(--size-regular-plus1);
   cursor: pointer;
+  margin: 0;
 }
 
 .footer-address:hover {
   cursor: pointer;
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-regular);
 }
 
 .socials-footer {
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.socials-footer .facebook,
+.socials-footer .instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language {
@@ -177,7 +186,7 @@ footer {
   height: 2rem;
   width: 3rem;
   border: none;
-  font-size: 0.7rem;
+  font-size: var(--size-small-min1);
   display: flex;
   justify-content: center;
   align-items: center;

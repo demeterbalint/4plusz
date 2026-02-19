@@ -21,7 +21,7 @@
   --weight-semibold: 600;
   --weight-bold: 700;
 
-  /* optional default sizes */
+  /* text sizes */
   --size-small-min1: 11px;
   --size-small: 12px;
   --size-small-plus1: 13px;
@@ -32,6 +32,9 @@
   --size-regular-plus2: 18px;
   --size-large: 20px;
   --size-large-plus2: 22px;
+
+  --size-gallery-close: 3rem;
+  --size-gallery-arrow: 5rem;
 
   -webkit-font-smoothing: antialiased; /* for Chrome/Safari on macOS */
   -moz-osx-font-smoothing: grayscale;  /* for Firefox on macOS */
@@ -45,7 +48,7 @@ html, body {
 }
 
 span, a {
-  font: var(--weight-roboto-superlight) var(--size-small-plus2) var(--font-roboto);
+  font: var(--weight-light) var(--size-small-plus2) var(--font-roboto);
 }
 
 h1 {
@@ -58,4 +61,33 @@ h2 {
 
 h3 {
   font: var(--weight-medium) var(--size-regular-plus2) var(--font-oswald);
+}
+
+.gallery-close {
+  position: absolute;
+  top: 0;
+  right: 2.7rem;
+  height: 3.4rem;
+  width: 3rem;
+  color: white;
+  font-size: var(--size-gallery-close);
+  cursor: pointer;
+  text-align: center;
+}
+
+.gallery-arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  color: white;
+}
+
+.gallery-arrows span {
+  width: 4rem;
+  height: 7rem;
+  font-size: var(--size-gallery-arrow);
+  cursor: pointer;
+  text-align: center;
 }

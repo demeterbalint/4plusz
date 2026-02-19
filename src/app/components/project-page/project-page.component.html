@@ -1,4 +1,4 @@
-<div class="projectpage-div">
+<div class="pp-div">
   <div class="pp-main-image">
     <img [src]="mainImage" [alt]="mainImage.toString()">
   </div>
@@ -25,8 +25,8 @@
     <div class="pp-gallery-div">
       <img [src]="projectImages[galleryIndex]" [alt]="projectImages[galleryIndex].toString()">
     </div>
-    <span class="pp-gallery-close" (click)="closeGallery()">×</span>
-    <div class="pp-gallery-arrows">
+    <span class="pp gallery-close" (click)="closeGallery()">×</span>
+    <div class="pp gallery-arrows">
       <span (click)="previousGalleryProject()">‹</span>
       <span (click)="nextGalleryProject()">›</span>
     </div>

@@ -51,22 +51,20 @@
 }
 
 .contact-title {
-  font-size: 14px;
+  font-size: var(--size-regular);
   width: 14%;
 }
 
-.contact-data,
-.follow-socials {
-  font-size: 0.85rem;
+.contact-data {
   width: 14%;
   white-space: pre-line;
 }
 
 .follow-socials {
+  width: 14%;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
 }
 
 .social-border {
@@ -80,6 +78,10 @@
   color: white;
   cursor: pointer;
   text-decoration: none;
+}
+
+.fa-facebook-f {
+  font-size: var(--size-small-plus1);
 }
 
 .contact-maps {

@@ -28,8 +28,9 @@ h2 {
 }
 
 span, a {
-  line-height: 1.88em;
-  font-size: var(--size-small-plus2);
+  line-height: 1.5rem;
+  font-size: var(--size-small-min1);
+  font-weight: var(--weight-regular);
 }
 
 a {
