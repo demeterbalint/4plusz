@@ -24,7 +24,7 @@
 }
 
 h2 {
-  font-size: 15px;
+  font-size: var(--size-regular-min1);
 }
 
 span, a {

@@ -44,6 +44,12 @@
   letter-spacing: 0.3px;
 }
 
+/*@media (max-width: 700px) {
+  .nav-right {
+    display: none;
+  }
+}*/
+
 .negyplusz {
   position: absolute;
   left: 6%;
