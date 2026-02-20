@@ -48,6 +48,7 @@
 
 .contact-datas a:hover {
   cursor: pointer;
+  font-weight: var(--weight-regular);
 }
 
 .contact-title {
