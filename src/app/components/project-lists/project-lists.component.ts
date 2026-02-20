@@ -1,12 +1,16 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, RouterLink} from '@angular/router';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {ProjectListModel} from '../../models/project-list-model';
 import {Language, LanguageService} from '../../services/language.service';
+import {NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-project-lists',
-  imports: [],
+  imports: [
+    NgForOf,
+    RouterLink
+  ],
   templateUrl: './project-lists.component.html',
   styleUrl: './project-lists.component.css'
 })

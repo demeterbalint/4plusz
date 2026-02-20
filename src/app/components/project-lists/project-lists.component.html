@@ -1,1 +1,16 @@
-<p>project-lists works!</p>
+<div class="projectlist-wrapper">
+  <h1>{{ projects.title[currentLang] }}</h1>
+  <div class="pl-grid">
+    <div class="pl-grid-project" *ngFor="let item of projects.projects">
+      <div class="pl-grid-project-name">
+        <h3>{{ item.project.projectTypeName[currentLang] }}
+          <a [routerLink]="['/projects', item.project.slug]"></a>
+        </h3>
+      </div>
+      <div class="pl-grid-project-image">
+        <img [src]="item.image" [alt]="item.image.toString()">
+        <a [routerLink]="['/projects', item.project.slug]"></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -49,19 +49,19 @@ html, body {
 }
 
 span, a {
-  font: var(--weight-light) var(--size-small-plus2) var(--font-roboto);
+  font: var(--weight-light) var(--size-small-plus2) var(--font-roboto); /* 300 14px */
 }
 
 h1 {
-  font: var(--weight-medium) var(--size-large-plus2) var(--font-oswald);
+  font: var(--weight-medium) var(--size-large-plus2) var(--font-oswald); /* 500 22px */
 }
 
 h2 {
-  font: var(--weight-medium) var(--size-large) var(--font-oswald);
+  font: var(--weight-medium) var(--size-large) var(--font-oswald); /* 500 20px */
 }
 
 h3 {
-  font: var(--weight-medium) var(--size-regular-plus2) var(--font-oswald);
+  font: var(--weight-medium) var(--size-regular-plus2) var(--font-oswald); /* 500 18px */
 }
 
 .gallery-close {

@@ -24,26 +24,45 @@ export class ProjectLoaderService {
     const rezhaz = projects.find(p => p.slug === 'keresztur-restaurant-office')!;
 
     return [
-      { project: raday, image: imageMap[raday.slug].find(i => i.includes('02'))! },
-      { project: raday, image: imageMap[raday.slug].find(i => i.includes('05'))! },
-      { project: csomor, image: imageMap[csomor.slug].find(i => i.includes('16'))! },
-      { project: fasor, image: imageMap[fasor.slug].find(i => i.includes('12'))! },
-      { project: kapy, image: imageMap[kapy.slug].find(i => i.includes('main'))! },
-      { project: budaors, image: imageMap[budaors.slug].find(i => i.includes('01'))! },
-      { project: ujpest, image: imageMap[ujpest.slug].find(i => i.includes('11'))! },
-      { project: fasor, image: imageMap[fasor.slug].find(i => i.includes('press'))! },
-      { project: ujpest, image: imageMap[ujpest.slug].find(i => i.includes('04'))! },
-      { project: budaors, image: imageMap[budaors.slug].find(i => i.includes('home'))! },
-      { project: rezhaz, image: imageMap[rezhaz.slug].find(i => i.includes('04'))! },
-      { project: budaors, image: imageMap[budaors.slug].find(i => i.includes('23'))! },
-      { project: fasor, image: imageMap[fasor.slug].find(i => i.includes('13'))! },
-      { project: csomor, image: imageMap[csomor.slug].find(i => i.includes('11'))! },
-      { project: raday, image: imageMap[raday.slug].find(i => i.includes('press'))! },
+      { project: raday, image: raday.images.find(i => i.includes('02'))! },
+      { project: raday, image: raday.images.find(i => i.includes('05'))! },
+      { project: csomor, image: csomor.images.find(i => i.includes('16'))! },
+      { project: fasor, image: fasor.images.find(i => i.includes('12'))! },
+      { project: kapy, image: kapy.images.find(i => i.includes('main'))! },
+      { project: budaors, image: budaors.images.find(i => i.includes('01'))! },
+      { project: ujpest, image: ujpest.images.find(i => i.includes('11'))! },
+      { project: fasor, image: fasor.images.find(i => i.includes('press'))! },
+      { project: ujpest, image: ujpest.images.find(i => i.includes('04'))! },
+      { project: budaors, image: budaors.images.find(i => i.includes('home'))! },
+      { project: rezhaz, image: rezhaz.images.find(i => i.includes('04'))! },
+      { project: budaors, image: budaors.images.find(i => i.includes('23'))! },
+      { project: fasor, image: fasor.images.find(i => i.includes('13'))! },
+      { project: csomor, image: csomor.images.find(i => i.includes('11'))! },
+      { project: raday, image: raday.images.find(i => i.includes('press'))! },
       // stb
     ];
   }
 
-  //slugs for project-types
+  private categoryImageKeyMap: Record<string, string> = {
+    'public-buildings': 'public',
+    'religious-buildings': 'religious',
+    'historical-buildings': 'historical',
+    'residential-buildings': 'residential',
+    'conceptual-designs': 'conceptual'
+  };
+
+  private getCategoryImage(project: ProjectModel, category: string): string {
+    const key = this.categoryImageKeyMap[category];
+
+    return imageMap[project.slug].find(img => img.includes(key))!
+  }
+
+  private filterProjectsByCategory(categoryKey: string): ProjectModel[] {
+    return this.projectService.getProjects()
+      .filter(project => project.images.some(img => img.includes(categoryKey)));
+  }
+
+  /*//slugs for project-types
   publicBuildingSlugs: string[] = ['raday-house', 'ujpest-parish-church', 'fasor-church', 'keresztur-restaurant-office', 'vac-high-school', 'budaors-church', 'csomor-ichurch',
     'tihany-granary', 'godollo-lyceum', 'ujlak-swimming-facility', 'bicske-swimming-facility', 'pesthidegkut-church', 'csipkebokor-kindergarten', 'geo-log-office', 'hetszinvirag-kindergarten']
 
@@ -55,57 +74,92 @@ export class ProjectLoaderService {
   historicalBuildingSlugs: string[] = ['fasor-church', 'tihany-granary', 'ujpest-parish-church', 'csipkebokor-kindergarten']
 
   conceptualDesignSlugs: string[] = ['godollo-lyceum', 'vac-high-school', 'pesthidegkut-church', 'pecsely-chapel', 'kulso-kelenfold-church', 'ujlak-swimming-facility',
-  'geo-log-office', 'family-house-3', 'family-house-1', 'albertfalva-church', 'weores-sandor-theatre']
+  'geo-log-office', 'family-house-3', 'family-house-1', 'albertfalva-church', 'weores-sandor-theatre']*/
 
   //methods for project-types
   getPublicBuildings(): ProjectListModel {
+    const category = 'public-buildings';
+    const projects = this.filterProjectsByCategory('public')
+      .map(project => ({
+        project,
+        image: this.getCategoryImage(project, category)
+      }));
+
     return {
       title: {
         hu: 'Középületek',
         en: 'Public\nBuildings'
       },
-      projects: this.projectService.getProjects().filter(project => this.publicBuildingSlugs.includes(project.slug))
-    }
+      projects
+    };
   }
 
-  getReligiousBuildings() {
+  getReligiousBuildings(): ProjectListModel {
+    const category = 'religious-buildings';
+    const projects = this.filterProjectsByCategory('religious')
+      .map(project => ({
+        project,
+        image: this.getCategoryImage(project, category)
+      }));
+
     return {
       title: {
         hu: 'Szakrális\népületek',
         en: 'Religious\nBuildings'
       },
-      projects: this.projectService.getProjects().filter(project => this.religiousBuildingSlugs.includes(project.slug))
-    }
+      projects
+    };
   }
 
-  getResidentialBuildings() {
+  getResidentialBuildings(): ProjectListModel {
+    const category = 'residential-buildings';
+    const projects = this.filterProjectsByCategory('residential')
+      .map(project => ({
+        project,
+        image: this.getCategoryImage(project, category)
+      }));
+
     return {
       title: {
         hu: 'Lakóépületek',
         en: 'Residential\nBuildings'
       },
-      projects: this.projectService.getProjects().filter(project => this.residentialBuildingSlugs.includes(project.slug))
-    }
+      projects
+    };
   }
 
-  getHistoricalBuildings() {
+  getHistoricalBuildings(): ProjectListModel {
+    const category = 'historical-buildings';
+    const projects = this.filterProjectsByCategory('historical')
+      .map(project => ({
+        project,
+        image: this.getCategoryImage(project, category)
+      }));
+
     return {
       title: {
         hu: 'Műemlékek',
         en: 'Historical\nBuildings'
       },
-      projects: this.projectService.getProjects().filter(project => this.historicalBuildingSlugs.includes(project.slug))
-    }
+      projects
+    };
   }
 
-  getConceptualDesigns() {
+  getConceptualDesigns(): ProjectListModel {
+    const category = 'conceptual-designs';
+    const projects = this.filterProjectsByCategory('conceptual')
+      .map(project => ({
+        project,
+        image: this.getCategoryImage(project, category)
+      }));
+
     return {
       title: {
         hu: 'Tervek',
         en: 'Conceptual\nDesigns'
       },
-      projects: this.projectService.getProjects().filter(project => this.conceptualDesignSlugs.includes(project.slug))
-    }
+      projects
+    };
   }
 
   getProjectBySlug(slug: string): ProjectModel {

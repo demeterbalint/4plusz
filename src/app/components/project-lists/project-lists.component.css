@@ -1,0 +1,66 @@
+.projectlist-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.pl-grid {
+  margin-top: 2rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8rem;
+  grid-row-gap: 4rem;
+}
+
+.pl-grid-project {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pl-grid-project-name {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.pl-grid-project-name h3 a {
+  position: absolute;
+  inset: 0;
+}
+
+h3 {
+  position: relative;
+  margin: 0;
+}
+
+.pl-grid-project-image {
+  position: relative;
+  aspect-ratio: 6/4;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pl-grid-project img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pl-grid-project-image a {
+  position: absolute;
+  inset: 0;
+}

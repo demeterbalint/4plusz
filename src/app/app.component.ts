@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
       { name: 'Szakrális épületek', route: 'religious-buildings' },
       { name: 'Lakóépületek', route: 'residential-buildings' },
       { name: 'Műemlékek', route: 'historical-buildings' },
-      { name: 'Tervek', route: 'conceptual-buildings' },
+      { name: 'Tervek', route: 'conceptual-designs' },
       { name: 'Referenciák', route: 'reference-works' }
     ],
     en: [
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
       { name: 'Religious buildings', route: 'religious-buildings' },
       { name: 'Residential buildings', route: 'residential-buildings' },
       { name: 'Historical buildings', route: 'historical-buildings' },
-      { name: 'Conceptual designs', route: 'conceptual-buildings' },
+      { name: 'Conceptual designs', route: 'conceptual-designs' },
       { name: 'Reference works', route: 'reference-works' }
     ]
   }
