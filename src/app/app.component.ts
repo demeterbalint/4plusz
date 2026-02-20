@@ -62,12 +62,34 @@ export class AppComponent implements OnInit {
   //mobile view
   protected menuOpen = false;
   protected typeOpen = false;
-
-  protected toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
+  private scrollY = 0;
 
   protected toggleTypeOpen() {
     this.typeOpen = !this.typeOpen;
+  }
+
+  openMenu() {
+    this.menuOpen = true;
+    this.scrollY = window.scrollY;
+
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.scrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    document.body.classList.add('no-scroll');
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+    this.typeOpen = false;
+
+    document.body.classList.remove('no-scroll');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    window.scrollTo(0, this.scrollY);
   }
 }

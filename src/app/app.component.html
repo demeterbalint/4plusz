@@ -2,22 +2,22 @@
   <header>
     <nav class="navbar">
       <a class="negyplusz" [routerLink]="['/']">{{ navFooText.headerBrand[currentLang] }}</a>
-      <i *ngIf="!menuOpen" class="fa-solid fa-bars" (click)="toggleMenu()"></i>
-      <i *ngIf="menuOpen" class="fa-solid fa-xmark" (click)="toggleMenu()"></i>
+      <i *ngIf="!menuOpen" class="fa-solid fa-bars" (click)="openMenu()"></i>
+      <i *ngIf="menuOpen" class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       <div class="nav-right" [class.open]="menuOpen">
         <ul class="nav-list">
-          <li><a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.home[currentLang] }}</a></li>
-          <li><a [routerLink]="['/studio']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.studio[currentLang] }}</a></li>
+          <li><a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.home[currentLang] }}</a></li>
+          <li><a [routerLink]="['/studio']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.studio[currentLang] }}</a></li>
           <li class="li-project">
-            <a [routerLink]="['/projects']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: false}">{{ navFooText.projects[currentLang] }}</a>
+            <a [routerLink]="['/projects']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: false}" (click)="closeMenu()">{{ navFooText.projects[currentLang] }}</a>
             <i *ngIf="menuOpen && !typeOpen" class="fa-solid fa-chevron-down" (click)="toggleTypeOpen()"></i>
             <i *ngIf="menuOpen && typeOpen" class="fa-solid fa-chevron-up" (click)="toggleTypeOpen()"></i>
             <div class="project-types" [class.open]="typeOpen">
-              <a *ngFor="let type of projectTypes[currentLang]" [routerLink]="['/projects', type.route]" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ type.name }}</a>
+              <a *ngFor="let type of projectTypes[currentLang]" [routerLink]="['/projects', type.route]" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ type.name }}</a>
             </div>
           </li>
-          <li><a [routerLink]="['/publications']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.publications[currentLang] }}</a></li>
-          <li><a [routerLink]="['/contact']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}">{{ navFooText.contact[currentLang] }}</a></li>
+          <li><a [routerLink]="['/publications']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.publications[currentLang] }}</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.contact[currentLang] }}</a></li>
         </ul>
         <div class="socials-header">
           <div class="facebook">
