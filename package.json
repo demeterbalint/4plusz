@@ -5,11 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run generate-images && ng serve",
-    "build": "npm run generate-images && ng build",
+    "build": "npm run generate-images && ng build --configuration production --base-href /4plusz/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generate-images": "node generate-images.js",
-    "deploy": "ng build --configuration production --base-href /4plusz/ && npx angular-cli-ghpages --dir=dist/4plusz"
+    "deploy": "npm run build && npx angular-cli-ghpages --dir=dist/4plusz/browser"
   },
   "private": true,
   "dependencies": {
