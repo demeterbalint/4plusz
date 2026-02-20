@@ -3,11 +3,11 @@ import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/route
 import {Language, LanguageService} from './services/language.service';
 import {NavbarFooterTextModel} from './models/navbar-footer-text-model';
 import {NAVBAR_FOOTER_TEXT} from './data/navbar-footer-text-data';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, NgForOf],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, NgForOf, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -59,5 +59,15 @@ export class AppComponent implements OnInit {
     window.open(url, '_blank');
   }
 
-  protected readonly window = window;
+  //mobile view
+  protected menuOpen = false;
+  protected typeOpen = false;
+
+  protected toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  protected toggleTypeOpen() {
+    this.typeOpen = !this.typeOpen;
+  }
 }
