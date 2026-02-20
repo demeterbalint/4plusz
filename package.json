@@ -1,13 +1,15 @@
 {
   "name": "negyplusz",
   "version": "0.0.0",
+  "homepage": "https://demeterbalint.github.io/4plusz",
   "scripts": {
     "ng": "ng",
     "start": "npm run generate-images && ng serve",
     "build": "npm run generate-images && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate-images": "node generate-images.js"
+    "generate-images": "node generate-images.js",
+    "deploy": "ng build --configuration production --base-href /4plusz/ && npx angular-cli-ghpages --dir=dist/4plusz"
   },
   "private": true,
   "dependencies": {
