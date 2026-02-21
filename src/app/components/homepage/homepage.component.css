@@ -42,7 +42,6 @@
   position: absolute;
   bottom: 0;
   left: 0.5rem;
-  color: white;
 }
 
 .home-image-stop-count {
@@ -52,7 +51,6 @@
   align-items: center;
   bottom: 0.7rem;
   right: 0.7rem;
-  color: white;
   gap: 1rem;
 }
 
@@ -84,18 +82,27 @@
 }
 
 .home-image-stop-count,
-.home-image-arrow-left,
-.home-image-arrow-right,
 .home-image h2 {
-  opacity: 0;
-  transition: opacity 0.5s, transform 0.5s ease;
+  /*backdrop-filter: blur(10px);*/
+  text-shadow: 1px 1px 10px black;
+  color: white;
 }
 
-.homepage-image-div:hover .home-image-stop-count,
-.homepage-image-div:hover .home-image-arrow-left,
-.homepage-image-div:hover .home-image-arrow-right,
-.homepage-image-div:hover .home-image h2 {
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .home-image-stop-count,
+  .home-image-arrow-left,
+  .home-image-arrow-right,
+  .home-image h2 {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s ease;
+  }
+
+  .homepage-image-div:hover .home-image-stop-count,
+  .homepage-image-div:hover .home-image-arrow-left,
+  .homepage-image-div:hover .home-image-arrow-right,
+  .homepage-image-div:hover .home-image h2 {
+    opacity: 1;
+  }
 }
 
 .home-gallery-wrapper {
