@@ -28,8 +28,6 @@ export class HomepageComponent implements OnInit {
   galleryIndex: number = 0;
 
   //gallery animation
-  isFadingOut = false;
-  isFadingIn = false;
   fadeDuration = 400; // ms
   currentGalleryIndex: number = 0; // what is currently shown
   nextGalleryIndex: number | null = null; // the one we will switch to
