@@ -28,10 +28,11 @@ export class HomepageComponent implements OnInit {
   galleryIndex: number = 0;
 
   //gallery animation
-  fadeDuration = 400; // ms
-  currentGalleryIndex: number = 0; // what is currently shown
-  nextGalleryIndex: number | null = null; // the one we will switch to
-  isFading = false;
+  fadeDuration = 600; // ms
+  currentGalleryIndex = 0; // what is currently shown
+  isFadingOut = false;
+  isFadingIn = false;
+  isGalleryAnimating = false;
 
   //animation
   isAnimating: boolean = false;
@@ -187,45 +188,73 @@ export class HomepageComponent implements OnInit {
   protected openGallery(index: number) {
     this.isGalleryOpen = true;
     this.galleryIndex = index;
+    this.currentGalleryIndex = index;
     this.isPaused = true;
+    this.isFadingOut = false;
+    this.isFadingIn = false;
+    this.isGalleryAnimating = false;
     this.scrollLockService.lock();
   }
 
   nextGalleryProject() {
-    if (this.isAnimating) return;
-    this.isAnimating = true;
+    if (this.isGalleryAnimating) return;
+    this.isGalleryAnimating = true;
 
-    // set the next index
-    this.nextGalleryIndex = (this.currentGalleryIndex + 1) % this.homePageProjects.length;
-    this.isFading = true; // triggers fade-out of current element
+    const nextIndex = (this.currentGalleryIndex + 1) % this.homePageProjects.length;
+
+    // Phase 1: Fade out current
+    this.isFadingOut = true;
+    this.isFadingIn = false;
 
     setTimeout(() => {
-      // fade-out complete → switch element
-      this.currentGalleryIndex = this.nextGalleryIndex!;
-      this.nextGalleryIndex = null;
-      this.isFading = false; // triggers fade-in of new element
-      this.isAnimating = false;
+      // Phase 2: Switch image and start fade in
+      this.currentGalleryIndex = nextIndex;
+      this.isFadingOut = false;
+      this.isFadingIn = false; // Reset to 0 before fading in
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          this.isFadingIn = true;
+
+          setTimeout(() => {
+            // Phase 3: Animation complete
+            this.isFadingIn = false;
+            this.isGalleryAnimating = false;
+          }, this.fadeDuration);
+        });
+      });
     }, this.fadeDuration);
   }
 
   previousGalleryProject() {
-    if (this.isAnimating) return;
-    this.isAnimating = true;
+    if (this.isGalleryAnimating) return;
+    this.isGalleryAnimating = true;
 
-    // set the previous index with looping
-    this.nextGalleryIndex =
-      this.currentGalleryIndex === 0
-        ? this.homePageProjects.length - 1
-        : this.currentGalleryIndex - 1;
+    const nextIndex = this.currentGalleryIndex === 0
+      ? this.homePageProjects.length - 1
+      : this.currentGalleryIndex - 1;
 
-    this.isFading = true; // triggers fade-out of current element
+    // Phase 1: Fade out current
+    this.isFadingOut = true;
+    this.isFadingIn = false;
 
     setTimeout(() => {
-      // fade-out complete → switch element
-      this.currentGalleryIndex = this.nextGalleryIndex!;
-      this.nextGalleryIndex = null;
-      this.isFading = false; // triggers fade-in of new element
-      this.isAnimating = false;
+      // Phase 2: Switch image and start fade in
+      this.currentGalleryIndex = nextIndex;
+      this.isFadingOut = false;
+      this.isFadingIn = false; // Reset to 0 before fading in
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          this.isFadingIn = true;
+
+          setTimeout(() => {
+            // Phase 3: Animation complete
+            this.isFadingIn = false;
+            this.isGalleryAnimating = false;
+          }, this.fadeDuration);
+        });
+      });
     }, this.fadeDuration);
   }
 

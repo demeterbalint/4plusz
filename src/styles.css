@@ -83,25 +83,31 @@ h3 {
   text-align: center;
 }
 
-.gallery-arrows {
+.gallery-arrow-left,
+.gallery-arrow-right {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-  color: white;
-}
-
-.gallery-arrows span {
+  top: 50%;
+  transform: translateY(-50%);
   width: 4rem;
   height: 7rem;
   font-size: var(--size-gallery-arrow);
   cursor: pointer;
   text-align: center;
+  z-index: 10;
+  color: white;
+}
+
+.gallery-arrow-left {
+  left: 2rem;
+}
+
+.gallery-arrow-right {
+  right: 2rem;
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .gallery-arrows {
+  .gallery-arrow-left,
+  .gallery-arrow-right {
     display: none;
   }
 }

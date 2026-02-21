@@ -26,9 +26,7 @@
       <img [src]="projectImages[galleryIndex]" [alt]="projectImages[galleryIndex].toString()">
     </div>
     <span class="pp gallery-close" (click)="closeGallery()">×</span>
-    <div class="pp gallery-arrows">
-      <span (click)="previousGalleryProject()">‹</span>
-      <span (click)="nextGalleryProject()">›</span>
-    </div>
+    <span class="gallery-arrow-left" (click)="previousGalleryProject()">‹</span>
+    <span class="gallery-arrow-right" (click)="nextGalleryProject()">›</span>
   </div>
 </div>

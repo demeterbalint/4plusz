@@ -19,30 +19,28 @@
   </div>
   <div *ngIf="isGalleryOpen" class="home-gallery-wrapper fullscreen-overlay">
     <span class="home gallery-close" (click)="closeGallery()">×</span>
-    <div class="home gallery-arrows">
-      <span (click)="previousGalleryProject()">‹</span>
-      <span (click)="nextGalleryProject()">›</span>
-    </div>
+    <span class="gallery-arrow-left" (click)="previousGalleryProject()">‹</span>
+    <span class="gallery-arrow-right" (click)="nextGalleryProject()">›</span>
     <div class="home-gallery-div"
          (wheel)="onWheel($event)"
          (pointerdown)="onPointerDown($event)"
          (pointermove)="onPointerMove($event)"
          (pointerup)="onPointerUp($event)"
          (pointercancel)="onPointerUp($event)">
-      <img
-        *ngIf="homePageProjects[currentGalleryIndex]"
-        [src]="homePageProjects[currentGalleryIndex].image"
-        [alt]="homePageProjects[currentGalleryIndex].image.toString()"
-        [class.fade-out]="isFading"
-        [class.fade-in]="!isFading"
-      />
-      <h1 class="home-gallery-name"
-        *ngIf="homePageProjects[currentGalleryIndex]"
-        [routerLink]="['/projects', homePageProjects[currentGalleryIndex].project.slug]"
-        [class.fade-out]="isFading"
-        [class.fade-in]="!isFading">
-        {{ homePageProjects[currentGalleryIndex].project.name[currentLang] }}
-      </h1>
+      <!-- current image -->
+      <div class="gallery-image-container"
+           [class.fading-out]="isFadingOut"
+           [class.fading-in]="isFadingIn || (!isFadingOut && !isGalleryAnimating)">
+        <img
+          [src]="homePageProjects[currentGalleryIndex].image"
+          [alt]="homePageProjects[currentGalleryIndex].image.toString()"
+        />
+        <h1 class="home-gallery-name"
+            [routerLink]="['/projects', homePageProjects[currentGalleryIndex].project.slug]"
+            (click)="closeGallery()">
+          {{ homePageProjects[currentGalleryIndex].project.name[currentLang] }}
+        </h1>
+      </div>
     </div>
   </div>
 </div>
