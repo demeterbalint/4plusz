@@ -1,7 +1,8 @@
 <div class="homepage-image-div">
   <div class="home-images">
-    <div class="home-images-track" [style.transform]="'translateX(-' + imageIndex * 100 + '%)'"
-         [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
+    <div class="home-images-track" [style.transform]="'translate3d(-' + imageIndex * 100 + '%, 0, 0)'"
+         [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'"
+         (transitionend)="onTransitionEnd()">
       <div class="home-image" *ngFor="let project of loopedProjects">
         <img [src]="project.image" [alt]="project.image.toString()" loading="lazy" decoding="async"
              (click)="openGallery(homePageProjects.indexOf(project))">

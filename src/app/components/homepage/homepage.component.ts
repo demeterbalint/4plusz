@@ -121,19 +121,6 @@ export class HomepageComponent implements OnInit {
     this.imageIndex++;
 
     this.preloadImagesAround();
-
-    if (this.imageIndex == this.loopedProjects.length - 1) {
-      setTimeout(() => {
-        this.isAnimating = false;
-        requestAnimationFrame(() => {
-          this.imageIndex = 1;
-        });
-      }, 2000);
-    } else {
-      setTimeout(() => {
-        this.isAnimating = false;
-      }, 2000);
-    }
   }
 
   previousProject() {
@@ -143,18 +130,18 @@ export class HomepageComponent implements OnInit {
     this.imageIndex--;
 
     this.preloadImagesAround();
+  }
 
-    if (this.imageIndex == 0) {
-      setTimeout(() => {
-        this.isAnimating = false;
-        requestAnimationFrame(() => {
-          this.imageIndex = this.loopedProjects.length - 2;
-        });
-      }, 2000);
-    } else {
-      setTimeout(() => {
-        this.isAnimating = false;
-      }, 2000);
+  onTransitionEnd() {
+    if (!this.isAnimating) return;
+
+    this.isAnimating = false;
+
+    // Handle loop jump
+    if (this.imageIndex === this.loopedProjects.length - 1) {
+      this.imageIndex = 1;
+    } else if (this.imageIndex === 0) {
+      this.imageIndex = this.loopedProjects.length - 2;
     }
   }
 
