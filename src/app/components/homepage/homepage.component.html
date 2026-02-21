@@ -3,7 +3,7 @@
     <div class="home-images-track" [style.transform]="'translateX(-' + imageIndex * 100 + '%)'"
          [style.transition]="isAnimating ? 'transform 2s cubic-bezier(.87, 0, .13, 1)' : 'none'">
       <div class="home-image" *ngFor="let project of loopedProjects">
-        <img [src]="project.image" [alt]="project.image.toString()" loading="eager" decoding="async"
+        <img [src]="project.image" [alt]="project.image.toString()" loading="lazy" decoding="async"
              (click)="openGallery(homePageProjects.indexOf(project))">
         <h2>{{ project.project.name[currentLang] }}</h2>
       </div>
@@ -17,23 +17,32 @@
     <i *ngIf="isPaused" class="fa-solid fa-caret-right" (click)="resumeAutoSlide()"></i>
     <span class="home-image-count">{{ displayIndex }}/{{ numberOfImages }}</span>
   </div>
-  <div *ngIf="isGalleryOpen" class="home-gallery-wrapper">
+  <div *ngIf="isGalleryOpen" class="home-gallery-wrapper fullscreen-overlay">
     <span class="home gallery-close" (click)="closeGallery()">×</span>
     <div class="home gallery-arrows">
       <span (click)="previousGalleryProject()">‹</span>
       <span (click)="nextGalleryProject()">›</span>
     </div>
-    <div class="home-gallery-div">
+    <div class="home-gallery-div"
+         (wheel)="onWheel($event)"
+         (pointerdown)="onPointerDown($event)"
+         (pointermove)="onPointerMove($event)"
+         (pointerup)="onPointerUp($event)"
+         (pointercancel)="onPointerUp($event)">
       <img
-        [src]="homePageProjects[galleryIndex].image"
-        [alt]="homePageProjects[galleryIndex].image.toString()"
-        [class.fade-out]="isFadingOut"
-        [class.fade-in]="isFadingIn"
+        *ngIf="homePageProjects[currentGalleryIndex]"
+        [src]="homePageProjects[currentGalleryIndex].image"
+        [alt]="homePageProjects[currentGalleryIndex].image.toString()"
+        [class.fade-out]="isFading"
+        [class.fade-in]="!isFading"
       />
       <h1 class="home-gallery-name"
-          [routerLink]="['/projects', homePageProjects[galleryIndex].project.slug]"
-          [class.fade-out]="isFadingOut"
-          [class.fade-in]="isFadingIn">{{ homePageProjects[galleryIndex].project.name[currentLang] }}</h1>
+        *ngIf="homePageProjects[currentGalleryIndex]"
+        [routerLink]="['/projects', homePageProjects[currentGalleryIndex].project.slug]"
+        [class.fade-out]="isFading"
+        [class.fade-in]="!isFading">
+        {{ homePageProjects[currentGalleryIndex].project.name[currentLang] }}
+      </h1>
     </div>
   </div>
 </div>

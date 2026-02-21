@@ -4,7 +4,7 @@
       <a class="negyplusz" [routerLink]="['/']">{{ navFooText.headerBrand[currentLang] }}</a>
       <i *ngIf="!menuOpen" class="fa-solid fa-bars" (click)="openMenu()"></i>
       <i *ngIf="menuOpen" class="fa-solid fa-xmark" (click)="closeMenu()"></i>
-      <div class="nav-right" [class.open]="menuOpen">
+      <div class="nav-right fullscreen-overlay" [class.open]="menuOpen">
         <ul class="nav-list">
           <li><a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.home[currentLang] }}</a></li>
           <li><a [routerLink]="['/studio']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}" (click)="closeMenu()">{{ navFooText.studio[currentLang] }}</a></li>

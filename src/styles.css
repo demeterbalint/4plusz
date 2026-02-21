@@ -71,6 +71,7 @@ h3 {
 }
 
 .gallery-close {
+  z-index: 3;
   position: absolute;
   top: 0;
   right: 2.7rem;
@@ -97,4 +98,22 @@ h3 {
   font-size: var(--size-gallery-arrow);
   cursor: pointer;
   text-align: center;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .gallery-arrows {
+    display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .gallery-close {
+    top: 2rem;
+    right: 0.5rem;
+    height: 3.4rem;
+    width: 3rem;
+    color: white;
+    font-size: var(--size-gallery-close);
+    text-align: center;
+  }
 }

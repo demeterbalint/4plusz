@@ -4,6 +4,7 @@ import {Language, LanguageService} from '../../services/language.service';
 import {HomepageProjectModel} from '../../models/homepage-project-model';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {RouterLink} from '@angular/router';
+import {ScrollLockService} from '../../services/scroll-lock.service';
 
 @Component({
   selector: 'app-homepage',
@@ -30,6 +31,9 @@ export class HomepageComponent implements OnInit {
   isFadingOut = false;
   isFadingIn = false;
   fadeDuration = 400; // ms
+  currentGalleryIndex: number = 0; // what is currently shown
+  nextGalleryIndex: number | null = null; // the one we will switch to
+  isFading = false;
 
   //animation
   isAnimating: boolean = false;
@@ -38,7 +42,8 @@ export class HomepageComponent implements OnInit {
   isPaused: boolean = false;
 
   constructor(private languageService: LanguageService,
-              private projectLoader: ProjectLoaderService) {
+              private projectLoader: ProjectLoaderService,
+              private scrollLockService: ScrollLockService) {
   }
 
   ngOnInit(): void {
@@ -79,6 +84,28 @@ export class HomepageComponent implements OnInit {
     );
   }
 
+  preloadImagesAround() {
+    if (this.numberOfImages === 0) return;
+
+    const realIndex = this.displayIndex - 1; // convert displayIndex to 0-based
+
+    const prevIndex =
+      realIndex === 0 ? this.homePageProjects.length - 1 : realIndex - 1;
+
+    const nextIndex =
+      realIndex === this.homePageProjects.length - 1 ? 0 : realIndex + 1;
+
+    const candidates = [
+      this.homePageProjects[realIndex],
+      this.homePageProjects[nextIndex],
+      this.homePageProjects[prevIndex],
+    ];
+
+    candidates.forEach(p => {
+      const img = new Image();
+      img.src = p.image;
+    });
+  }
 
   startAutoSlide() {
     this.intervalId = setInterval(() => {
@@ -89,17 +116,19 @@ export class HomepageComponent implements OnInit {
   }
 
   nextProject() {
-    if (this.isAnimating || this.numberOfImages == 0) {
-      return;
-    }
+    if (this.isAnimating || this.numberOfImages == 0) return;
 
     this.isAnimating = true;
     this.imageIndex++;
 
+    this.preloadImagesAround();
+
     if (this.imageIndex == this.loopedProjects.length - 1) {
       setTimeout(() => {
         this.isAnimating = false;
-        this.imageIndex = 1;
+        requestAnimationFrame(() => {
+          this.imageIndex = 1;
+        });
       }, 2000);
     } else {
       setTimeout(() => {
@@ -109,17 +138,19 @@ export class HomepageComponent implements OnInit {
   }
 
   previousProject() {
-    if (this.isAnimating || this.numberOfImages == 0) {
-      return;
-    }
+    if (this.isAnimating || this.numberOfImages == 0) return;
 
     this.isAnimating = true;
     this.imageIndex--;
 
+    this.preloadImagesAround();
+
     if (this.imageIndex == 0) {
       setTimeout(() => {
         this.isAnimating = false;
-        this.imageIndex = this.loopedProjects.length - 2;
+        requestAnimationFrame(() => {
+          this.imageIndex = this.loopedProjects.length - 2;
+        });
       }, 2000);
     } else {
       setTimeout(() => {
@@ -159,50 +190,101 @@ export class HomepageComponent implements OnInit {
     this.isGalleryOpen = true;
     this.galleryIndex = index;
     this.isPaused = true;
+    this.scrollLockService.lock();
   }
 
-  protected previousGalleryProject() {
-    if (!this.isGalleryOpen || this.isAnimating) return;
+  nextGalleryProject() {
+    if (this.isAnimating) return;
     this.isAnimating = true;
 
-    this.isFadingOut = true;
+    // set the next index
+    this.nextGalleryIndex = (this.currentGalleryIndex + 1) % this.homePageProjects.length;
+    this.isFading = true; // triggers fade-out of current element
 
     setTimeout(() => {
-      this.galleryIndex =
-        this.galleryIndex === 0 ? this.homePageProjects.length - 1 : this.galleryIndex - 1;
-
-      this.isFadingOut = false;
-      this.isFadingIn = true;
-
-      setTimeout(() => {
-        this.isFadingIn = false;
-        this.isAnimating = false;
-      }, this.fadeDuration);
+      // fade-out complete → switch element
+      this.currentGalleryIndex = this.nextGalleryIndex!;
+      this.nextGalleryIndex = null;
+      this.isFading = false; // triggers fade-in of new element
+      this.isAnimating = false;
     }, this.fadeDuration);
   }
 
-  protected nextGalleryProject() {
-    if (!this.isGalleryOpen || this.isAnimating) return;
+  previousGalleryProject() {
+    if (this.isAnimating) return;
     this.isAnimating = true;
-    this.isFadingOut = true;
+
+    // set the previous index with looping
+    this.nextGalleryIndex =
+      this.currentGalleryIndex === 0
+        ? this.homePageProjects.length - 1
+        : this.currentGalleryIndex - 1;
+
+    this.isFading = true; // triggers fade-out of current element
 
     setTimeout(() => {
-      // switch image after fade-out
-      this.galleryIndex =
-        this.galleryIndex === this.homePageProjects.length - 1 ? 0 : this.galleryIndex + 1;
-
-      this.isFadingOut = false;
-      this.isFadingIn = true;
-
-      setTimeout(() => {
-        this.isFadingIn = false;
-        this.isAnimating = false;
-      }, this.fadeDuration);
+      // fade-out complete → switch element
+      this.currentGalleryIndex = this.nextGalleryIndex!;
+      this.nextGalleryIndex = null;
+      this.isFading = false; // triggers fade-in of new element
+      this.isAnimating = false;
     }, this.fadeDuration);
   }
 
   protected closeGallery() {
     this.isGalleryOpen = false;
     this.isPaused = false;
+    this.scrollLockService.unlock();
+  }
+
+  /* touch handling on gallery */
+  pointerStartX = 0;
+  pointerCurrentX = 0;
+  isSwiping = false;
+  minSwipeDistance = 50; // px threshold to trigger next/prev
+
+  onWheel(event: WheelEvent) {
+    if (Math.abs(event.deltaX) > 20) { // threshold
+      if (event.deltaX > 0) {
+        this.nextGalleryProject();
+      } else {
+        this.previousGalleryProject();
+      }
+    }
+  }
+
+  onPointerDown(event: PointerEvent) {
+    if (this.isAnimating) return;
+
+    // Track only touch/mouse for swipe
+    if (event.pointerType === 'mouse' || event.pointerType === 'touch') {
+      this.isSwiping = true;
+      this.pointerStartX = event.clientX;
+      this.pointerCurrentX = this.pointerStartX;
+
+      // Capture pointer to keep receiving move/up events outside element
+      (event.target as HTMLElement).setPointerCapture(event.pointerId);
+    }
+  }
+
+  onPointerMove(event: PointerEvent) {
+    if (!this.isSwiping) return;
+    this.pointerCurrentX = event.clientX;
+  }
+
+  onPointerUp(event: PointerEvent) {
+    if (!this.isSwiping) return;
+    this.isSwiping = false;
+
+    const diff = this.pointerStartX - this.pointerCurrentX;
+
+    if (Math.abs(diff) > this.minSwipeDistance) {
+      if (diff > 0) {
+        this.nextGalleryProject();
+      } else {
+        this.previousGalleryProject();
+      }
+    }
+    (event.target as HTMLElement).releasePointerCapture(event.pointerId);
   }
 }

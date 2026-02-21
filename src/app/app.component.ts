@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Language, LanguageService} from './services/language.service';
 import {NavbarFooterTextModel} from './models/navbar-footer-text-model';
 import {NAVBAR_FOOTER_TEXT} from './data/navbar-footer-text-data';
 import {NgForOf, NgIf} from '@angular/common';
+import {ScrollLockService} from './services/scroll-lock.service';
 
 @Component({
   selector: 'app-root',
@@ -34,8 +35,8 @@ export class AppComponent implements OnInit {
     ]
   }
 
-  constructor(private router: Router,
-              private languageService: LanguageService) {
+  constructor(private languageService: LanguageService,
+              private scrollLockService: ScrollLockService) {
   }
 
   ngOnInit(): void {
@@ -44,7 +45,7 @@ export class AppComponent implements OnInit {
     })
   }
 
-  navFooText: NavbarFooterTextModel =  NAVBAR_FOOTER_TEXT;
+  navFooText: NavbarFooterTextModel = NAVBAR_FOOTER_TEXT;
 
   switchToEnglish() {
     this.languageService.setLanguage('en');
@@ -62,7 +63,6 @@ export class AppComponent implements OnInit {
   //mobile view
   protected menuOpen = false;
   protected typeOpen = false;
-  private scrollY = 0;
 
   protected toggleTypeOpen() {
     this.typeOpen = !this.typeOpen;
@@ -70,26 +70,13 @@ export class AppComponent implements OnInit {
 
   openMenu() {
     this.menuOpen = true;
-    this.scrollY = window.scrollY;
-
+    this.scrollLockService.lock();
     document.body.style.position = 'fixed';
-    document.body.style.top = `-${this.scrollY}px`;
-    document.body.style.left = '0';
-    document.body.style.right = '0';
-    document.body.style.width = '100%';
-    document.body.classList.add('no-scroll');
   }
 
   closeMenu() {
     this.menuOpen = false;
     this.typeOpen = false;
-
-    document.body.classList.remove('no-scroll');
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.left = '';
-    document.body.style.right = '';
-    document.body.style.width = '';
-    window.scrollTo(0, this.scrollY);
+    this.scrollLockService.unlock();
   }
 }
