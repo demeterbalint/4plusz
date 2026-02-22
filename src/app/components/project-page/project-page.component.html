@@ -22,11 +22,11 @@
     </div>
   </div>
   <div *ngIf="isGalleryOpen" class="pp-gallery fullscreen-overlay">
-    <div class="pp-gallery-div">
-      <img [src]="projectImages[galleryIndex]" [alt]="projectImages[galleryIndex].toString()">
-    </div>
     <span class="pp gallery-close" (click)="closeGallery()">×</span>
     <span class="gallery-arrow-left" (click)="previousGalleryProject()">‹</span>
     <span class="gallery-arrow-right" (click)="nextGalleryProject()">›</span>
+    <div class="pp-gallery-div">
+      <img [src]="projectImages[galleryIndex]" [alt]="projectImages[galleryIndex].toString()">
+    </div>
   </div>
 </div>

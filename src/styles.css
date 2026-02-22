@@ -1,7 +1,7 @@
 :root {
   --menuColor: #696969;
   --backgroundColor: white;
-  --languageActiveColor: rgb(254, 97, 97);
+  --languageActiveColor: #ff6900;
   --languagePipeColor: rgb(230, 224, 211);
   --languageColor: rgb(51, 51, 51);
   --languageHoverColor: rgb(149, 149, 149);
@@ -9,7 +9,7 @@
   --referenceColor: #404040;
 
   --mobileMenuColor: black;
-  --mobileMenuActiveColor: red;
+  --mobileMenuActiveColor: #ff6900;
 
   --brandFont: var(--weight-extralight) var(--size-regular) var(--font-oswald);
   --menuFont: var(--weight-regular) var(--size-small-min1) var(--font-roboto);
@@ -96,6 +96,7 @@ h3 {
   text-align: center;
   z-index: 10;
   color: white;
+  text-shadow: 1px 1px 10px black;
 }
 
 .gallery-arrow-left {
@@ -109,7 +110,7 @@ h3 {
 @media (hover: none) and (pointer: coarse) {
   .gallery-arrow-left,
   .gallery-arrow-right {
-    display: none;
+    display: block;
   }
 }
 

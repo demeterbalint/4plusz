@@ -99,8 +99,8 @@ export class ProjectService {
     {
       slug: 'kapy',
       name: {
-        hu: 'TÁRSASHÁZ',
-        en: 'APARTMENT BUILDING'
+        hu: 'KAPY UTCAI TÁRSASHÁZ',
+        en: 'KAPY STREET APARTMENT BUILDING'
       },
       gridShort: {
         hu: 'Kapy utcai öt lakásos társaház',
@@ -966,8 +966,8 @@ export class ProjectService {
     {
       slug: 'hubay-garden',
       name: {
-        hu: 'TÁRSASHÁZ',
-        en: 'RESIDENTIAL PARK'
+        hu: 'HUBAY GARDEN TÁRSASHÁZ',
+        en: 'HUBAY GARDEN RESIDENTIAL PARK'
       },
       gridShort: {
         hu: 'Hubay Garden hatvan lakásos lakóépület',

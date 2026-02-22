@@ -226,6 +226,10 @@ footer {
 
 /* touch/mobile devices */
 @media (hover: none) and (pointer: coarse) {
+  .negyplusz {
+    z-index: 300;
+  }
+
   .main-container {
     padding-top: clamp(70px, 10vh, 90px);
   }
@@ -263,7 +267,7 @@ footer {
   }
 
   .nav-list {
-    padding-top: 1rem;
+    padding-top: 5rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -308,10 +312,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     border-top: none;
     background: none !important;
-    padding: 0;
+    padding: 1rem 0;
   }
 
   .project-types.open a {
@@ -351,5 +355,10 @@ footer {
   .language .bt-hu {
     border-right: 2px solid var(--languagePipeColor);
   }
+}
 
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .nav-list {
+    padding-top: 13rem;
+  }
 }

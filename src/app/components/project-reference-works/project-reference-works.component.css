@@ -3,26 +3,29 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 3rem;
-}
-
-h1 {
-  align-self: center;
 }
 
 .reference-div {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
 .reference-table {
-  width: 75%;
+  width: 100%;
+  min-width: 900px;
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -38,6 +41,7 @@ h1 {
   text-align: left;
   vertical-align: middle;
   color: var(--referenceColor);
+  white-space: normal;
 }
 
 .reference-table td {
@@ -48,4 +52,13 @@ h1 {
 
 .reference-table thead tr {
   border-bottom: 2px solid black;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .reference-table {
+    width: 95%;
+    -webkit-text-size-adjust: 100%; /* iOS Safari */
+    text-size-adjust: 100%;
+  }
+
 }
