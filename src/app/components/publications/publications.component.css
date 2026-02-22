@@ -10,7 +10,6 @@
 
 .publications-background {
   position: relative;
-  background-color: bisque;
   width: 100%;
   height: 25.9rem;
   display: flex;
@@ -62,7 +61,8 @@
   justify-content: center;
   align-items: center;
   width: 77.3%;
-  height: 26rem;
+  height: max-content;
+  padding: 2.5rem 0;
   border-bottom: black solid 1px;
 }
 
@@ -76,7 +76,7 @@
 
 .item-image-div {
   width: 41.8%;
-  height: 17.5rem;
+  aspect-ratio: 4 / 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,4 +123,71 @@
   font-weight: var(--weight-regular);
   line-height: 1.5rem;
   white-space: pre-line;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .publication-item {
+    width: 90%;
+  }
+
+  .publication-item-width {
+    gap: 2rem;
+    border: black solid 1px;
+  }
+
+  .item-text-div {
+    border: black solid 1px;
+    margin-top: 0;
+  }
+
+  .item-image-div {
+    width: 45%;
+  }
+
+  .item-text-div-title {
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  .item-text-div-snippet {
+    margin-top: 1.5rem;
+    font-size: var(--size-small-plus1);
+    line-height: 1.4;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .publications-titles {
+    width: 90%;
+    /*border: black solid 1px;*/
+    transform: translateY(30%);
+  }
+
+  .publications-titles h1,
+  .publications-subtitle {
+    margin-left: 1rem;
+  }
+
+  .publication-item:nth-child(1n) .publication-item-width {
+    flex-direction: column-reverse;
+  }
+
+  .publication-item-width {
+    width: 97%;
+    gap: 1rem;
+  }
+
+  .item-image-div,
+  .item-text-div {
+    width: 100%;
+  }
+
+  .item-image-div {
+    aspect-ratio: auto;
+  }
+
+  .item-image-div img {
+    height: auto;
+  }
+
 }
