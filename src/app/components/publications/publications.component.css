@@ -83,7 +83,6 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
-  background-color: darkgray;
 }
 
 .item-image-div img {
@@ -132,12 +131,11 @@
 
   .publication-item-width {
     gap: 2rem;
-    border: black solid 1px;
   }
 
   .item-text-div {
-    border: black solid 1px;
     margin-top: 0;
+    align-self: center;
   }
 
   .item-image-div {
@@ -157,6 +155,10 @@
 }
 
 @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .publications-div {
+    gap: 1rem;
+  }
+
   .publications-titles {
     width: 90%;
     /*border: black solid 1px;*/
