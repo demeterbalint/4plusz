@@ -134,10 +134,10 @@ export const imageMap: Record<string, string[]> = {
 ],
   'family-house-5': [
     "assets/buildings/family-house-5/veszprem-01.jpg",
-    "assets/buildings/family-house-5/veszprem-02-main.jpg",
+    "assets/buildings/family-house-5/veszprem-02.jpg",
     "assets/buildings/family-house-5/veszprem-03.jpg",
     "assets/buildings/family-house-5/veszprem-04.jpg",
-    "assets/buildings/family-house-5/veszprem-05.webp",
+    "assets/buildings/family-house-5/veszprem-05-main.webp",
     "assets/buildings/family-house-5/veszprem-grid.jpg",
     "assets/buildings/family-house-5/veszprem-residential.webp"
 ],

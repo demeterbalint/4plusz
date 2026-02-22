@@ -116,12 +116,20 @@ h3 {
 
 @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
   .gallery-close {
-    top: 2rem;
+    top: 3rem;
     right: 0.5rem;
     height: 3.4rem;
     width: 3rem;
     color: white;
     font-size: var(--size-gallery-close);
     text-align: center;
+  }
+
+  .gallery-arrow-left {
+    left: 0;
+  }
+
+  .gallery-arrow-right {
+    right: 0;
   }
 }
