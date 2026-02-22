@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7.5rem;
+  gap: 5rem;
   padding-bottom: 4rem;
 }
 
@@ -11,7 +11,6 @@
   position: relative;
   width: 100%;
   height: 23.7rem;
-  background-color: darkgray;
 }
 
 .contact-background img {
@@ -27,42 +26,52 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
   width: 77.5%;
-  height: 10rem;
+  height: 42%;
   opacity: 0.9;
 }
 
-.contact-titles,
-.contact-datas {
-  width: 100%;
-  display: flex;
+.contact-box-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 2rem;
   text-align: center;
 }
 
-.contact-datas a:hover {
-  cursor: pointer;
-  font-weight: var(--weight-regular);
+.contact-item {
+  display: contents;
+  grid-row: 1;
+}
+
+.contact-data,
+.follow-socials {
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  width: max-content;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-item a:hover {
+    cursor: pointer;
+    font-weight: var(--weight-regular);
+  }
 }
 
 .contact-title {
   font-size: var(--size-regular);
-  width: 14%;
 }
 
 .contact-data {
-  width: 14%;
   white-space: pre-line;
 }
 
 .follow-socials {
-  width: 14%;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -93,4 +102,55 @@
 
 .contact-maps iframe {
   filter: grayscale(100%);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .contact-div {
+    gap: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .social-border {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .fa-facebook-f {
+    font-size: var(--size-large-plus1);
+  }
+
+  .fa-instagram {
+    font-size: var(--size-large-plus1);
+  }
+
+  .follow-socials {
+    gap: 1rem
+  }
+}
+
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  .contact-background {
+    height: 33rem;
+  }
+
+  .contact-box {
+    height: 70%;
+  }
+
+  .contact-box-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+  }
+
+  .contact-item.first h2 {
+    margin-top: 0;
+  }
+
+  .contact-item h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
