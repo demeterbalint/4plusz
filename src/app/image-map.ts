@@ -46,14 +46,14 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/budaors-church/budaors-18.webp",
     "assets/buildings/budaors-church/budaors-19.webp",
     "assets/buildings/budaors-church/budaors-20.webp",
-    "assets/buildings/budaors-church/budaors-21.jpeg",
+    "assets/buildings/budaors-church/budaors-21.webp",
     "assets/buildings/budaors-church/budaors-22.webp",
     "assets/buildings/budaors-church/budaors-23.webp",
     "assets/buildings/budaors-church/budaors-24.webp",
     "assets/buildings/budaors-church/budaors-25-main.webp",
     "assets/buildings/budaors-church/budaors-26.webp",
     "assets/buildings/budaors-church/budaors-grid.jpg",
-    "assets/buildings/budaors-church/budaors-home.png",
+    "assets/buildings/budaors-church/budaors-home.webp",
     "assets/buildings/budaors-church/budaors-press.jpg"
 ],
   'csipkebokor-kindergarten': [
@@ -94,7 +94,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/family-house-1/pilis-02.webp",
     "assets/buildings/family-house-1/pilis-03-main-residential-conceptual.webp",
     "assets/buildings/family-house-1/pilis-04.webp",
-    "assets/buildings/family-house-1/pilis-grid.jpg"
+    "assets/buildings/family-house-1/pilis-grid.webp"
 ],
   'family-house-2': [
     "assets/buildings/family-house-2/veres-01.webp",
@@ -165,8 +165,8 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/fasor-church/fasor-21.webp",
     "assets/buildings/fasor-church/fasor-22.webp",
     "assets/buildings/fasor-church/fasor-23-main-public-religious-historical.webp",
-    "assets/buildings/fasor-church/fasor-grid.jpg",
-    "assets/buildings/fasor-church/fasor-press.jpg"
+    "assets/buildings/fasor-church/fasor-grid.webp",
+    "assets/buildings/fasor-church/fasor-press.webp"
 ],
   'geo-log-office': [
     "assets/buildings/geo-log-office/geo-log-01.webp",
@@ -183,7 +183,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/godollo-lyceum/godollo-05.webp",
     "assets/buildings/godollo-lyceum/godollo-06.webp",
     "assets/buildings/godollo-lyceum/godollo-07-main-public-conceptual.webp",
-    "assets/buildings/godollo-lyceum/godollo-grid.jpg"
+    "assets/buildings/godollo-lyceum/godollo-grid.webp"
 ],
   'hetszinvirag-kindergarten': [
     "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-01.webp",
@@ -197,8 +197,8 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-09.webp",
     "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-10.webp",
     "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-grid.jpg",
-    "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-main.jpg",
-    "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-public-public.jpg"
+    "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-main.webp",
+    "assets/buildings/hetszinvirag-kindergarten/hetszinvirag-public-public.webp"
 ],
   'hubay-garden': [
     "assets/buildings/hubay-garden/hubay-01.webp",
@@ -216,7 +216,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/hubay-garden/hubay-13.webp",
     "assets/buildings/hubay-garden/hubay-14.webp",
     "assets/buildings/hubay-garden/hubay-15.webp",
-    "assets/buildings/hubay-garden/hubay-grid.jpg"
+    "assets/buildings/hubay-garden/hubay-grid.webp"
 ],
   'kapy': [
     "assets/buildings/kapy/kapy-01.webp",
@@ -234,7 +234,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/kapy/kapy-13-main.webp",
     "assets/buildings/kapy/kapy-14.webp",
     "assets/buildings/kapy/kapy-15.webp",
-    "assets/buildings/kapy/kapy-grid.jpg"
+    "assets/buildings/kapy/kapy-grid.webp"
 ],
   'keresztur-restaurant-office': [
     "assets/buildings/keresztur-restaurant-office/copperhouse-01.webp",
@@ -276,7 +276,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/pecsely-chapel/pecsely-06.webp",
     "assets/buildings/pecsely-chapel/pecsely-07.webp",
     "assets/buildings/pecsely-chapel/pecsely-08-main-religious-conceptual.webp",
-    "assets/buildings/pecsely-chapel/pecsely-grid.jpg"
+    "assets/buildings/pecsely-chapel/pecsely-grid.webp"
 ],
   'pesthidegkut-church': [
     "assets/buildings/pesthidegkut-church/hidegkut-01.webp",
@@ -287,7 +287,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/pesthidegkut-church/hidegkut-06.webp",
     "assets/buildings/pesthidegkut-church/hidegkut-07.webp",
     "assets/buildings/pesthidegkut-church/hidegkut-08-main-public-religious-conceptual.webp",
-    "assets/buildings/pesthidegkut-church/hidegkut-grid.png"
+    "assets/buildings/pesthidegkut-church/hidegkut-grid.webp"
 ],
   'raday-house': [
     "assets/buildings/raday-house/raday-01.webp",
@@ -331,8 +331,8 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/tihany-granary/tihany-10.webp",
     "assets/buildings/tihany-granary/tihany-11.webp",
     "assets/buildings/tihany-granary/tihany-12-main-public.webp",
-    "assets/buildings/tihany-granary/tihany-grid.jpg",
-    "assets/buildings/tihany-granary/tihany-historical.jpg"
+    "assets/buildings/tihany-granary/tihany-grid.webp",
+    "assets/buildings/tihany-granary/tihany-historical.webp"
 ],
   'ujlak-swimming-facility': [
     "assets/buildings/ujlak-swimming-facility/ujlak-01.webp",
@@ -345,7 +345,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/ujlak-swimming-facility/ujlak-08.webp",
     "assets/buildings/ujlak-swimming-facility/ujlak-09.webp",
     "assets/buildings/ujlak-swimming-facility/ujlak-10.webp",
-    "assets/buildings/ujlak-swimming-facility/ujlak-grid.jpg",
+    "assets/buildings/ujlak-swimming-facility/ujlak-grid.webp",
     "assets/buildings/ujlak-swimming-facility/ujlak-main-public-conceptual.webp"
 ],
   'ujpest-parish-church': [
@@ -375,7 +375,7 @@ export const imageMap: Record<string, string[]> = {
     "assets/buildings/vac-high-school/bernath-07.webp",
     "assets/buildings/vac-high-school/bernath-08.webp",
     "assets/buildings/vac-high-school/bernath-09-main-public-conceptual.webp",
-    "assets/buildings/vac-high-school/bernath-grid.jpg"
+    "assets/buildings/vac-high-school/bernath-grid.webp"
 ],
   'weores-sandor-theatre': [
     "assets/buildings/weores-sandor-theatre/weores-01.webp",
