@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ProjectModel} from '../../models/project-model';
 import {ProjectLoaderService} from '../../services/project-loader.service';
 import {Language, LanguageService} from '../../services/language.service';
@@ -32,10 +32,12 @@ export class ProjectPageComponent implements OnInit {
   isGalleryOpen: boolean = false;
   galleryIndex: number = 0;
 
+  threeRowProjectSlugs = ['kulso-kelenfold-church', 'vac-high-school', 'albertfalva-church']
+
   constructor(private projectLoader: ProjectLoaderService,
               private languageService: LanguageService,
               private route: ActivatedRoute,
-              private scrrollLockService: ScrollLockService) {
+              private scrollLockService: ScrollLockService) {
   }
 
   ngOnInit(): void {
@@ -69,7 +71,7 @@ export class ProjectPageComponent implements OnInit {
   protected openGallery(index: number) {
     this.isGalleryOpen = true;
     this.galleryIndex = index;
-    this.scrrollLockService.lock();
+    this.scrollLockService.lock();
   }
 
   protected previousGalleryProject() {
@@ -90,6 +92,6 @@ export class ProjectPageComponent implements OnInit {
 
   protected closeGallery() {
     this.isGalleryOpen = false;
-    this.scrrollLockService.unlock();
+    this.scrollLockService.unlock();
   }
 }

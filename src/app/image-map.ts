@@ -59,8 +59,8 @@ export const imageMap: Record<string, string[]> = {
   'csipkebokor-kindergarten': [
     "assets/buildings/csipkebokor-kindergarten/csipkebokor-01.webp",
     "assets/buildings/csipkebokor-kindergarten/csipkebokor-02.webp",
-    "assets/buildings/csipkebokor-kindergarten/csipkebokor-03.webp",
-    "assets/buildings/csipkebokor-kindergarten/csipkebokor-04-main-public-historical.webp",
+    "assets/buildings/csipkebokor-kindergarten/csipkebokor-03-main-public-historical.webp",
+    "assets/buildings/csipkebokor-kindergarten/csipkebokor-04.webp",
     "assets/buildings/csipkebokor-kindergarten/csipkebokor-05.webp",
     "assets/buildings/csipkebokor-kindergarten/csipkebokor-06.webp",
     "assets/buildings/csipkebokor-kindergarten/csipkebokor-07.webp",

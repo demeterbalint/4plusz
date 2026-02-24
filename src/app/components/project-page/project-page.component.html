@@ -15,7 +15,7 @@
       <span *ngFor="let part of project.longDescription[currentLang]">{{ part }}</span>
     </div>
   </div>
-  <div class="pp-image-grid">
+  <div class="pp-image-grid" [class.three-row]="threeRowProjectSlugs.includes(project.slug)">
     <div class="pp-image-grid-item" *ngFor="let image of projectImages" (click)="openGallery(projectImages.indexOf(image))">
       <img [src]="image" [alt]="image.toString()">
       <div class="pp-image-grid-hover"></div>
