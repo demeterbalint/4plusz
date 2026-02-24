@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.navbar i {
+.menu-toggle {
   display: none;
 }
 
@@ -223,7 +223,6 @@ footer {
 }
 
 
-
 /* touch/mobile devices */
 @media (hover: none) and (pointer: coarse) {
   .negyplusz {
@@ -238,32 +237,78 @@ footer {
     height: clamp(70px, 10vh, 90px);
   }
 
-  .navbar i {
+  .menu-toggle {
     z-index: 3000;
+    position: relative;
     display: block;
-    margin-right: 1rem;
-    font-size: 2rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    /*border: none;*/
+    background: transparent;
+    border: none;
+  }
+
+  .menu-toggle span {
+    position: absolute;
+    left: 6px;
+    width: 28px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+    /*transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.2s ease;*/
+  }
+
+  .menu-toggle span:nth-child(1) {
+    top: 8px;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    top: 18px;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    top: 28px;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
   }
 
   .nav-right {
-    display: none;
-  }
-
-  .nav-right.open {
     position: fixed;
     z-index: 200;
     inset: 0;
     width: 100vw;
     max-height: 100dvh;
-    overflow-y: auto;
-    background: white !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    letter-spacing: 0;
+    background: white !important;
+    overflow-y: auto;
     padding-bottom: 3rem;
+    letter-spacing: 0;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain; /* stops scroll chaining */
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-18px);
+    transition: opacity 0.25s ease 0.05s, transform 0.25s ease 0.05s;
+  }
+
+  .nav-right.open {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-list {

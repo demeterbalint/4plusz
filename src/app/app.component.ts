@@ -80,4 +80,8 @@ export class AppComponent implements OnInit {
     this.typeOpen = false;
     this.scrollLockService.unlock();
   }
+
+  protected toggleMenu() {
+    this.menuOpen ? this.closeMenu() : this.openMenu();
+  }
 }
