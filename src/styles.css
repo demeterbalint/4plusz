@@ -82,6 +82,7 @@ h3 {
   font-size: var(--size-gallery-close);
   cursor: pointer;
   text-align: center;
+  text-shadow: 1px 1px 5px black;
 }
 
 .gallery-arrow-left,
@@ -96,7 +97,7 @@ h3 {
   text-align: center;
   z-index: 10;
   color: white;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 5px black;
 }
 
 .gallery-arrow-left {
