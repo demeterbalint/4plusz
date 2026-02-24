@@ -15,6 +15,7 @@ import {ScrollLockService} from './services/scroll-lock.service';
 export class AppComponent implements OnInit {
   title = 'negyplusz';
 
+  isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   currentLang: Language = 'hu';
   projectTypes = {
     hu: [

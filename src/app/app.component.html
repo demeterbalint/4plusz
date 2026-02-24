@@ -40,7 +40,8 @@
   <footer>
     <div class="footer-contact-div">
       <h3 class="footer-name" [routerLink]="['/contact']">{{ navFooText.footerBrand[currentLang] }}</h3>
-      <span>{{ navFooText.phone[currentLang] }}</span>
+      <span *ngIf="!isMobile">{{ navFooText.phone[currentLang] }}</span>
+      <a *ngIf="isMobile" [href]="'tel:' + navFooText.phone[currentLang]">{{ navFooText.phone[currentLang] }}</a>
       <span class="footer-address" (click)="openMaps()">{{ navFooText.address[currentLang] }}</span>
       <div class="socials-footer">
         <div class="facebook">

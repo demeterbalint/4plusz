@@ -9,11 +9,12 @@
         </div>
         <div class="contact-item">
           <h2 class="contact-title">{{ contactData.phoneTitle[currentLang] }}</h2>
-          <span class="contact-data">{{ contactData.phone[currentLang] }}</span>
+          <span *ngIf="!isMobile" class="contact-data">{{ contactData.phone[currentLang] }}</span>
+          <a *ngIf="isMobile" class="contact-data" [href]="'tel:' + contactData.phone[currentLang]">{{ contactData.phone[currentLang] }}</a>
         </div>
         <div class="contact-item">
           <h2 class="contact-title">{{ contactData.emailTitle[currentLang] }}</h2>
-          <a class="contact-data" (click)="openMail()">{{ contactData.email[currentLang] }}</a>
+          <a class="contact-data" href="mailto:{{ mainEmail }}" (click)="openEmail($event)">{{ contactData.email[currentLang] }}</a>
         </div>
         <div class="contact-item">
           <h2 class="contact-title">{{ contactData.followTitle[currentLang] }}</h2>
@@ -33,5 +34,4 @@
       width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-  <!--<div id="map" class="contact-maps"></div>-->
 </div>

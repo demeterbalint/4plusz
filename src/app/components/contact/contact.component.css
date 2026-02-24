@@ -54,6 +54,8 @@
   align-self: center;
   justify-self: center;
   width: max-content;
+  text-decoration: none;
+  color: black;
 }
 
 @media (hover: hover) and (pointer: fine) {
