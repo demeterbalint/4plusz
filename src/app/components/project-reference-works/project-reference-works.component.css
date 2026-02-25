@@ -56,9 +56,13 @@
 
 @media (hover: none) and (pointer: coarse) {
   .reference-table {
-    width: 95%;
     -webkit-text-size-adjust: 100%; /* iOS Safari */
     text-size-adjust: 100%;
   }
+}
 
+@media (hover: none) and (pointer: coarse) and (orientation: landscape) {
+  .reference-div {
+    width: 90%;
+  }
 }

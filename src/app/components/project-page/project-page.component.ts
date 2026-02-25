@@ -32,7 +32,8 @@ export class ProjectPageComponent implements OnInit {
   isGalleryOpen: boolean = false;
   galleryIndex: number = 0;
 
-  threeRowProjectSlugs = ['kulso-kelenfold-church', 'vac-high-school', 'albertfalva-church']
+  threeRowProjectSlugs = ['kulso-kelenfold-church', 'vac-high-school', 'albertfalva-church', 'family-house-4', 'family-house-5']
+  twoRowProjectSlugs = ['family-house-1', 'geo-log-office']
 
   constructor(private projectLoader: ProjectLoaderService,
               private languageService: LanguageService,
