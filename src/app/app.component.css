@@ -404,6 +404,6 @@ footer {
 
 @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
   .nav-list {
-    padding-top: 13rem;
+    padding-top: 0;
   }
 }

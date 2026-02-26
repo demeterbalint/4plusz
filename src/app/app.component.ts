@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Language, LanguageService} from './services/language.service';
 import {NavbarFooterTextModel} from './models/navbar-footer-text-model';
@@ -73,6 +73,7 @@ export class AppComponent implements OnInit {
     this.menuOpen = true;
     this.scrollLockService.lock();
     document.body.style.position = 'fixed';
+    this.onMenuOpen();
   }
 
   closeMenu() {
@@ -83,5 +84,32 @@ export class AppComponent implements OnInit {
 
   protected toggleMenu() {
     this.menuOpen ? this.closeMenu() : this.openMenu();
+  }
+
+  // reference nav-right and nav-list
+  @ViewChild('navRight') navRightRef!: ElementRef;
+  @ViewChild('navList') navListRef!: ElementRef;
+
+  setNavListMargin() {
+    const navRightHeight = this.navRightRef.nativeElement.offsetHeight; // total nav-right height
+    const navListHeight = this.navListRef.nativeElement.offsetHeight;   // current nav-list height
+
+    // Calculate top margin to vertically center nav-list in nav-right
+    const marginTop = (navRightHeight - navListHeight) / 2;
+
+    // Apply the margin-top
+    this.navListRef.nativeElement.style.marginTop = `${marginTop}px`;
+  }
+
+  // Call this whenever menu opens or window resizes
+  onMenuOpen() {
+    this.setNavListMargin();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (this.menuOpen && !this.typeOpen) {
+      this.setNavListMargin();
+    }
   }
 }

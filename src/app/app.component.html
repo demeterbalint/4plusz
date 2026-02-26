@@ -12,8 +12,8 @@
         <span></span>
         <span></span>
       </button>
-      <div class="nav-right fullscreen-overlay" [class.open]="menuOpen">
-        <ul class="nav-list">
+      <div class="nav-right fullscreen-overlay" [class.open]="menuOpen" #navRight>
+        <ul class="nav-list" #navList>
           <li><a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}"
                  (click)="closeMenu()">{{ navFooText.home[currentLang] }}</a></li>
           <li><a [routerLink]="['/studio']" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true}"
