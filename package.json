@@ -1,11 +1,11 @@
 {
   "name": "negyplusz",
   "version": "0.0.0",
-  "homepage": "https://demeterbalint.github.io/4plusz",
+  "homepage": "https://www.4plusz.hu",
   "scripts": {
     "ng": "ng",
     "start": "npm run generate-images && ng serve",
-    "build": "npm run generate-images && ng build --configuration production --base-href /4plusz/",
+    "build": "npm run generate-images && ng build --configuration production --base-href /",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generate-images": "node generate-images.js",
