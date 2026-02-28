@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generate-images": "node generate-images.js",
-    "deploy": "npm run build && npx angular-cli-ghpages --dir=dist/4plusz/browser"
+    "deploy": "npm run build && npx angular-cli-ghpages --dir=dist/4plusz/browser --cname=www.4plusz.hu"
   },
   "private": true,
   "dependencies": {
