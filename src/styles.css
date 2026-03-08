@@ -57,7 +57,7 @@ html, body {
 
 @media (min-width: 1300px) {
   html {
-    font-size: clamp(16px, 14px + 0.4vw, 20px);
+    font-size: clamp(16px, 14px + 0.25vw, 20px);
   }
 }
 
