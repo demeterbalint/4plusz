@@ -55,6 +55,12 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
+@media (min-width: 1300px) {
+  html {
+    font-size: clamp(16px, 14px + 0.4vw, 20px);
+  }
+}
+
 span, a {
   font: var(--weight-light) var(--size-small-plus2) var(--font-roboto); /* 300 14px */
 }
